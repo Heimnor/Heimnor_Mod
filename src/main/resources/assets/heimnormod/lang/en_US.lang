@@ -27,8 +27,6 @@ item.shaal1P.name=Plastron des dunes
 item.shaal2J.name=Jambières des sables
 item.shaal1B.name=Bottes des dunes
 
-item.lamellaireJ.name=Lamellaire
-
 item.djarneddin1C.name=Casque des steppes
 item.djarneddin1P.name=Plastron des steppes
 item.djarneddin1B.name=Bottes des steppes
@@ -53,8 +51,10 @@ item.mercenaireP.name=Plastron de mercenaire
 item.mercenaireJ.name=Cotte de maille
 item.mercenaireB.name=Bottes de mercenaire
 
-item.hajiC.name=Casque Haji
-item.hajiP.name=Ensemble Haji
+item.CHaji.name=Casque Haji
+item.PHaji.name=Protections Haji
+item.JHaji.name=Maille Haji
+item.BHaji.name=Jambières Haji
 
 item.toundraC.name=Couvre-chef de fourrure
 item.toundraP.name=Pelisse de fourrure
@@ -66,10 +66,35 @@ item.guerinP.name=Plastron de Guérin
 item.guerinJ.name=Tabard de Guérin
 item.guerinB.name=Bottes de Guérin
 
-item.plaquesC.name=Casque de plaques
-item.plaquesP.name=Plastron de plaques
-item.plaquesJ.name=Protections de plaques
-item.plaquesB.name=Bottes de plaques
+item.CPlaques.name=Casque de plaques
+item.PPlaques.name=Plastron de plaques
+item.JPlaques.name=Protections de plaques
+item.BPlaques.name=Bottes de plaques
+
+item.CClericale.name=Masque Cléricale
+item.PClericale.name=Plastron Cléricale
+item.JClericale.name=Maille Cléricale
+item.BClericales.name=Bottes Cléricales
+
+item.CCloute.name=Casque en Cuir clouté
+item.PCloute.name=Plastron en Cuir clouté
+item.JCloute.name=Gambison renforcé
+item.BCloute.name=Jambières en Cuir clouté
+
+item.CGjermund.name=Gjermünd
+item.PHuscarl.name=Torse d'Huscarl
+item.JHuscarl.name=Peaux d'Huscarl
+item.BHuscarl.name=Chausses d'Huscarl
+
+item.CMaille.name=Coiffe de Maille
+item.PMaille.name=Epaulières maillées
+item.JMaille.name=Dessous maillé
+item.BMaille.name=Chausses maillées
+
+item.CLamellaire.name=Coiffe Lamellaire
+item.PLamellaire.name=Epaulières en Lamellaire
+item.JLamellaire.name=Lamellaire
+item.BLamellaire.name=Jambières en Lamellaire
 
 item.masserhombe.name=Masse Rhombe
 item.matraque.name=Matraque

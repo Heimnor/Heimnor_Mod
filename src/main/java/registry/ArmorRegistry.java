@@ -13,14 +13,15 @@ public class ArmorRegistry {
 
 	public static Item casqueAdamante, plastronAdamante, jambieresAdamante, bottesAdamante, casqueOronne_1,
 			plastronOronne_1, jambieresOronnes_1, bottesOronnes_1, shaalCasque_1, shaalPlastron_1, shaalBottes_1,
-			shaalJambieres_2, lamellaireJambieres, DjarnedinCasque_1, DjarnedinPlastron_1, DjarnedinBottes_1,
+			shaalJambieres_2, DjarnedinCasque_1, DjarnedinPlastron_1, DjarnedinBottes_1,
 			cuirBouilliCasque, cuirBouilliPlastron, cuirBouilliJambieres, cuirBouilliBottes, armureImproviseeCasque,
 			armureImproviseePlastron, armureImproviseeJambieres, armureImproviseeBottes, armureMercenaireCasque,
-			armureMercenairePlastron, armureMercenaireJambieres, armureMercenaireBottes, armureHajiCasque,
-			armureHajiPlastron, armureToundraCasque, armureToundraPlastron, armureToundraJambieres, armureToundraBottes,
+			armureMercenairePlastron, armureMercenaireJambieres, armureMercenaireBottes, cHaji,
+			pHaji, jHaji, bHaji, armureToundraCasque, armureToundraPlastron, armureToundraJambieres, armureToundraBottes,
 			armureGuerinneCasque, armureGuerinnePlastron, armureGuerinneJambieres, armureGuerinneBottes,
-			armurePlaquesCasque, armurePlaquesPlastron, armurePlaquesJambieres, armurePlaquesBottes, cClericale, pClericale, jClericale, bClericale,
-			sergentC, sergentP, sergentJ, sergentB;
+			cPlaques, pPlaques, jPlaques, bPlaques, cClericale, pClericale, jClericale, bClericale,
+			sergentC, sergentP, sergentJ, sergentB, cCloute, pCloute, jCloute, bCloute, cHuscarl, pHuscarl, jHuscarl, bHuscarl, cMaille, pMaille, jMaille, bMaille, 
+			cLamellaire, pLamellaire, jLamellaire, bLamellaire;
 
 	public static ArmorMaterial civilLeg = EnumHelper.addArmorMaterial("armureLourdeMaterial", 50,
 			new int[] { 1, 3, 2, 1 }, 20);
@@ -51,8 +52,6 @@ public class ArmorRegistry {
 
 		shaalJambieres_2 = new HArmor(milLeger, SABLES, 2, ArmorCategories.MILITAIRELEGER, "shaal2J");
 
-		lamellaireJambieres = new HArmor(milLeger, LAMELLAIRE, 2, ArmorCategories.MILITAIRELEGER, "lamellaireJ");
-
 		DjarnedinCasque_1 = new HArmor(milLeger, STEPPES, 0, ArmorCategories.MILITAIRELEGER, "djarneddin1C");
 		DjarnedinPlastron_1 = new HArmor(milLeger, STEPPES, 1, ArmorCategories.MILITAIRELEGER, "djarneddin1P");
 		DjarnedinBottes_1 = new HArmor(milLeger, STEPPES, 3, ArmorCategories.MILITAIRELEGER, "djarneddin1B");
@@ -72,8 +71,11 @@ public class ArmorRegistry {
 		armureMercenaireJambieres = new HArmor(milLeger, MERCENAIRE, 2, ArmorCategories.MILITAIRELEGER, "mercenaireJ");
 		armureMercenaireBottes = new HArmor(milLeger, MERCENAIRE, 3, ArmorCategories.MILITAIRELEGER, "mercenaireB");
 
-		armureHajiCasque = new HArmor(milLeger, HAJI, 0, ArmorCategories.MILITAIRELEGER, "hajiC");
-		armureHajiPlastron = new HArmor(milLeger, HAJI, 1, ArmorCategories.MILITAIRELEGER, "hajiP");
+		cHaji = new HArmor(milLeger, HAJI, 0, ArmorCategories.MILITAIRELEGER, "CHaji");
+		pHaji = new HArmor(milLeger, HAJI, 1, ArmorCategories.MILITAIRELEGER, "PHaji");
+		jHaji = new HArmor(milLeger, HAJI, 2, ArmorCategories.MILITAIRELEGER, "JHaji");
+		bHaji = new HArmor(milLeger, HAJI, 3, ArmorCategories.MILITAIRELEGER, "BHaji");
+
 
 		armureToundraCasque = new HArmor(civilLeg, TOUNDRA, 0, ArmorCategories.CIVILLEGER, "toundraC");
 		armureToundraPlastron = new HArmor(civilLeg, TOUNDRA, 1, ArmorCategories.CIVILLEGER, "toundraP");
@@ -85,10 +87,10 @@ public class ArmorRegistry {
 		armureGuerinneJambieres = new HArmor(milLourd, GUERIN, 2, ArmorCategories.MILITAIRELOURD, "guerinJ");
 		armureGuerinneBottes = new HArmor(milLourd, GUERIN, 3, ArmorCategories.MILITAIRELOURD, "guerinB");
 
-		armurePlaquesCasque = new HArmor(milLourd, PLAQUES, 0, ArmorCategories.MILITAIRELOURD, "plaquesC");
-		armurePlaquesPlastron = new HArmor(milLourd, PLAQUES, 1, ArmorCategories.MILITAIRELOURD, "plaquesP");
-		armurePlaquesJambieres = new HArmor(milLourd, PLAQUES, 2, ArmorCategories.MILITAIRELOURD, "plaquesJ");
-		armurePlaquesBottes = new HArmor(milLourd, PLAQUES, 3, ArmorCategories.MILITAIRELOURD, "plaquesB");
+		cPlaques = new HArmor(milLourd, PLAQUES, 0, ArmorCategories.MILITAIRELOURD, "CPlaques");
+		pPlaques = new HArmor(milLourd, PLAQUES, 1, ArmorCategories.MILITAIRELOURD, "PPlaques");
+		jPlaques = new HArmor(milLourd, PLAQUES, 2, ArmorCategories.MILITAIRELOURD, "JPlaques");
+		bPlaques = new HArmor(milLourd, PLAQUES, 3, ArmorCategories.MILITAIRELOURD, "BPlaques");
 		
 		cClericale = new HArmor(milLeger, CLERICALE, 0, ArmorCategories.MILITAIRELEGER, "CClericale");
 		pClericale = new HArmor(milLeger, CLERICALE, 1, ArmorCategories.MILITAIRELEGER, "PClericale");
@@ -99,6 +101,26 @@ public class ArmorRegistry {
 		sergentP = new HArmor(milLourd, SERGENT, 1, ArmorCategories.MILITAIRELOURD, "PSergent");
 		sergentJ = new HArmor(milLourd, SERGENT, 2, ArmorCategories.MILITAIRELOURD, "JSergent");
 		sergentB = new HArmor(milLourd, SERGENT, 3, ArmorCategories.MILITAIRELOURD, "BSergent");
+		
+		cCloute = new HArmor(milLeger, CLOUTE, 0, ArmorCategories.MILITAIRELEGER, "CCloute");
+		pCloute = new HArmor(milLeger, CLOUTE, 1, ArmorCategories.MILITAIRELEGER, "PCloute");
+		jCloute = new HArmor(milLeger, CLOUTE, 2, ArmorCategories.MILITAIRELEGER, "JCloute");
+		bCloute = new HArmor(milLeger, CLOUTE, 3, ArmorCategories.MILITAIRELEGER, "BCloute");
+		
+		cHuscarl = new HArmor(milLeger, HUSCARL, 0, ArmorCategories.MILITAIRELEGER, "CGjermund");
+		pHuscarl = new HArmor(milLeger, HUSCARL, 1, ArmorCategories.MILITAIRELEGER, "PHuscarl");
+		jHuscarl = new HArmor(milLeger, HUSCARL, 2, ArmorCategories.MILITAIRELEGER, "JHuscarl");
+		bHuscarl = new HArmor(milLeger, HUSCARL, 3, ArmorCategories.MILITAIRELEGER, "BHuscarl");
+		
+		cMaille = new HArmor(milLeger, MAILLE, 0, ArmorCategories.MILITAIRELEGER, "CMaille");
+		pMaille = new HArmor(milLeger, MAILLE, 1, ArmorCategories.MILITAIRELEGER, "PMaille");
+		jMaille = new HArmor(milLeger, MAILLE, 2, ArmorCategories.MILITAIRELEGER, "JMaille");
+		bMaille = new HArmor(milLeger, MAILLE, 3, ArmorCategories.MILITAIRELEGER, "BMaille");
+		
+		cLamellaire = new HArmor(milLeger, LAMELLAIRE, 0, ArmorCategories.MILITAIRELEGER, "CLamellaire");
+		pLamellaire = new HArmor(milLeger, LAMELLAIRE, 1, ArmorCategories.MILITAIRELEGER, "PLamellaire");
+		jLamellaire = new HArmor(milLeger, LAMELLAIRE, 2, ArmorCategories.MILITAIRELEGER, "JLamellaire");
+		bLamellaire = new HArmor(milLeger, LAMELLAIRE, 3, ArmorCategories.MILITAIRELEGER, "BLamellaire");
 
 		GameRegistry.registerItem(casqueAdamante, "item_casqueAdamante");
 		GameRegistry.registerItem(plastronAdamante, "item_plastronAdamante");
@@ -115,8 +137,6 @@ public class ArmorRegistry {
 		GameRegistry.registerItem(shaalBottes_1, "item_shaalBottes_1");
 
 		GameRegistry.registerItem(shaalJambieres_2, "item_shaalJambieres_2");
-
-		GameRegistry.registerItem(lamellaireJambieres, "item_lamellaireJambieres");
 
 		GameRegistry.registerItem(DjarnedinCasque_1, "item_djarnedinCasque_1");
 		GameRegistry.registerItem(DjarnedinPlastron_1, "item_djarnedinPlastron_1");
@@ -137,8 +157,10 @@ public class ArmorRegistry {
 		GameRegistry.registerItem(armureMercenaireJambieres, "item_armureMercenaireJambieres");
 		GameRegistry.registerItem(armureMercenaireBottes, "item_armureMercenaireBottes");
 
-		GameRegistry.registerItem(armureHajiCasque, "item_armureHajiCasque");
-		GameRegistry.registerItem(armureHajiPlastron, "item_armureHajiPlastron");
+		GameRegistry.registerItem(cHaji, "item_cHaji");
+		GameRegistry.registerItem(pHaji, "item_pHaji");
+		GameRegistry.registerItem(jHaji, "item_jHaji");
+		GameRegistry.registerItem(bHaji, "item_bHaji");
 
 		GameRegistry.registerItem(armureToundraCasque, "item_armureToundraCasque");
 		GameRegistry.registerItem(armureToundraPlastron, "item_armureToundraPlastron");
@@ -150,20 +172,41 @@ public class ArmorRegistry {
 		GameRegistry.registerItem(armureGuerinneJambieres, "item_armureGuerinneJambieres");
 		GameRegistry.registerItem(armureGuerinneBottes, "item_armureGuerinneBottes");
 
-		GameRegistry.registerItem(armurePlaquesCasque, "item_armurePlaquesCasque");
-		GameRegistry.registerItem(armurePlaquesPlastron, "item_armurePlaquesPlastron");
-		GameRegistry.registerItem(armurePlaquesJambieres, "item_armurePlaquesJambieres");
-		GameRegistry.registerItem(armurePlaquesBottes, "item_armurePlaquesBottes");
+		GameRegistry.registerItem(cPlaques, "item_armurePlaquesCasque");
+		GameRegistry.registerItem(pPlaques, "item_armurePlaquesPlastron");
+		GameRegistry.registerItem(jPlaques, "item_armurePlaquesJambieres");
+		GameRegistry.registerItem(bPlaques, "item_armurePlaquesBottes");
 		
-		GameRegistry.registerItem(cClericale, "item_cClericale" );
-		GameRegistry.registerItem(pClericale, "item_pClericale" );
-		GameRegistry.registerItem(jClericale, "item_jClericale" );
-		GameRegistry.registerItem(bClericale, "item_bClericale" );
+		GameRegistry.registerItem(cClericale, "item_cClericale");
+		GameRegistry.registerItem(pClericale, "item_pClericale");
+		GameRegistry.registerItem(jClericale, "item_jClericale");
+		GameRegistry.registerItem(bClericale, "item_bClericale");
 		
 		GameRegistry.registerItem(sergentC, "item_cSergent");
 		GameRegistry.registerItem(sergentP, "item_pSergent");
 		GameRegistry.registerItem(sergentJ, "item_jSergent");
 		GameRegistry.registerItem(sergentB, "item_bSergent");
+		
+		GameRegistry.registerItem(cCloute, "item_cCloute");
+		GameRegistry.registerItem(pCloute, "item_pCloute");
+		GameRegistry.registerItem(jCloute, "item_jCloute");
+		GameRegistry.registerItem(bCloute, "item_bCloute");
+		
+		GameRegistry.registerItem(cHuscarl, "item_cHuscarl");
+		GameRegistry.registerItem(pHuscarl, "item_pHuscarl");
+		GameRegistry.registerItem(jHuscarl, "item_jHuscarl");
+		GameRegistry.registerItem(bHuscarl, "item_bHuscarl");
+		
+		GameRegistry.registerItem(cMaille, "item_cMaille");
+		GameRegistry.registerItem(pMaille, "item_pMaille");
+		GameRegistry.registerItem(jMaille, "item_jMaille");
+		GameRegistry.registerItem(bMaille, "item_bMaille");
+		
+		GameRegistry.registerItem(cLamellaire, "item_cLamellaire");
+		GameRegistry.registerItem(pLamellaire, "item_pLamellaire");
+		GameRegistry.registerItem(jLamellaire, "item_jLamellaire");
+		GameRegistry.registerItem(bLamellaire, "item_bLamellaire");
+
 
 	}
 
