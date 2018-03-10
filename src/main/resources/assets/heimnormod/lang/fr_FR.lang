@@ -56,6 +56,11 @@ item.toundraP.name=Pelisse de fourrure
 item.toundraJ.name=Bas de fourrure
 item.toundraB.name=Bottes de fourrure
 
+item.CSergent.name=Casque de Sergent
+item.PSergent.name=Plastron de Sergent
+item.JSergent.name=Jambières de Sergent
+item.BSergent.name=Bottes de Sergent
+
 item.guerinC.name=Casque de Guérin
 item.guerinP.name=Plastron de Guérin
 item.guerinJ.name=Tabard de Guérin

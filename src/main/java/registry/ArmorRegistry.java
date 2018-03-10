@@ -19,7 +19,8 @@ public class ArmorRegistry {
 			armureMercenairePlastron, armureMercenaireJambieres, armureMercenaireBottes, armureHajiCasque,
 			armureHajiPlastron, armureToundraCasque, armureToundraPlastron, armureToundraJambieres, armureToundraBottes,
 			armureGuerinneCasque, armureGuerinnePlastron, armureGuerinneJambieres, armureGuerinneBottes,
-			armurePlaquesCasque, armurePlaquesPlastron, armurePlaquesJambieres, armurePlaquesBottes, cClericale, pClericale, jClericale, bClericale;
+			armurePlaquesCasque, armurePlaquesPlastron, armurePlaquesJambieres, armurePlaquesBottes, cClericale, pClericale, jClericale, bClericale,
+			sergentC, sergentP, sergentJ, sergentB;
 
 	public static ArmorMaterial civilLeg = EnumHelper.addArmorMaterial("armureLourdeMaterial", 50,
 			new int[] { 1, 3, 2, 1 }, 20);
@@ -93,6 +94,11 @@ public class ArmorRegistry {
 		pClericale = new HArmor(milLeger, CLERICALE, 1, ArmorCategories.MILITAIRELEGER, "PClericale");
 		jClericale = new HArmor(milLeger, CLERICALE, 2, ArmorCategories.MILITAIRELEGER, "JClericale");
 		bClericale = new HArmor(milLeger, CLERICALE, 3, ArmorCategories.MILITAIRELEGER, "BClericales");
+		
+		sergentC = new HArmor(milLourd, SERGENT, 0, ArmorCategories.MILITAIRELOURD, "CSergent");
+		sergentP = new HArmor(milLourd, SERGENT, 1, ArmorCategories.MILITAIRELOURD, "PSergent");
+		sergentJ = new HArmor(milLourd, SERGENT, 2, ArmorCategories.MILITAIRELOURD, "JSergent");
+		sergentB = new HArmor(milLourd, SERGENT, 3, ArmorCategories.MILITAIRELOURD, "BSergent");
 
 		GameRegistry.registerItem(casqueAdamante, "item_casqueAdamante");
 		GameRegistry.registerItem(plastronAdamante, "item_plastronAdamante");
@@ -153,6 +159,11 @@ public class ArmorRegistry {
 		GameRegistry.registerItem(pClericale, "item_pClericale" );
 		GameRegistry.registerItem(jClericale, "item_jClericale" );
 		GameRegistry.registerItem(bClericale, "item_bClericale" );
+		
+		GameRegistry.registerItem(sergentC, "item_cSergent");
+		GameRegistry.registerItem(sergentP, "item_pSergent");
+		GameRegistry.registerItem(sergentJ, "item_jSergent");
+		GameRegistry.registerItem(sergentB, "item_bSergent");
 
 	}
 

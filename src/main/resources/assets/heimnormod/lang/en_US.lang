@@ -38,6 +38,11 @@ item.cuirBouilliP.name=Plastron de cuir bouilli
 item.cuirBouilliJ.name=Jambieres de cuir bouilli
 item.cuirBouilliB.name=Bottes de cuir bouilli
 
+item.CSergent.name=Casque de Sergent
+item.PSergent.name=Plastron de Sergent
+item.JSergent.name=Jambières de Sergent
+item.BSergent.name=Bottes de Sergent
+
 item.improviseeC.name=Couvre-chef improvisé
 item.improviseeP.name=Plastron improvisé
 item.improviseeJ.name=Jambières improvisées
