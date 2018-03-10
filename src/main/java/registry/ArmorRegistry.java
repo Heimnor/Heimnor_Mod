@@ -19,7 +19,7 @@ public class ArmorRegistry {
 			armureMercenairePlastron, armureMercenaireJambieres, armureMercenaireBottes, armureHajiCasque,
 			armureHajiPlastron, armureToundraCasque, armureToundraPlastron, armureToundraJambieres, armureToundraBottes,
 			armureGuerinneCasque, armureGuerinnePlastron, armureGuerinneJambieres, armureGuerinneBottes,
-			armurePlaquesCasque, armurePlaquesPlastron, armurePlaquesJambieres, armurePlaquesBottes;
+			armurePlaquesCasque, armurePlaquesPlastron, armurePlaquesJambieres, armurePlaquesBottes, cClericale, pClericale, jClericale, bClericale;
 
 	public static ArmorMaterial civilLeg = EnumHelper.addArmorMaterial("armureLourdeMaterial", 50,
 			new int[] { 1, 3, 2, 1 }, 20);
@@ -88,6 +88,11 @@ public class ArmorRegistry {
 		armurePlaquesPlastron = new HArmor(milLourd, PLAQUES, 1, ArmorCategories.MILITAIRELOURD, "plaquesP");
 		armurePlaquesJambieres = new HArmor(milLourd, PLAQUES, 2, ArmorCategories.MILITAIRELOURD, "plaquesJ");
 		armurePlaquesBottes = new HArmor(milLourd, PLAQUES, 3, ArmorCategories.MILITAIRELOURD, "plaquesB");
+		
+		cClericale = new HArmor(milLeger, CLERICALE, 0, ArmorCategories.MILITAIRELEGER, "CClericale");
+		pClericale = new HArmor(milLeger, CLERICALE, 1, ArmorCategories.MILITAIRELEGER, "PClericale");
+		jClericale = new HArmor(milLeger, CLERICALE, 2, ArmorCategories.MILITAIRELEGER, "JClericale");
+		bClericale = new HArmor(milLeger, CLERICALE, 3, ArmorCategories.MILITAIRELEGER, "BClericales");
 
 		GameRegistry.registerItem(casqueAdamante, "item_casqueAdamante");
 		GameRegistry.registerItem(plastronAdamante, "item_plastronAdamante");
@@ -143,6 +148,11 @@ public class ArmorRegistry {
 		GameRegistry.registerItem(armurePlaquesPlastron, "item_armurePlaquesPlastron");
 		GameRegistry.registerItem(armurePlaquesJambieres, "item_armurePlaquesJambieres");
 		GameRegistry.registerItem(armurePlaquesBottes, "item_armurePlaquesBottes");
+		
+		GameRegistry.registerItem(cClericale, "item_cClericale" );
+		GameRegistry.registerItem(pClericale, "item_pClericale" );
+		GameRegistry.registerItem(jClericale, "item_jCleircale" );
+		GameRegistry.registerItem(bClericale, "item_bCleircale" );
 
 	}
 

@@ -32,7 +32,7 @@ public class HArmor extends ItemArmor {
 	}
 
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
-		if (this.type == 3 && !this.armor.getLayer2().equals("")) {
+		if (this.type == 2 && !this.armor.getLayer2().equals("")) {
 			return this.armor.getLayer2();
 		}
 		if (!this.armor.getLayer1().equals(""))

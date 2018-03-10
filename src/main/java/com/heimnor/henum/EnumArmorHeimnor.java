@@ -16,7 +16,8 @@ public enum EnumArmorHeimnor {
 	HAJI("armureHajiLayer_1.png", ""),
 	TOUNDRA("armureToundraLayer_1.png", "armureToundraLayer_2.png"),
 	GUERIN("armureGuerinneLayer_1.png", "armureGuerinneLayer_2.png"),
-	PLAQUES("armurePlaquesLayer_1.png", "armurePlaquesLayer_2.png");
+	PLAQUES("armurePlaquesLayer_1.png", "armurePlaquesLayer_2.png"),
+	CLERICALE ("Clericale1.png", "Clericale2.png");
 
 	private String layer1 = "";
 	private String layer2 = "";
