@@ -151,8 +151,8 @@ public class ArmorRegistry {
 		
 		GameRegistry.registerItem(cClericale, "item_cClericale" );
 		GameRegistry.registerItem(pClericale, "item_pClericale" );
-		GameRegistry.registerItem(jClericale, "item_jCleircale" );
-		GameRegistry.registerItem(bClericale, "item_bCleircale" );
+		GameRegistry.registerItem(jClericale, "item_jClericale" );
+		GameRegistry.registerItem(bClericale, "item_bClericale" );
 
 	}
 
