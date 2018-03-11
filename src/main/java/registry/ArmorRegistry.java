@@ -23,15 +23,15 @@ public class ArmorRegistry {
 			sergentC, sergentP, sergentJ, sergentB, cCloute, pCloute, jCloute, bCloute, cHuscarl, pHuscarl, jHuscarl, bHuscarl, cMaille, pMaille, jMaille, bMaille, 
 			cLamellaire, pLamellaire, jLamellaire, bLamellaire, cMaraudeur, pMaraudeur, jMaraudeur, bMaraudeur;
 
-	public static ArmorMaterial civilLeg = EnumHelper.addArmorMaterial("armureLourdeMaterial", 50,
+	public static ArmorMaterial civilLeg = EnumHelper.addArmorMaterial("civilLegerMaterial", 50,
 			new int[] { 1, 3, 2, 1 }, 20);
-	public static ArmorMaterial civilLourd = EnumHelper.addArmorMaterial("armureMoyMaterial", 70,
+	public static ArmorMaterial civilLourd = EnumHelper.addArmorMaterial("civilLourdMaterial", 70,
 			new int[] { 1, 4, 2, 1 }, 20);
-	public static ArmorMaterial milLeger = EnumHelper.addArmorMaterial("armureLegereMaterial", 90,
+	public static ArmorMaterial milLeger = EnumHelper.addArmorMaterial("militaireLegerMaterial", 90,
 			new int[] { 2, 5, 2, 1 }, 20);
-	public static ArmorMaterial milLourd = EnumHelper.addArmorMaterial("armureLegereMaterial", 120,
+	public static ArmorMaterial milLourd = EnumHelper.addArmorMaterial("militaireLourdMaterial", 120,
 			new int[] { 3, 6, 3, 2 }, 20);
-	public static ArmorMaterial adamante = EnumHelper.addArmorMaterial("armureLegereMaterial", 130,
+	public static ArmorMaterial adamante = EnumHelper.addArmorMaterial("adamanteMaterial", 130,
 			new int[] { 4, 6, 5, 3 }, 20);
 
 	public static void registerArmors() {
