@@ -21,7 +21,7 @@ public class ArmorRegistry {
 			armureGuerinneCasque, armureGuerinnePlastron, armureGuerinneJambieres, armureGuerinneBottes,
 			cPlaques, pPlaques, jPlaques, bPlaques, cClericale, pClericale, jClericale, bClericale,
 			sergentC, sergentP, sergentJ, sergentB, cCloute, pCloute, jCloute, bCloute, cHuscarl, pHuscarl, jHuscarl, bHuscarl, cMaille, pMaille, jMaille, bMaille, 
-			cLamellaire, pLamellaire, jLamellaire, bLamellaire;
+			cLamellaire, pLamellaire, jLamellaire, bLamellaire, cMaraudeur, pMaraudeur, jMaraudeur, bMaraudeur;
 
 	public static ArmorMaterial civilLeg = EnumHelper.addArmorMaterial("armureLourdeMaterial", 50,
 			new int[] { 1, 3, 2, 1 }, 20);
@@ -121,6 +121,11 @@ public class ArmorRegistry {
 		pLamellaire = new HArmor(milLeger, LAMELLAIRE, 1, ArmorCategories.MILITAIRELEGER, "PLamellaire");
 		jLamellaire = new HArmor(milLeger, LAMELLAIRE, 2, ArmorCategories.MILITAIRELEGER, "JLamellaire");
 		bLamellaire = new HArmor(milLeger, LAMELLAIRE, 3, ArmorCategories.MILITAIRELEGER, "BLamellaire");
+		
+		cMaraudeur = new HArmor(milLourd, MARAUDEUR, 0, ArmorCategories.MILITAIRELOURD, "CMaraudeur");
+		pMaraudeur = new HArmor(milLourd, MARAUDEUR, 1, ArmorCategories.MILITAIRELOURD, "PMaraudeur");
+		jMaraudeur = new HArmor(milLourd, MARAUDEUR, 2, ArmorCategories.MILITAIRELOURD, "JMaraudeur");
+		bMaraudeur = new HArmor(milLourd, MARAUDEUR, 3, ArmorCategories.MILITAIRELOURD, "BMaraudeur");
 
 		GameRegistry.registerItem(casqueAdamante, "item_casqueAdamante");
 		GameRegistry.registerItem(plastronAdamante, "item_plastronAdamante");
@@ -206,6 +211,12 @@ public class ArmorRegistry {
 		GameRegistry.registerItem(pLamellaire, "item_pLamellaire");
 		GameRegistry.registerItem(jLamellaire, "item_jLamellaire");
 		GameRegistry.registerItem(bLamellaire, "item_bLamellaire");
+		
+		GameRegistry.registerItem(cMaraudeur, "item_cMaraudeur");
+		GameRegistry.registerItem(pMaraudeur, "item_pMaraudeur");
+		GameRegistry.registerItem(jMaraudeur, "item_jMaraudeur");
+		GameRegistry.registerItem(bMaraudeur, "item_bMaraudeur");
+
 
 
 	}

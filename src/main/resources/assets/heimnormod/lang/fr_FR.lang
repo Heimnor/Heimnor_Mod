@@ -31,7 +31,7 @@ item.djarneddin1C.name=Casque des steppes
 item.djarneddin1P.name=Plastron des steppes
 item.djarneddin1B.name=Bottes des steppes
 
-item.cuirBouilliC.name=Casque de cuir bouilli
+item.cuirBouilliC.name=Capuche de cuir bouilli
 item.cuirBouilliP.name=Plastron de cuir bouilli
 item.cuirBouilliJ.name=Jambieres de cuir bouilli
 item.cuirBouilliB.name=Bottes de cuir bouilli
@@ -95,6 +95,11 @@ item.CLamellaire.name=Coiffe Lamellaire
 item.PLamellaire.name=Epaulières en Lamellaire
 item.JLamellaire.name=Lamellaire
 item.BLamellaire.name=Jambières en Lamellaire
+
+item.CMaraudeur.name=Casque de Maraudeur
+item.PMaraudeur.name=Plastron de Maraudeur
+item.JMaraudeur.name=Dessous de Maraudeur
+item.BMaraudeur.name=Jambières en Maraudeur
 
 item.masserhombe.name=Masse Rhombe
 item.matraque.name=Matraque
