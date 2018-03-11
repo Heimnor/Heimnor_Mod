@@ -1,7 +1,6 @@
 package registry;
 
-import com.heimnor.common.Heimnor;
-import static com.heimnor.henum.EnumArmorHeimnor.*;
+import com.heimnor.henum.EnumArmorHeimnor;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import init.armor.HArmor;
@@ -13,15 +12,16 @@ public class ArmorRegistry {
 
 	public static Item casqueAdamante, plastronAdamante, jambieresAdamante, bottesAdamante, casqueOronne_1,
 			plastronOronne_1, jambieresOronnes_1, bottesOronnes_1, shaalCasque_1, shaalPlastron_1, shaalBottes_1,
-			shaalJambieres_2, DjarnedinCasque_1, DjarnedinPlastron_1, DjarnedinBottes_1,
-			cuirBouilliCasque, cuirBouilliPlastron, cuirBouilliJambieres, cuirBouilliBottes, armureImproviseeCasque,
+			shaalJambieres_2, DjarnedinCasque_1, DjarnedinPlastron_1, DjarnedinBottes_1, cuirBouilliCasque,
+			cuirBouilliPlastron, cuirBouilliJambieres, cuirBouilliBottes, armureImproviseeCasque,
 			armureImproviseePlastron, armureImproviseeJambieres, armureImproviseeBottes, armureMercenaireCasque,
-			armureMercenairePlastron, armureMercenaireJambieres, armureMercenaireBottes, cHaji,
-			pHaji, jHaji, bHaji, armureToundraCasque, armureToundraPlastron, armureToundraJambieres, armureToundraBottes,
-			armureGuerinneCasque, armureGuerinnePlastron, armureGuerinneJambieres, armureGuerinneBottes,
-			cPlaques, pPlaques, jPlaques, bPlaques, cClericale, pClericale, jClericale, bClericale,
-			sergentC, sergentP, sergentJ, sergentB, cCloute, pCloute, jCloute, bCloute, cHuscarl, pHuscarl, jHuscarl, bHuscarl, cMaille, pMaille, jMaille, bMaille, 
-			cLamellaire, pLamellaire, jLamellaire, bLamellaire, cMaraudeur, pMaraudeur, jMaraudeur, bMaraudeur;
+			armureMercenairePlastron, armureMercenaireJambieres, armureMercenaireBottes, cHaji, pHaji, jHaji, bHaji,
+			armureToundraCasque, armureToundraPlastron, armureToundraJambieres, armureToundraBottes,
+			armureGuerinneCasque, armureGuerinnePlastron, armureGuerinneJambieres, armureGuerinneBottes, cPlaques,
+			pPlaques, jPlaques, bPlaques, cClericale, pClericale, jClericale, bClericale, sergentC, sergentP, sergentJ,
+			sergentB, cCloute, pCloute, jCloute, bCloute, cHuscarl, pHuscarl, jHuscarl, bHuscarl, cMaille, pMaille,
+			jMaille, bMaille, cLamellaire, pLamellaire, jLamellaire, bLamellaire, cMaraudeur, pMaraudeur, jMaraudeur,
+			bMaraudeur;
 
 	public static ArmorMaterial civilLeg = EnumHelper.addArmorMaterial("civilLegerMaterial", 50,
 			new int[] { 1, 3, 2, 1 }, 20);
@@ -36,96 +36,122 @@ public class ArmorRegistry {
 
 	public static void registerArmors() {
 
-		casqueAdamante = new HArmor(adamante, ADAMANTE, 0, ArmorCategories.BRAZ, "adamanteC");
-		plastronAdamante = new HArmor(adamante, ADAMANTE, 1, ArmorCategories.BRAZ, "adamanteP");
-		jambieresAdamante = new HArmor(adamante, ADAMANTE, 2, ArmorCategories.BRAZ, "adamanteJ");
-		bottesAdamante = new HArmor(adamante, ADAMANTE, 3, ArmorCategories.BRAZ, "adamanteB");
+		casqueAdamante = new HArmor(adamante, EnumArmorHeimnor.ADAMANTE, 0, ArmorCategories.BRAZ, "adamanteC");
+		plastronAdamante = new HArmor(adamante, EnumArmorHeimnor.ADAMANTE, 1, ArmorCategories.BRAZ, "adamanteP");
+		jambieresAdamante = new HArmor(adamante, EnumArmorHeimnor.ADAMANTE, 2, ArmorCategories.BRAZ, "adamanteJ");
+		bottesAdamante = new HArmor(adamante, EnumArmorHeimnor.ADAMANTE, 3, ArmorCategories.BRAZ, "adamanteB");
 
-		casqueOronne_1 = new HArmor(civilLourd, ORONNELEG, 0, ArmorCategories.CIVILLOURD, "oronne1C");
-		plastronOronne_1 = new HArmor(civilLourd, ORONNELEG, 1, ArmorCategories.CIVILLOURD, "oronne1P");
-		jambieresOronnes_1 = new HArmor(civilLourd, ORONNELEG, 2, ArmorCategories.CIVILLOURD, "oronne1J");
-		bottesOronnes_1 = new HArmor(civilLourd, ORONNELEG, 3, ArmorCategories.CIVILLOURD, "oronne1B");
+		casqueOronne_1 = new HArmor(civilLourd, EnumArmorHeimnor.ORONNELEG, 0, ArmorCategories.CIVILLOURD, "oronne1C");
+		plastronOronne_1 = new HArmor(civilLourd, EnumArmorHeimnor.ORONNELEG, 1, ArmorCategories.CIVILLOURD,
+				"oronne1P");
+		jambieresOronnes_1 = new HArmor(civilLourd, EnumArmorHeimnor.ORONNELEG, 2, ArmorCategories.CIVILLOURD,
+				"oronne1J");
+		bottesOronnes_1 = new HArmor(civilLourd, EnumArmorHeimnor.ORONNELEG, 3, ArmorCategories.CIVILLOURD, "oronne1B");
 
-		shaalCasque_1 = new HArmor(milLeger, DUNES, 0, ArmorCategories.MILITAIRELEGER, "shaal1C");
-		shaalPlastron_1 = new HArmor(milLeger, DUNES, 1, ArmorCategories.MILITAIRELEGER, "shaal1P");
-		shaalBottes_1 = new HArmor(milLeger, DUNES, 3, ArmorCategories.MILITAIRELEGER, "shaal1B");
+		shaalCasque_1 = new HArmor(milLeger, EnumArmorHeimnor.DUNES, 0, ArmorCategories.MILITAIRELEGER, "shaal1C");
+		shaalPlastron_1 = new HArmor(milLeger, EnumArmorHeimnor.DUNES, 1, ArmorCategories.MILITAIRELEGER, "shaal1P");
+		shaalBottes_1 = new HArmor(milLeger, EnumArmorHeimnor.DUNES, 3, ArmorCategories.MILITAIRELEGER, "shaal1B");
 
-		shaalJambieres_2 = new HArmor(milLeger, SABLES, 2, ArmorCategories.MILITAIRELEGER, "shaal2J");
+		shaalJambieres_2 = new HArmor(milLeger, EnumArmorHeimnor.SABLES, 2, ArmorCategories.MILITAIRELEGER, "shaal2J");
 
-		DjarnedinCasque_1 = new HArmor(milLeger, STEPPES, 0, ArmorCategories.MILITAIRELEGER, "djarneddin1C");
-		DjarnedinPlastron_1 = new HArmor(milLeger, STEPPES, 1, ArmorCategories.MILITAIRELEGER, "djarneddin1P");
-		DjarnedinBottes_1 = new HArmor(milLeger, STEPPES, 3, ArmorCategories.MILITAIRELEGER, "djarneddin1B");
+		DjarnedinCasque_1 = new HArmor(milLeger, EnumArmorHeimnor.STEPPES, 0, ArmorCategories.MILITAIRELEGER,
+				"djarneddin1C");
+		DjarnedinPlastron_1 = new HArmor(milLeger, EnumArmorHeimnor.STEPPES, 1, ArmorCategories.MILITAIRELEGER,
+				"djarneddin1P");
+		DjarnedinBottes_1 = new HArmor(milLeger, EnumArmorHeimnor.STEPPES, 3, ArmorCategories.MILITAIRELEGER,
+				"djarneddin1B");
 
-		cuirBouilliCasque = new HArmor(civilLourd, CUIRBOUILLI, 0, ArmorCategories.CIVILLOURD, "cuirBouilliC");
-		cuirBouilliPlastron = new HArmor(civilLourd, CUIRBOUILLI, 1, ArmorCategories.CIVILLOURD, "cuirBouilliP");
-		cuirBouilliJambieres = new HArmor(civilLourd, CUIRBOUILLI, 2, ArmorCategories.CIVILLOURD, "cuirBouilliJ");
-		cuirBouilliBottes = new HArmor(civilLourd, CUIRBOUILLI, 3, ArmorCategories.CIVILLOURD, "cuirBouilliB");
+		cuirBouilliCasque = new HArmor(civilLourd, EnumArmorHeimnor.CUIRBOUILLI, 0, ArmorCategories.CIVILLOURD,
+				"cuirBouilliC");
+		cuirBouilliPlastron = new HArmor(civilLourd, EnumArmorHeimnor.CUIRBOUILLI, 1, ArmorCategories.CIVILLOURD,
+				"cuirBouilliP");
+		cuirBouilliJambieres = new HArmor(civilLourd, EnumArmorHeimnor.CUIRBOUILLI, 2, ArmorCategories.CIVILLOURD,
+				"cuirBouilliJ");
+		cuirBouilliBottes = new HArmor(civilLourd, EnumArmorHeimnor.CUIRBOUILLI, 3, ArmorCategories.CIVILLOURD,
+				"cuirBouilliB");
 
-		armureImproviseeCasque = new HArmor(civilLeg, IMPROVISEE, 0, ArmorCategories.CIVILLEGER, "improviseeC");
-		armureImproviseePlastron = new HArmor(civilLeg, IMPROVISEE, 1, ArmorCategories.CIVILLEGER, "improviseeP");
-		armureImproviseeJambieres = new HArmor(civilLeg, IMPROVISEE, 2, ArmorCategories.CIVILLEGER, "improviseeJ");
-		armureImproviseeBottes = new HArmor(civilLeg, IMPROVISEE, 3, ArmorCategories.CIVILLEGER, "improviseeB");
+		armureImproviseeCasque = new HArmor(civilLeg, EnumArmorHeimnor.IMPROVISEE, 0, ArmorCategories.CIVILLEGER,
+				"improviseeC");
+		armureImproviseePlastron = new HArmor(civilLeg, EnumArmorHeimnor.IMPROVISEE, 1, ArmorCategories.CIVILLEGER,
+				"improviseeP");
+		armureImproviseeJambieres = new HArmor(civilLeg, EnumArmorHeimnor.IMPROVISEE, 2, ArmorCategories.CIVILLEGER,
+				"improviseeJ");
+		armureImproviseeBottes = new HArmor(civilLeg, EnumArmorHeimnor.IMPROVISEE, 3, ArmorCategories.CIVILLEGER,
+				"improviseeB");
 
-		armureMercenaireCasque = new HArmor(milLeger, MERCENAIRE, 0, ArmorCategories.MILITAIRELEGER, "mercenaireC");
-		armureMercenairePlastron = new HArmor(milLeger, MERCENAIRE, 1, ArmorCategories.MILITAIRELEGER, "mercenaireP");
-		armureMercenaireJambieres = new HArmor(milLeger, MERCENAIRE, 2, ArmorCategories.MILITAIRELEGER, "mercenaireJ");
-		armureMercenaireBottes = new HArmor(milLeger, MERCENAIRE, 3, ArmorCategories.MILITAIRELEGER, "mercenaireB");
+		armureMercenaireCasque = new HArmor(milLeger, EnumArmorHeimnor.MERCENAIRE, 0, ArmorCategories.MILITAIRELEGER,
+				"mercenaireC");
+		armureMercenairePlastron = new HArmor(milLeger, EnumArmorHeimnor.MERCENAIRE, 1, ArmorCategories.MILITAIRELEGER,
+				"mercenaireP");
+		armureMercenaireJambieres = new HArmor(milLeger, EnumArmorHeimnor.MERCENAIRE, 2, ArmorCategories.MILITAIRELEGER,
+				"mercenaireJ");
+		armureMercenaireBottes = new HArmor(milLeger, EnumArmorHeimnor.MERCENAIRE, 3, ArmorCategories.MILITAIRELEGER,
+				"mercenaireB");
 
-		cHaji = new HArmor(milLeger, HAJI, 0, ArmorCategories.MILITAIRELEGER, "CHaji");
-		pHaji = new HArmor(milLeger, HAJI, 1, ArmorCategories.MILITAIRELEGER, "PHaji");
-		jHaji = new HArmor(milLeger, HAJI, 2, ArmorCategories.MILITAIRELEGER, "JHaji");
-		bHaji = new HArmor(milLeger, HAJI, 3, ArmorCategories.MILITAIRELEGER, "BHaji");
+		cHaji = new HArmor(milLeger, EnumArmorHeimnor.HAJI, 0, ArmorCategories.MILITAIRELEGER, "CHaji");
+		pHaji = new HArmor(milLeger, EnumArmorHeimnor.HAJI, 1, ArmorCategories.MILITAIRELEGER, "PHaji");
+		jHaji = new HArmor(milLeger, EnumArmorHeimnor.HAJI, 2, ArmorCategories.MILITAIRELEGER, "JHaji");
+		bHaji = new HArmor(milLeger, EnumArmorHeimnor.HAJI, 3, ArmorCategories.MILITAIRELEGER, "BHaji");
 
+		armureToundraCasque = new HArmor(civilLeg, EnumArmorHeimnor.TOUNDRA, 0, ArmorCategories.CIVILLEGER, "toundraC");
+		armureToundraPlastron = new HArmor(civilLeg, EnumArmorHeimnor.TOUNDRA, 1, ArmorCategories.CIVILLEGER,
+				"toundraP");
+		armureToundraJambieres = new HArmor(civilLeg, EnumArmorHeimnor.TOUNDRA, 2, ArmorCategories.CIVILLEGER,
+				"toundraJ");
+		armureToundraBottes = new HArmor(civilLeg, EnumArmorHeimnor.TOUNDRA, 3, ArmorCategories.CIVILLEGER, "toundraB");
 
-		armureToundraCasque = new HArmor(civilLeg, TOUNDRA, 0, ArmorCategories.CIVILLEGER, "toundraC");
-		armureToundraPlastron = new HArmor(civilLeg, TOUNDRA, 1, ArmorCategories.CIVILLEGER, "toundraP");
-		armureToundraJambieres = new HArmor(civilLeg, TOUNDRA, 2, ArmorCategories.CIVILLEGER, "toundraJ");
-		armureToundraBottes = new HArmor(civilLeg, TOUNDRA, 3, ArmorCategories.CIVILLEGER, "toundraB");
+		armureGuerinneCasque = new HArmor(milLourd, EnumArmorHeimnor.GUERIN, 0, ArmorCategories.MILITAIRELOURD,
+				"guerinC");
+		armureGuerinnePlastron = new HArmor(milLourd, EnumArmorHeimnor.GUERIN, 1, ArmorCategories.MILITAIRELOURD,
+				"guerinP");
+		armureGuerinneJambieres = new HArmor(milLourd, EnumArmorHeimnor.GUERIN, 2, ArmorCategories.MILITAIRELOURD,
+				"guerinJ");
+		armureGuerinneBottes = new HArmor(milLourd, EnumArmorHeimnor.GUERIN, 3, ArmorCategories.MILITAIRELOURD,
+				"guerinB");
 
-		armureGuerinneCasque = new HArmor(milLourd, GUERIN, 0, ArmorCategories.MILITAIRELOURD, "guerinC");
-		armureGuerinnePlastron = new HArmor(milLourd, GUERIN, 1, ArmorCategories.MILITAIRELOURD, "guerinP");
-		armureGuerinneJambieres = new HArmor(milLourd, GUERIN, 2, ArmorCategories.MILITAIRELOURD, "guerinJ");
-		armureGuerinneBottes = new HArmor(milLourd, GUERIN, 3, ArmorCategories.MILITAIRELOURD, "guerinB");
+		cPlaques = new HArmor(milLourd, EnumArmorHeimnor.PLAQUES, 0, ArmorCategories.MILITAIRELOURD, "CPlaques");
+		pPlaques = new HArmor(milLourd, EnumArmorHeimnor.PLAQUES, 1, ArmorCategories.MILITAIRELOURD, "PPlaques");
+		jPlaques = new HArmor(milLourd, EnumArmorHeimnor.PLAQUES, 2, ArmorCategories.MILITAIRELOURD, "JPlaques");
+		bPlaques = new HArmor(milLourd, EnumArmorHeimnor.PLAQUES, 3, ArmorCategories.MILITAIRELOURD, "BPlaques");
 
-		cPlaques = new HArmor(milLourd, PLAQUES, 0, ArmorCategories.MILITAIRELOURD, "CPlaques");
-		pPlaques = new HArmor(milLourd, PLAQUES, 1, ArmorCategories.MILITAIRELOURD, "PPlaques");
-		jPlaques = new HArmor(milLourd, PLAQUES, 2, ArmorCategories.MILITAIRELOURD, "JPlaques");
-		bPlaques = new HArmor(milLourd, PLAQUES, 3, ArmorCategories.MILITAIRELOURD, "BPlaques");
-		
-		cClericale = new HArmor(milLeger, CLERICALE, 0, ArmorCategories.MILITAIRELEGER, "CClericale");
-		pClericale = new HArmor(milLeger, CLERICALE, 1, ArmorCategories.MILITAIRELEGER, "PClericale");
-		jClericale = new HArmor(milLeger, CLERICALE, 2, ArmorCategories.MILITAIRELEGER, "JClericale");
-		bClericale = new HArmor(milLeger, CLERICALE, 3, ArmorCategories.MILITAIRELEGER, "BClericales");
-		
-		sergentC = new HArmor(milLourd, SERGENT, 0, ArmorCategories.MILITAIRELOURD, "CSergent");
-		sergentP = new HArmor(milLourd, SERGENT, 1, ArmorCategories.MILITAIRELOURD, "PSergent");
-		sergentJ = new HArmor(milLourd, SERGENT, 2, ArmorCategories.MILITAIRELOURD, "JSergent");
-		sergentB = new HArmor(milLourd, SERGENT, 3, ArmorCategories.MILITAIRELOURD, "BSergent");
-		
-		cCloute = new HArmor(milLeger, CLOUTE, 0, ArmorCategories.MILITAIRELEGER, "CCloute");
-		pCloute = new HArmor(milLeger, CLOUTE, 1, ArmorCategories.MILITAIRELEGER, "PCloute");
-		jCloute = new HArmor(milLeger, CLOUTE, 2, ArmorCategories.MILITAIRELEGER, "JCloute");
-		bCloute = new HArmor(milLeger, CLOUTE, 3, ArmorCategories.MILITAIRELEGER, "BCloute");
-		
-		cHuscarl = new HArmor(milLeger, HUSCARL, 0, ArmorCategories.MILITAIRELEGER, "CGjermund");
-		pHuscarl = new HArmor(milLeger, HUSCARL, 1, ArmorCategories.MILITAIRELEGER, "PHuscarl");
-		jHuscarl = new HArmor(milLeger, HUSCARL, 2, ArmorCategories.MILITAIRELEGER, "JHuscarl");
-		bHuscarl = new HArmor(milLeger, HUSCARL, 3, ArmorCategories.MILITAIRELEGER, "BHuscarl");
-		
-		cMaille = new HArmor(milLeger, MAILLE, 0, ArmorCategories.MILITAIRELEGER, "CMaille");
-		pMaille = new HArmor(milLeger, MAILLE, 1, ArmorCategories.MILITAIRELEGER, "PMaille");
-		jMaille = new HArmor(milLeger, MAILLE, 2, ArmorCategories.MILITAIRELEGER, "JMaille");
-		bMaille = new HArmor(milLeger, MAILLE, 3, ArmorCategories.MILITAIRELEGER, "BMaille");
-		
-		cLamellaire = new HArmor(milLeger, LAMELLAIRE, 0, ArmorCategories.MILITAIRELEGER, "CLamellaire");
-		pLamellaire = new HArmor(milLeger, LAMELLAIRE, 1, ArmorCategories.MILITAIRELEGER, "PLamellaire");
-		jLamellaire = new HArmor(milLeger, LAMELLAIRE, 2, ArmorCategories.MILITAIRELEGER, "JLamellaire");
-		bLamellaire = new HArmor(milLeger, LAMELLAIRE, 3, ArmorCategories.MILITAIRELEGER, "BLamellaire");
-		
-		cMaraudeur = new HArmor(milLourd, MARAUDEUR, 0, ArmorCategories.MILITAIRELOURD, "CMaraudeur");
-		pMaraudeur = new HArmor(milLourd, MARAUDEUR, 1, ArmorCategories.MILITAIRELOURD, "PMaraudeur");
-		jMaraudeur = new HArmor(milLourd, MARAUDEUR, 2, ArmorCategories.MILITAIRELOURD, "JMaraudeur");
-		bMaraudeur = new HArmor(milLourd, MARAUDEUR, 3, ArmorCategories.MILITAIRELOURD, "BMaraudeur");
+		cClericale = new HArmor(milLeger, EnumArmorHeimnor.CLERICALE, 0, ArmorCategories.MILITAIRELEGER, "CClericale");
+		pClericale = new HArmor(milLeger, EnumArmorHeimnor.CLERICALE, 1, ArmorCategories.MILITAIRELEGER, "PClericale");
+		jClericale = new HArmor(milLeger, EnumArmorHeimnor.CLERICALE, 2, ArmorCategories.MILITAIRELEGER, "JClericale");
+		bClericale = new HArmor(milLeger, EnumArmorHeimnor.CLERICALE, 3, ArmorCategories.MILITAIRELEGER, "BClericales");
+
+		sergentC = new HArmor(milLourd, EnumArmorHeimnor.SERGENT, 0, ArmorCategories.MILITAIRELOURD, "CSergent");
+		sergentP = new HArmor(milLourd, EnumArmorHeimnor.SERGENT, 1, ArmorCategories.MILITAIRELOURD, "PSergent");
+		sergentJ = new HArmor(milLourd, EnumArmorHeimnor.SERGENT, 2, ArmorCategories.MILITAIRELOURD, "JSergent");
+		sergentB = new HArmor(milLourd, EnumArmorHeimnor.SERGENT, 3, ArmorCategories.MILITAIRELOURD, "BSergent");
+
+		cCloute = new HArmor(milLeger, EnumArmorHeimnor.CLOUTE, 0, ArmorCategories.MILITAIRELEGER, "CCloute");
+		pCloute = new HArmor(milLeger, EnumArmorHeimnor.CLOUTE, 1, ArmorCategories.MILITAIRELEGER, "PCloute");
+		jCloute = new HArmor(milLeger, EnumArmorHeimnor.CLOUTE, 2, ArmorCategories.MILITAIRELEGER, "JCloute");
+		bCloute = new HArmor(milLeger, EnumArmorHeimnor.CLOUTE, 3, ArmorCategories.MILITAIRELEGER, "BCloute");
+
+		cHuscarl = new HArmor(milLeger, EnumArmorHeimnor.HUSCARL, 0, ArmorCategories.MILITAIRELEGER, "CGjermund");
+		pHuscarl = new HArmor(milLeger, EnumArmorHeimnor.HUSCARL, 1, ArmorCategories.MILITAIRELEGER, "PHuscarl");
+		jHuscarl = new HArmor(milLeger, EnumArmorHeimnor.HUSCARL, 2, ArmorCategories.MILITAIRELEGER, "JHuscarl");
+		bHuscarl = new HArmor(milLeger, EnumArmorHeimnor.HUSCARL, 3, ArmorCategories.MILITAIRELEGER, "BHuscarl");
+
+		cMaille = new HArmor(milLeger, EnumArmorHeimnor.MAILLE, 0, ArmorCategories.MILITAIRELEGER, "CMaille");
+		pMaille = new HArmor(milLeger, EnumArmorHeimnor.MAILLE, 1, ArmorCategories.MILITAIRELEGER, "PMaille");
+		jMaille = new HArmor(milLeger, EnumArmorHeimnor.MAILLE, 2, ArmorCategories.MILITAIRELEGER, "JMaille");
+		bMaille = new HArmor(milLeger, EnumArmorHeimnor.MAILLE, 3, ArmorCategories.MILITAIRELEGER, "BMaille");
+
+		cLamellaire = new HArmor(milLeger, EnumArmorHeimnor.LAMELLAIRE, 0, ArmorCategories.MILITAIRELEGER,
+				"CLamellaire");
+		pLamellaire = new HArmor(milLeger, EnumArmorHeimnor.LAMELLAIRE, 1, ArmorCategories.MILITAIRELEGER,
+				"PLamellaire");
+		jLamellaire = new HArmor(milLeger, EnumArmorHeimnor.LAMELLAIRE, 2, ArmorCategories.MILITAIRELEGER,
+				"JLamellaire");
+		bLamellaire = new HArmor(milLeger, EnumArmorHeimnor.LAMELLAIRE, 3, ArmorCategories.MILITAIRELEGER,
+				"BLamellaire");
+
+		cMaraudeur = new HArmor(milLourd, EnumArmorHeimnor.MARAUDEUR, 0, ArmorCategories.MILITAIRELOURD, "CMaraudeur");
+		pMaraudeur = new HArmor(milLourd, EnumArmorHeimnor.MARAUDEUR, 1, ArmorCategories.MILITAIRELOURD, "PMaraudeur");
+		jMaraudeur = new HArmor(milLourd, EnumArmorHeimnor.MARAUDEUR, 2, ArmorCategories.MILITAIRELOURD, "JMaraudeur");
+		bMaraudeur = new HArmor(milLourd, EnumArmorHeimnor.MARAUDEUR, 3, ArmorCategories.MILITAIRELOURD, "BMaraudeur");
 
 		GameRegistry.registerItem(casqueAdamante, "item_casqueAdamante");
 		GameRegistry.registerItem(plastronAdamante, "item_plastronAdamante");
@@ -181,43 +207,41 @@ public class ArmorRegistry {
 		GameRegistry.registerItem(pPlaques, "item_armurePlaquesPlastron");
 		GameRegistry.registerItem(jPlaques, "item_armurePlaquesJambieres");
 		GameRegistry.registerItem(bPlaques, "item_armurePlaquesBottes");
-		
+
 		GameRegistry.registerItem(cClericale, "item_cClericale");
 		GameRegistry.registerItem(pClericale, "item_pClericale");
 		GameRegistry.registerItem(jClericale, "item_jClericale");
 		GameRegistry.registerItem(bClericale, "item_bClericale");
-		
+
 		GameRegistry.registerItem(sergentC, "item_cSergent");
 		GameRegistry.registerItem(sergentP, "item_pSergent");
 		GameRegistry.registerItem(sergentJ, "item_jSergent");
 		GameRegistry.registerItem(sergentB, "item_bSergent");
-		
+
 		GameRegistry.registerItem(cCloute, "item_cCloute");
 		GameRegistry.registerItem(pCloute, "item_pCloute");
 		GameRegistry.registerItem(jCloute, "item_jCloute");
 		GameRegistry.registerItem(bCloute, "item_bCloute");
-		
+
 		GameRegistry.registerItem(cHuscarl, "item_cHuscarl");
 		GameRegistry.registerItem(pHuscarl, "item_pHuscarl");
 		GameRegistry.registerItem(jHuscarl, "item_jHuscarl");
 		GameRegistry.registerItem(bHuscarl, "item_bHuscarl");
-		
+
 		GameRegistry.registerItem(cMaille, "item_cMaille");
 		GameRegistry.registerItem(pMaille, "item_pMaille");
 		GameRegistry.registerItem(jMaille, "item_jMaille");
 		GameRegistry.registerItem(bMaille, "item_bMaille");
-		
+
 		GameRegistry.registerItem(cLamellaire, "item_cLamellaire");
 		GameRegistry.registerItem(pLamellaire, "item_pLamellaire");
 		GameRegistry.registerItem(jLamellaire, "item_jLamellaire");
 		GameRegistry.registerItem(bLamellaire, "item_bLamellaire");
-		
+
 		GameRegistry.registerItem(cMaraudeur, "item_cMaraudeur");
 		GameRegistry.registerItem(pMaraudeur, "item_pMaraudeur");
 		GameRegistry.registerItem(jMaraudeur, "item_jMaraudeur");
 		GameRegistry.registerItem(bMaraudeur, "item_bMaraudeur");
-
-
 
 	}
 
