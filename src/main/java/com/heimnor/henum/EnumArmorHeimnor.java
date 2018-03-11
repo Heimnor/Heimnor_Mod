@@ -5,7 +5,7 @@ import com.heimnor.common.Heimnor;
 public enum EnumArmorHeimnor {
 
 	ADAMANTE("armureAdamante_1.png", "armureAdamante_2.png"),
-	ORONNELEG("oonne1_1.png", "oronne1_2.png"),
+	ORONNELEG("oronne1_1.png", "oronne1_2.png"),
 	DUNES("armureShaal_1Layer_1.png", ""),
 	SABLES("", "shaalJambieresLayer_2.png"),
 	LAMELLAIRE("Lamellaire1.png", "Lamellaire2.png"),
