@@ -110,8 +110,7 @@ public class Heimnor {
 				.setTextureName(Heimnor.MODID + ":clochettetext").setCreativeTab(HeimnorMiscCreativeTabs);
 		// Items Divers
 
-		itemchope = new AlcoolHeimnor(0, 0.5F, false).setUnlocalizedName("chope")
-				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":chope");
+		itemchope = new AlcoolHeimnor(1, "chope", false);
 		// paramètres item (class)
 		itemverre_vin = new VerreVin(0, 0.3F, false).setUnlocalizedName("verre_vin")
 				.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs).setTextureName(Heimnor.MODID + ":verre_vin");

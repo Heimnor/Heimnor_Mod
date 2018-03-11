@@ -25,7 +25,7 @@ public class ItemsFoodHeimnor extends ItemFood {
 
 	@Override
 	public ItemStack onEaten(ItemStack stack, World world, EntityPlayer player) {
-
+		
 		stack.stackSize--;
 		if (stack.hasTagCompound()) {
 			if (stack.getTagCompound().hasKey("qualityint")) {

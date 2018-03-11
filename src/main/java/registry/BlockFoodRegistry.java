@@ -14,6 +14,7 @@ import init.block.BlockPlancheDecoup;
 import init.foods.IngredientsHeimnor;
 import init.foods.ItemsFoodHeimnor;
 import init.foods.UstensileHeimnor;
+import init.foods.AlcoolHeimnor;
 import init.foods.CouteauCuisineHeimnor;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -33,9 +34,16 @@ public class BlockFoodRegistry {
 			pouletFermier, pouletcuit, viandehachee, viandehacheecuite;
 
 	public static Item casserole, poele;
+	
+	public static Item rhumAmbre, vinRougePremium, vodka, whisky;
 
 	public static void registerBlock() {
 
+		rhumAmbre = new AlcoolHeimnor(4, "rhumAmbre", true);
+		vinRougePremium = new AlcoolHeimnor(5, "vinrougePremium", true);
+		vodka = new AlcoolHeimnor(4, "vodka", true);
+		whisky = new AlcoolHeimnor(4, "whisky", true);
+		
 		casserole = new UstensileHeimnor().setUnlocalizedName("casserole").setTextureName(Heimnor.MODID + ":casserole");
 		poele = new UstensileHeimnor().setUnlocalizedName("poele").setTextureName(Heimnor.MODID + ":poele");
 
@@ -153,6 +161,11 @@ public class BlockFoodRegistry {
 		GameRegistry.registerItem(couteauCuisineSimple, "item_couteaucuisinesimple");
 		GameRegistry.registerItem(casserole, "item_casserole");
 		GameRegistry.registerItem(poele, "item_poele");
+		
+		GameRegistry.registerItem(rhumAmbre, "item_rhumAmbre");
+		GameRegistry.registerItem(vinRougePremium, "item_vinRougePremium");
+		GameRegistry.registerItem(vodka, "item_vodka");
+		GameRegistry.registerItem(whisky, "item_whisky");
 
 		GameRegistry.registerItem(viandeLainard, "item_viandeLainard");
 		GameRegistry.registerItem(viandeLaineux, "item_viandeLaineux");
