@@ -74,7 +74,7 @@ public class CommandAJ extends CommandBase {
 							NbtCsFile.setNbtTagCompound(joueurs, "aj", compound);
 							ItemStack stackAJ = new ItemStack(Heimnor.itemAJ, nbrAJ * 10);
 							player.inventory.addItemStackToInventory(stackAJ);
-							sender.addChatMessage(new ChatComponentText("Vous avez bien reçu vos actions journalières.").setChatStyle(chatStyle));
+							sender.addChatMessage(new ChatComponentText("Vous avez bien recu vos actions journalières.").setChatStyle(chatStyle));
 						} else {
 							this.errors(sender, 2);
 						}

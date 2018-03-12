@@ -72,7 +72,7 @@ public class Heimnor {
 			"heimnor_weapon_creative_tabs");
 	public static CreativeTabs HeimnorFoodTabs = new HeimnorFoodCreativeTabs("heimnor_food_tabs");
 
-	public static Item itemdrogue1, itemchope_vide, itemverre_vin_vide, itemdes, itemAJ;
+	public static Item itemdrogue1, itemchope_vide, itemverre_vin_vide, bouteilleVide, itemdes, itemAJ;
 	// Déclaration des items Vanilla
 
 	public static Item itemclochette;
@@ -81,9 +81,6 @@ public class Heimnor {
 	public static Item itemchope, itemverre_vin, itemnourritureminerale1;
 	// Déclaration des Items Consommables
 
-
-
-	
 	@Instance("heimnormod")
 	public static Heimnor instance;
 	// Instance du Mod d'Heimnor
@@ -94,7 +91,7 @@ public class Heimnor {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {// Pré Initialisation
-		
+
 		itemdes = new ItemDes().setUnlocalizedName("des").setCreativeTab(Heimnor.HeimnorMiscCreativeTabs)
 				.setTextureName(Heimnor.MODID + ":des");
 		itemdrogue1 = new ItemHeimnor().setUnlocalizedName("drogue1").setCreativeTab(Heimnor.HeimnorMiscCreativeTabs)
@@ -103,17 +100,19 @@ public class Heimnor {
 				.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs).setTextureName(Heimnor.MODID + ":chope_vide");
 		itemverre_vin_vide = new ItemHeimnor().setUnlocalizedName("verre_vin_vide")
 				.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs).setTextureName(Heimnor.MODID + ":verre_vin_vide");
-		itemAJ = new ItemHeimnor().setUnlocalizedName("AJ").setTextureName(Heimnor.MODID + ":aj").setCreativeTab(HeimnorMiscCreativeTabs);
+		bouteilleVide = new ItemHeimnor().setUnlocalizedName("bouteilleVide").setTextureName(MODID + ":bouteilleVide")
+				.setCreativeTab(HeimnorMiscCreativeTabs);
+		itemAJ = new ItemHeimnor().setUnlocalizedName("AJ").setTextureName(Heimnor.MODID + ":aj")
+				.setCreativeTab(HeimnorMiscCreativeTabs);
 		// Items Vanilla
 
 		itemclochette = new ClochetteMJ().setUnlocalizedName("clochette")
 				.setTextureName(Heimnor.MODID + ":clochettetext").setCreativeTab(HeimnorMiscCreativeTabs);
 		// Items Divers
 
-		itemchope = new AlcoolHeimnor(1, "chope", false);
+		itemchope = new AlcoolHeimnor(1, "chope", false, this.itemchope_vide);
 		// paramètres item (class)
-		itemverre_vin = new VerreVin(0, 0.3F, false).setUnlocalizedName("verre_vin")
-				.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs).setTextureName(Heimnor.MODID + ":verre_vin");
+		itemverre_vin = new AlcoolHeimnor(1, "verre_vin", false, this.itemverre_vin_vide);
 		itemnourritureminerale1 = new NourritureMinerale1(8, 0.5F, false).setUnlocalizedName("NourritureMinerale1")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":nourritureminerale1");
 
@@ -127,7 +126,6 @@ public class Heimnor {
 		BlockFoodRegistry.registerTileEntity();
 		FurnitureRegistry.registerTileEntities();
 
-		
 		// Armes
 
 		GameRegistry.registerItem(itemdes, "item_des");
@@ -140,12 +138,12 @@ public class Heimnor {
 		GameRegistry.registerItem(itemverre_vin_vide, "item_verre_vin_vide");
 		GameRegistry.registerItem(itemchope, "item_chope");
 		GameRegistry.registerItem(itemchope_vide, "item_chope_vide");
+		GameRegistry.registerItem(bouteilleVide, "item_bouteilleVide");
 
 		// GR Consommables et contenants
 
 		GameRegistry.registerItem(itemclochette, "item_clochette");
 		// GR Items Divers
-
 
 		network = NetworkRegistry.INSTANCE.newSimpleChannel("chatChannel");
 		network.registerMessage(com.heimnor.packet.IMessageChat.IMessageHandlerChat.class, IMessageChat.class, 1,
@@ -163,7 +161,7 @@ public class Heimnor {
 		network.registerMessage(com.heimnor.packet.IMessageCSSyncRep.ClientHandler.class, IMessageCSSyncRep.class, 7,
 				Side.CLIENT);
 		network.registerMessage(com.heimnor.packet.IMessageLog.Handler.class, IMessageLog.class, 8, Side.SERVER);
-		network.registerMessage(com.heimnor.packet.PacketPerm.Handler.class, PacketPerm.class, 9 , Side.CLIENT);
+		network.registerMessage(com.heimnor.packet.PacketPerm.Handler.class, PacketPerm.class, 9, Side.CLIENT);
 		network.registerMessage(com.heimnor.packet.SyncFood.Handler.class, SyncFood.class, 10, Side.CLIENT);
 		// Network Packets
 	}
@@ -194,10 +192,10 @@ public class Heimnor {
 		event.registerServerCommand(new CommandJet());
 		event.registerServerCommand(new HPerm());
 		event.registerServerCommand(new CommandAJ());
-		
+
 		File permissions = new File("Heimnor/Permissions.dat");
-		
-		if(!permissions.exists()) {
+
+		if (!permissions.exists()) {
 			permissions.getParentFile().mkdirs();
 			System.out.println("Permissions.dat crée");
 			try {

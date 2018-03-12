@@ -9,6 +9,7 @@ import com.heimnor.tileentity.TileEntityPlancheDecoup;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import init.block.BlockFourCuisine;
+import init.block.BlockGlass;
 import init.block.BlockPlanDeTravail;
 import init.block.BlockPlancheDecoup;
 import init.foods.IngredientsHeimnor;
@@ -22,7 +23,7 @@ import net.minecraft.item.Item;
 
 public class BlockFoodRegistry {
 
-	public static Block planDeTravail, fourCuisine, plancheDecoup;
+	public static Block planDeTravail, fourCuisine, plancheDecoup, verre;
 
 	public static Item couteauCuisineSimple;
 
@@ -39,10 +40,10 @@ public class BlockFoodRegistry {
 
 	public static void registerBlock() {
 
-		rhumAmbre = new AlcoolHeimnor(4, "rhumAmbre", true);
-		vinRougePremium = new AlcoolHeimnor(5, "vinrougePremium", true);
-		vodka = new AlcoolHeimnor(4, "vodka", true);
-		whisky = new AlcoolHeimnor(4, "whisky", true);
+		rhumAmbre = new AlcoolHeimnor(4, "rhumAmbre", true, Heimnor.bouteilleVide);
+		vinRougePremium = new AlcoolHeimnor(5, "vinRougePremium", true, Heimnor.bouteilleVide);
+		vodka = new AlcoolHeimnor(4, "vodka", true, Heimnor.bouteilleVide);
+		whisky = new AlcoolHeimnor(4, "whisky", true, Heimnor.bouteilleVide);
 		
 		casserole = new UstensileHeimnor().setUnlocalizedName("casserole").setTextureName(Heimnor.MODID + ":casserole");
 		poele = new UstensileHeimnor().setUnlocalizedName("poele").setTextureName(Heimnor.MODID + ":poele");
@@ -148,6 +149,7 @@ public class BlockFoodRegistry {
 
 		planDeTravail = new BlockPlanDeTravail(Material.wood).setBlockName("plandetravail")
 				.setBlockTextureName(Heimnor.MODID + ":plandetravail").setCreativeTab(Heimnor.HeimnorFoodTabs);
+		verre = new BlockGlass(Material.glass).setBlockName("verre").setBlockTextureName(Heimnor.MODID + ":verre");
 		fourCuisine = new BlockFourCuisine(Material.glass).setBlockName("fourCuisine")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setBlockTextureName(Heimnor.MODID + ":fourmaterialrock");
 		plancheDecoup = new BlockPlancheDecoup(Material.wood).setBlockName("plancheDecoup")
@@ -206,6 +208,7 @@ public class BlockFoodRegistry {
 		GameRegistry.registerBlock(fourCuisine, "block_fourcuisine");
 		GameRegistry.registerBlock(planDeTravail, "block_plandetravail");
 		GameRegistry.registerBlock(plancheDecoup, "block_planchedecoup");
+		GameRegistry.registerBlock(verre, "block_verre");
 	}
 
 	public static void registerTileEntity() {
