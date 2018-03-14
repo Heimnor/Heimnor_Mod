@@ -15,10 +15,19 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 
-public class FichesFonc {
+public class FichesUtils {
 
 	private static File joueursFile = new File("Heimnor/Joueurs.dat");
 	private static File permissions = new File("Heimnor/Permissions.dat");
+	private static boolean hasPerso;
+	private static EntityPlayer player;
+
+	public FichesUtils(EntityPlayer player) {
+
+		hasPerso = NbtCsFile.getData(joueursFile).getCompoundTag("index").getCompoundTag(player.getDisplayName())
+				.hasKey("perso");
+		this.player = player;
+	}
 
 	public static boolean isMJ(EntityPlayer player) {
 
@@ -38,14 +47,12 @@ public class FichesFonc {
 
 	public static int getCuisine(EntityPlayer player) {
 
-		if (NbtCsFile.getData(joueursFile).getCompoundTag("index").getCompoundTag(player.getDisplayName())
-				.hasKey("perso")) {
+		if (hasPerso) {
 
 			String persoName = NbtCsFile.getData(new File("Heimnor/Joueurs.dat")).getCompoundTag("index")
 					.getCompoundTag(player.getDisplayName()).getString("perso");
 			int cuisine = NbtCsFile.getData(new File("Heimnor/Fiches.dat")).getCompoundTag("index")
 					.getCompoundTag(persoName).getInteger("cuisine");
-			System.out.println("Cuisine : " + cuisine);
 			return cuisine;
 		} else {
 			return 0;
@@ -75,9 +82,45 @@ public class FichesFonc {
 		int resultat = jet + comp1 + comp2;
 
 		String formula = "(" + jet + "+" + comp1 + "+" + comp2 + "=" + resultat + ")";
-		IChatComponent chatMsg = new ChatComponentText(EnumChatFormatting.DARK_GRAY + "[" + comp1Name + " + "
-				+ comp2Name + "]" + formula + EnumChatFormatting.GRAY + player.getDisplayName() + "obtient");
+		IChatComponent chatMsg = new ChatComponentText(
+				EnumChatFormatting.DARK_GRAY + "[" + comp1Name + " + " + comp2Name + "]" + formula
+						+ EnumChatFormatting.GRAY + player.getDisplayName() + "obtient" + resultat + ".");
 		player.addChatMessage(chatMsg);
 		return resultat;
+	}
+
+	public static int ThrowPhys() {
+
+		if (hasPerso) {
+			String persoName = NbtCsFile.getData(new File("Heimnor/Joueurs.dat")).getCompoundTag("index")
+					.getCompoundTag(player.getDisplayName()).getString("perso");
+			int fo = NbtCsFile.getData(new File("Heimnor/Fiches.dat")).getCompoundTag("index").getCompoundTag(persoName)
+					.getInteger("force");
+			int ag = NbtCsFile.getData(new File("Heimnor/Fiches.dat")).getCompoundTag("index").getCompoundTag(persoName)
+					.getInteger("agilite");
+			int comp;
+			String compName;
+			if (ag < fo) {
+				comp = fo;
+				compName = "FO";
+			} else if (ag > fo) {
+				comp = ag;
+				compName = "AG";
+			} else {
+				comp = fo;
+				compName = "FO/AG";
+			}
+
+			Random rand = new Random();
+			int jet = 1 + rand.nextInt(20);
+			int results = jet + comp;
+
+			String formula = "(" + jet + "+" + comp + "=" + results + ")";
+			ChatComponentText text = new ChatComponentText(EnumChatFormatting.DARK_GRAY + "[" + compName + "]" + formula
+					+ EnumChatFormatting.GRAY + player.getDisplayName() + "obtient" + results + ".");
+			player.addChatMessage(text);
+			return results;
+		}
+		return -1;
 	}
 }

@@ -1,8 +1,7 @@
 package init.divers;
 
-import com.heimnor.common.Heimnor;
+import com.heimnor.common.ExtendedPropertyH;
 import com.heimnor.henum.EnumSound;
-import com.heimnor.packet.PacketPerm;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;

@@ -43,7 +43,6 @@ public class IMessageChatCloseReponse implements IMessage {
 
 				ClientProxy.CHATTING_PLAYERS_USERNAME.remove(message.username);
 				EntityPlayer player = Minecraft.getMinecraft().thePlayer;
-				System.out.println(ClientProxy.CHATTING_PLAYERS_USERNAME);
 			}
 			return null;
 		}

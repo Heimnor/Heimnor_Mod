@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.heimnor.common.Heimnor;
 import com.heimnor.packet.SyncFood;
-import com.heimnor.utils.FichesFonc;
+import com.heimnor.utils.FichesUtils;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -58,8 +58,8 @@ public class ItemsFoodHeimnor extends ItemFood {
 			if (!world.isRemote) {
 
 				if (!stack.getTagCompound().hasKey("quality")) {
-					int result = FichesFonc.throwOneComp((EntityPlayer) player, "Cuisine",
-							FichesFonc.getCuisine((EntityPlayer) player), world);
+					int result = FichesUtils.throwOneComp((EntityPlayer) player, "Cuisine",
+							FichesUtils.getCuisine((EntityPlayer) player), world);
 
 					System.out.println("Jet de dés :" + result);
 					int i = 5;

@@ -40,10 +40,10 @@ public class BlockFoodRegistry {
 
 	public static void registerBlock() {
 
-		rhumAmbre = new AlcoolHeimnor(4, "rhumAmbre", true, Heimnor.bouteilleVide);
-		vinRougePremium = new AlcoolHeimnor(5, "vinRougePremium", true, Heimnor.bouteilleVide);
-		vodka = new AlcoolHeimnor(4, "vodka", true, Heimnor.bouteilleVide);
-		whisky = new AlcoolHeimnor(4, "whisky", true, Heimnor.bouteilleVide);
+		rhumAmbre = new AlcoolHeimnor(4, "rhumAmbre", true, Heimnor.bouteilleVide, 8);
+		vinRougePremium = new AlcoolHeimnor(5, "vinRougePremium", true, Heimnor.bouteilleVide, 5);
+		vodka = new AlcoolHeimnor(4, "vodka", true, Heimnor.bouteilleVide, 7);
+		whisky = new AlcoolHeimnor(4, "whisky", true, Heimnor.bouteilleVide, 7);
 		
 		casserole = new UstensileHeimnor().setUnlocalizedName("casserole").setTextureName(Heimnor.MODID + ":casserole");
 		poele = new UstensileHeimnor().setUnlocalizedName("poele").setTextureName(Heimnor.MODID + ":poele");

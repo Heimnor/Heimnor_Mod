@@ -14,6 +14,7 @@ import com.heimnor.creativetabs.HeimnorFoodCreativeTabs;
 import com.heimnor.creativetabs.HeimnorMiscCreativeTab;
 import com.heimnor.creativetabs.HeimnorWeaponCreativeTabs;
 import com.heimnor.events.LivingEventHandler;
+import com.heimnor.events.PropertiesEvent;
 import com.heimnor.events.ServerEvents;
 import com.heimnor.packet.IMessageCSSync;
 import com.heimnor.packet.IMessageCSSyncRep;
@@ -23,6 +24,8 @@ import com.heimnor.packet.IMessageChatCloseReponse;
 import com.heimnor.packet.IMessageChatReponse;
 import com.heimnor.packet.IMessageDes;
 import com.heimnor.packet.IMessageLog;
+import com.heimnor.packet.IMessagePropertyRep;
+import com.heimnor.packet.IMessagePropertySync;
 import com.heimnor.packet.PacketPerm;
 import com.heimnor.packet.SyncFood;
 import com.heimnor.proxy.CommonProxy;
@@ -110,9 +113,9 @@ public class Heimnor {
 				.setTextureName(Heimnor.MODID + ":clochettetext").setCreativeTab(HeimnorMiscCreativeTabs);
 		// Items Divers
 
-		itemchope = new AlcoolHeimnor(1, "chope", false, this.itemchope_vide);
+		itemchope = new AlcoolHeimnor(1, "chope", false, this.itemchope_vide, 4);
 		// paramètres item (class)
-		itemverre_vin = new AlcoolHeimnor(1, "verre_vin", false, this.itemverre_vin_vide);
+		itemverre_vin = new AlcoolHeimnor(1, "verre_vin", false, this.itemverre_vin_vide, 5);
 		itemnourritureminerale1 = new NourritureMinerale1(8, 0.5F, false).setUnlocalizedName("NourritureMinerale1")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":nourritureminerale1");
 
@@ -163,6 +166,10 @@ public class Heimnor {
 		network.registerMessage(com.heimnor.packet.IMessageLog.Handler.class, IMessageLog.class, 8, Side.SERVER);
 		network.registerMessage(com.heimnor.packet.PacketPerm.Handler.class, PacketPerm.class, 9, Side.CLIENT);
 		network.registerMessage(com.heimnor.packet.SyncFood.Handler.class, SyncFood.class, 10, Side.CLIENT);
+		network.registerMessage(com.heimnor.packet.IMessagePropertySync.CommonHandler.class, IMessagePropertySync.class,
+				11, Side.SERVER);
+		network.registerMessage(com.heimnor.packet.IMessagePropertyRep.ClientHandler.class, IMessagePropertyRep.class,
+				12, Side.CLIENT);
 		// Network Packets
 	}
 
@@ -175,6 +182,8 @@ public class Heimnor {
 		MinecraftForge.EVENT_BUS.register(new PlayerDataEventHandler());
 		MinecraftForge.EVENT_BUS.register(new ServerEvents());
 		FMLCommonHandler.instance().bus().register(new ServerEvents());
+		MinecraftForge.EVENT_BUS.register(new PropertiesEvent());
+		FMLCommonHandler.instance().bus().register(new PropertiesEvent());
 		NetworkRegistry.INSTANCE.registerGuiHandler(Heimnor.instance, new CSGuiHandler());
 		proxy.registerRender();
 		// Items Render
