@@ -28,7 +28,7 @@ public class HArmor extends ItemArmor {
 		this.type = type;
 		this.setCreativeTab(Heimnor.HeimnorArmorCreativeTabs);
 		this.setUnlocalizedName(unlocalized);
-		this.setTextureName(Heimnor.MODID +":armures/" + unlocalized);
+		this.setTextureName(Heimnor.MODID +":armors/" + unlocalized);
 	}
 
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {

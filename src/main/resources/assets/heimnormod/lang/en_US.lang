@@ -256,6 +256,14 @@ item.viandehachee.name=§4Viande hachée crue
 item.viandehacheecuite.name=§4Viande hachée
 item.sandLainard.name=Casse-Croute au Lainard
 item.NourritureMinerale1.name=§2Noraï vert
+item.bouteilleVide.name=§7Bouteille vide
+item.cleanWater.name=§9Eau propre
+item.dirtyWater.name=§9Eau impropre
+item.saltWater.name=§9Eau salinisée
+item.rhumAmbre.name=§6Rhum Ambré
+item.vinRougePremium.name=§6Bouteille de vin rouge
+item.whisky.name=§6Whisky
+item.vodka.name=§6Vodka
 
 commande.des.usage=Usage : /jet <valeur1>d<valeur2>
 command.ic.usage=Usage : /ic <reset>

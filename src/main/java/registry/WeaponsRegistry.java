@@ -216,226 +216,116 @@ public class WeaponsRegistry {
 
 	public static void registerWeapons() {
 
-		epeeClaymore = new Armes(claymoreMaterial).setUnlocalizedName("epeeclaymore")
-				.setTextureName(Heimnor.MODID + ":epee_claymore").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		masseRhombe = new Armes(masserhombeMaterial).setUnlocalizedName("masserhombe")
-				.setTextureName(Heimnor.MODID + ":masse_rhombe").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		matraque = new Armes(matraqueMaterial).setUnlocalizedName("matraque").setTextureName(Heimnor.MODID + ":matraque")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		patteDours = new Armes(pattedoursMaterial).setUnlocalizedName("pattedours")
-				.setTextureName(Heimnor.MODID + ":patte_dours").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		bodan = new Armes(bodanMaterial).setUnlocalizedName("bodan").setTextureName(Heimnor.MODID + ":bodan")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		saif = new Armes(saifMaterial).setUnlocalizedName("saif").setTextureName(Heimnor.MODID + ":saif")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		brazure = new Armes(brazureMaterial).setUnlocalizedName("brazure").setTextureName(Heimnor.MODID + ":brazure")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachebenie = new Armes(hachebenieMaterial).setUnlocalizedName("hachebenie")
-				.setTextureName(Heimnor.MODID + ":hachebenie").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		espadondebraz = new Armes(espadondebrazMaterial).setUnlocalizedName("mespadondebraz")
-				.setTextureName(Heimnor.MODID + ":espadon_de_braz").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		bipenne = new Armes(bipenneMaterial).setUnlocalizedName("bipenne").setTextureName(Heimnor.MODID + ":bipenne")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		marteaudeguerre = new Armes(marteaudeguerreMaterial).setUnlocalizedName("marteaudeguerre")
-				.setTextureName(Heimnor.MODID + ":marteaudeguerre").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		daguedebraz = new Armes(daguedebrazMaterial).setUnlocalizedName("daguedebraz")
-				.setTextureName(Heimnor.MODID + ":dague_de_braz").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		guisarme = new Armes(guisarmeMaterial).setUnlocalizedName("guisarme").setTextureName(Heimnor.MODID + ":guisarme")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		marteaudebraz = new Armes(marteaudebrazMaterial).setUnlocalizedName("marteaudebraz")
-				.setTextureName(Heimnor.MODID + ":marteau_de_braz").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		faux = new Armes(fauxMaterial).setUnlocalizedName("faux").setTextureName(Heimnor.MODID + ":faux")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		lancedebraz = new Armes(lancedebrazMaterial).setUnlocalizedName("lancedebraz")
-				.setTextureName(Heimnor.MODID + ":lance_de_braz").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeedebraz = new Armes(epeedebrazMaterial).setUnlocalizedName("epeedebraz")
-				.setTextureName(Heimnor.MODID + ":epee_de_braz").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		bidentdebraz = new Armes(bidentdebrazMaterial).setUnlocalizedName("bidentdebraz")
-				.setTextureName(Heimnor.MODID + ":bident_de_braz").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		marteaulourddebraz = new Armes(marteaulourdebrazMaterial).setUnlocalizedName("marteaulourddebraz")
-				.setTextureName(Heimnor.MODID + ":marteau_lourd_de_braz").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachoir = new Armes(hachoirMaterial).setUnlocalizedName("hachoir").setTextureName(Heimnor.MODID + ":hachoir")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		becdecorbin = new Armes(becdecorbinMaterial).setUnlocalizedName("becdecorbin")
-				.setTextureName(Heimnor.MODID + ":bec_de_corbin").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		khirve = new Armes(khirveMaterial).setUnlocalizedName("khirve").setTextureName(Heimnor.MODID + ":khirve")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeelarge = new Armes(epeelargeMaterial).setUnlocalizedName("epeelarge").setTextureName(Heimnor.MODID + ":epee_large")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		daguerituelle = new Armes(daguerituelleMaterial).setUnlocalizedName("daguerituelle")
-				.setTextureName(Heimnor.MODID + ":dague_rituelle").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		chapelier = new Armes(chapelierMaterial).setUnlocalizedName("chapelier").setTextureName(Heimnor.MODID + ":chapelier")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		sceptre = new Armes(sceptreMaterial).setUnlocalizedName("sceptre").setTextureName(Heimnor.MODID + ":sceptre")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		daguedos = new Armes(daguedosMaterial).setUnlocalizedName("daguedos").setTextureName(Heimnor.MODID + ":dague_dos")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		tsuri = new Armes(tsuriMaterial).setUnlocalizedName("tsuri").setTextureName(Heimnor.MODID + ":tsuri")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hallebardeailee = new Armes(hallebardeaileeMaterial).setUnlocalizedName("hallebardeailee")
-				.setTextureName(Heimnor.MODID + ":hallebardeailee").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeebatarde = new Armes(epeebatardeMaterial).setUnlocalizedName("epeebatarde")
-				.setTextureName(Heimnor.MODID + ":epeebatarde").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hanche = new Armes(hancheMaterial).setUnlocalizedName("hanche").setTextureName(Heimnor.MODID + ":hanche")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		espadon = new Armes(espadonMaterial).setUnlocalizedName("espadon").setTextureName(Heimnor.MODID + ":espadon")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		dague = new Armes(dagueMaterial).setUnlocalizedName("dague").setTextureName(Heimnor.MODID + ":dague")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hallante = new Armes(hallanteMaterial).setUnlocalizedName("hallante").setTextureName(Heimnor.MODID + ":hallante")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		masseaailettes = new Armes(masseaailettesMaterial).setUnlocalizedName("masseaailettes")
-				.setTextureName(Heimnor.MODID + ":masse_a_ailettes").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		massebenie = new Armes(massebenieMaterial).setUnlocalizedName("massebenie")
-				.setTextureName(Heimnor.MODID + ":masse_benie").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hallebarde = new Armes(hallebardeMaterial).setUnlocalizedName("hallebarde")
-				.setTextureName(Heimnor.MODID + ":hallebarde").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		sceptreoronne = new Armes(sceptreoronneMaterial).setUnlocalizedName("sceptreoronne")
-				.setTextureName(Heimnor.MODID + ":sceptre_oronne").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hallebardebenie = new Armes(hallebardebenieMaterial).setUnlocalizedName("hallebardebenie")
-				.setTextureName(Heimnor.MODID + ":hallebarde_benie").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		lancedefaille = new Armes(lancedefailleMaterial).setUnlocalizedName("lancedefaille")
-				.setTextureName(Heimnor.MODID + ":lance_de_faille").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		vangarde = new Armes(vangardeMaterial).setUnlocalizedName("vangarde").setTextureName(Heimnor.MODID + ":vangarde")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		qian = new Armes(qianMaterial).setUnlocalizedName("qian").setTextureName(Heimnor.MODID + ":qian")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		yishi = new Armes(yishiMaterial).setUnlocalizedName("yishi").setTextureName(Heimnor.MODID + ":yishi")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeebenie = new Armes(epeebenieMaterial).setUnlocalizedName("epeebenie").setTextureName(Heimnor.MODID + ":epee_benie")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachedefjil = new Armes(hachedefjilMaterial).setUnlocalizedName("hachedefjil")
-				.setTextureName(Heimnor.MODID + ":hache_de_fjil").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeedorion = new Armes(epeedorionMaterial).setUnlocalizedName("epeedorion")
-				.setTextureName(Heimnor.MODID + ":epee_dorion").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		daguedefjil = new Armes(daguedefjilMaterial).setUnlocalizedName("daguedefjil")
-				.setTextureName(Heimnor.MODID + ":dague_de_fjil").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		massedos = new Armes(massedosMaterial).setUnlocalizedName("massedos").setTextureName(Heimnor.MODID + ":masse_dos")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		lamedefjil = new Armes(lamedefjilMaterial).setUnlocalizedName("lamedefjil")
-				.setTextureName(Heimnor.MODID + ":lame_de_fjil").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		quadree = new Armes(quadreeMaterial).setUnlocalizedName("quadree").setTextureName(Heimnor.MODID + ":quadree")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		surin = new Armes(surinMaterial).setUnlocalizedName("surin").setTextureName(Heimnor.MODID + ":surin")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		malfif = new Armes(malfifMaterial).setUnlocalizedName("malfif").setTextureName(Heimnor.MODID + ":malfif")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		tesson = new Armes(tessonMaterial).setUnlocalizedName("tesson").setTextureName(Heimnor.MODID + ":tesson")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		bouteille = new Armes(bouteilleMaterial).setUnlocalizedName("bouteille").setTextureName(Heimnor.MODID + ":bouteille")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		planche = new Armes(plancheMaterial).setUnlocalizedName("planche").setTextureName(Heimnor.MODID + ":planche")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		massehectaire = new Armes(massehectaireMaterial).setUnlocalizedName("massehectaire")
-				.setTextureName(Heimnor.MODID + ":masse_hectaire").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachedebataille = new Armes(hachedebatailleMaterial).setUnlocalizedName("hachedebataille")
-				.setTextureName(Heimnor.MODID + ":hache_de_bataille").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		deuxmains = new Armes(deuxmainsMaterial).setUnlocalizedName("deuxmains").setTextureName(Heimnor.MODID + ":deuxmains")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		coutelas = new Armes(coutelasMaterial).setUnlocalizedName("coutelas").setTextureName(Heimnor.MODID + ":coutelas")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		zhang = new Armes(zhangMaterial).setUnlocalizedName("zhang").setTextureName(Heimnor.MODID + ":zhang")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hallebardebarbue = new Armes(hallebardebarbueMaterial).setUnlocalizedName("hallebardebarbue")
-				.setTextureName(Heimnor.MODID + ":hallebarde_barbue").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		masseapointes = new Armes(masseapointesMaterial).setUnlocalizedName("masseapointes")
-				.setTextureName(Heimnor.MODID + ":masse_a_pointes").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachebarbue = new Armes(hachebarbueMaterial).setUnlocalizedName("hachebarbue")
-				.setTextureName(Heimnor.MODID + ":hache_barbue").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		lance = new Armes(lanceMaterial).setUnlocalizedName("lance").setTextureName(Heimnor.MODID + ":lance")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		sceptredefer = new Armes(sceptredeferMaterial).setUnlocalizedName("sceptredefer")
-				.setTextureName(Heimnor.MODID + ":sceptre_de_fer").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachepahinne = new Armes(hachepahinneMaterial).setUnlocalizedName("hachepahinne")
-				.setTextureName(Heimnor.MODID + ":hache_pahinne").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		massedeguerre = new Armes(massedeguerreMaterial).setUnlocalizedName("massedeguerre")
-				.setTextureName(Heimnor.MODID + ":massedeguerre").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		katana = new Armes(katanaMaterial).setUnlocalizedName("katana").setTextureName(Heimnor.MODID + ":katana")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		katar = new Armes(katarMaterial).setUnlocalizedName("katar").setTextureName(Heimnor.MODID + ":katar")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		kukri = new Armes(kukriMaterial).setUnlocalizedName("kukri").setTextureName(Heimnor.MODID + ":kukri")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		marteau = new Armes(marteauMaterial).setUnlocalizedName("marteau").setTextureName(Heimnor.MODID + ":marteau")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		sakran = new Armes(sakranMaterial).setUnlocalizedName("sakran").setTextureName(Heimnor.MODID + ":sakran")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		espadondorion = new Armes(espadondorionMaterial).setUnlocalizedName("espadondorion")
-				.setTextureName(Heimnor.MODID + ":espadon_dorion").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeeailee = new Armes(epeeaileeMaterial).setUnlocalizedName("epeeailee").setTextureName(Heimnor.MODID + ":epee_ailee")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeedroite = new Armes(epeedroiteMaterial).setUnlocalizedName("epeedroite")
-				.setTextureName(Heimnor.MODID + ":epee_droite").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		becdemoinin = new Armes(becdemoininMaterial).setUnlocalizedName("becdemoinin")
-				.setTextureName(Heimnor.MODID + ":bec_de_moinin").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		rapiere = new Armes(rapiereMaterial).setUnlocalizedName("rapiere").setTextureName(Heimnor.MODID + ":rapiere")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		sabre = new Armes(sabreMaterial).setUnlocalizedName("sabre").setTextureName(Heimnor.MODID + ":sabre")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		fauchon = new Armes(fauchonMaterial).setUnlocalizedName("fauchon").setTextureName(Heimnor.MODID + ":fauchon")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		fleau = new Armes(fleauMaterial).setUnlocalizedName("fleau").setTextureName(Heimnor.MODID + ":fleau")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		gantsdeguerre = new Armes(gantsdeguerreMaterial).setUnlocalizedName("gantsdeguerre")
-				.setTextureName(Heimnor.MODID + ":gants_de_guerre").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		griffesdefer = new Armes(griffesdeferMaterial).setUnlocalizedName("griffesdefer")
-				.setTextureName(Heimnor.MODID + ":griffes_de_fer").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		piquederoc = new Armes(piquederocMaterial).setUnlocalizedName("piquederoc")
-				.setTextureName(Heimnor.MODID + ":pique_de_roc").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeelongue = new Armes(epeelongueMaterial).setUnlocalizedName("epeelongue")
-				.setTextureName(Heimnor.MODID + ":epeelongue").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		massederoc = new Armes(massederocMaterial).setUnlocalizedName("massederoc")
-				.setTextureName(Heimnor.MODID + ":massederoc").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		zenjia = new Armes(zenjiaMaterial).setUnlocalizedName("zenjia").setTextureName(Heimnor.MODID + ":zenjia")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		lancederoc = new Armes(lancederocMaterial).setUnlocalizedName("lancederoc")
-				.setTextureName(Heimnor.MODID + ":lance_de_roc").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		pontinne = new Armes(pontinneMaterial).setUnlocalizedName("pontinne").setTextureName(Heimnor.MODID + ":pontinne")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		maillet = new Armes(mailletMaterial).setUnlocalizedName("maillet").setTextureName(Heimnor.MODID + ":maillet")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		piquard = new Armes(piquardMaterial).setUnlocalizedName("piquard").setTextureName(Heimnor.MODID + ":piquard")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		daguederoc = new Armes(daguederocMaterial).setUnlocalizedName("daguederoc")
-				.setTextureName(Heimnor.MODID + ":dague_de_roc").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		pieu = new Armes(pieuMaterial).setUnlocalizedName("pieu").setTextureName(Heimnor.MODID + ":pieu")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		torchere = new Armes(torchereMaterial).setUnlocalizedName("torchere").setTextureName(Heimnor.MODID + ":torchere")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		gourdincercle = new Armes(gourdincercleMaterial).setUnlocalizedName("gourdincercle")
-				.setTextureName(Heimnor.MODID + ":gourdin_cercle").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		baton = new Armes(batonMaterial).setUnlocalizedName("baton").setTextureName(Heimnor.MODID + ":baton")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		canne = new Armes(canneMaterial).setUnlocalizedName("canne").setTextureName(Heimnor.MODID + ":canne")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		lanceenbois = new Armes(lanceenboisMaterial).setUnlocalizedName("lanceenbois")
-				.setTextureName(Heimnor.MODID + ":lance_en_bois").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		piquetier = new Armes(piquetierMaterial).setUnlocalizedName("piquetier").setTextureName(Heimnor.MODID + ":piquetier")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		serpe = new Armes(serpeMaterial).setUnlocalizedName("serpe").setTextureName(Heimnor.MODID + ":serpe")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		brigande = new Armes(brigandeMaterial).setUnlocalizedName("brigande").setTextureName(Heimnor.MODID + ":brigande")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		pilleuse = new Armes(pilleuseMaterial).setUnlocalizedName("pilleuse").setTextureName(Heimnor.MODID + ":pilleuse")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		yanli = new Armes(yanliMaterial).setUnlocalizedName("yanli").setTextureName(Heimnor.MODID + ":yanli")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		haida = new Armes(haidaMaterial).setUnlocalizedName("haida").setTextureName(Heimnor.MODID + ":haida")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epee = new Armes(epeeMaterial).setUnlocalizedName("epee").setTextureName(Heimnor.MODID + ":epeebase")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		gourdin = new Armes(gourdinMaterial).setUnlocalizedName("gourdin").setTextureName(Heimnor.MODID + ":gourdin")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		balais = new Armes(balaisMaterial).setUnlocalizedName("balais").setTextureName(Heimnor.MODID + ":balais")
-				.setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		lamedobsidienne = new Armes(lamedobsidienneMaterial).setUnlocalizedName("lamedobsidienne")
-				.setTextureName(Heimnor.MODID + ":lame_dobsidienne").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachederoc = new Armes(hachederocMaterial).setUnlocalizedName("hachederoc")
-				.setTextureName(Heimnor.MODID + ":hache_de_roc").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		hachedentrainement = new Armes(hachedentrainementMaterial).setUnlocalizedName("hachedentrainement")
-				.setTextureName(Heimnor.MODID + ":hache_dentrainement").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
-		epeedentrainement = new Armes(epeedentrainementMaterial).setUnlocalizedName("epeedentrainement")
-				.setTextureName(Heimnor.MODID + ":epee_dentrainement").setCreativeTab(Heimnor.HeimnorWeaponCreativeTabs);
+		epeeClaymore = new Armes(claymoreMaterial, "epeeclaymore");
+		masseRhombe = new Armes(masserhombeMaterial, "masseRhombe");
+		matraque = new Armes(matraqueMaterial, "matraque");
+		patteDours = new Armes(pattedoursMaterial, "patteDOurs");
+		bodan = new Armes(bodanMaterial, "bodan");
+		saif = new Armes(saifMaterial, "saif");
+		brazure = new Armes(brazureMaterial, "brazure");
+		hachebenie = new Armes(hachebenieMaterial, "hachebenie");
+		espadondebraz = new Armes(espadondebrazMaterial, "espadonDeBraz");
+		bipenne = new Armes(bipenneMaterial, "bipenne");
+		marteaudeguerre = new Armes(marteaudeguerreMaterial, "marteaudeguerre");
+		daguedebraz = new Armes(daguedebrazMaterial, "dagueDeBraz");
+		guisarme = new Armes(guisarmeMaterial, "guisarme");
+		marteaudebraz = new Armes(marteaudebrazMaterial, "marteauDeBraz");
+		faux = new Armes(fauxMaterial, "faux");
+		lancedebraz = new Armes(lancedebrazMaterial, "lanceDeBraz");
+		epeedebraz = new Armes(epeedebrazMaterial, "epeeDeBraz");
+		bidentdebraz = new Armes(bidentdebrazMaterial, "bidentDeBraz");
+		marteaulourddebraz = new Armes(marteaulourdebrazMaterial, "marteauLourdDeBraz");
+		hachoir = new Armes(hachoirMaterial, "hachoir");
+		becdecorbin = new Armes(becdecorbinMaterial, "becDeCorbin");
+		khirve = new Armes(khirveMaterial, "khirve");
+		epeelarge = new Armes(epeelargeMaterial, "epeeLarge");
+		daguerituelle = new Armes(daguerituelleMaterial, "dagueRituelle");
+		chapelier = new Armes(chapelierMaterial, "Chapelier");
+		sceptre = new Armes(sceptreMaterial, "Sceptre");
+		daguedos = new Armes(daguedosMaterial, "dagueDos");
+		tsuri = new Armes(tsuriMaterial, "tsuri");
+		hallebardeailee = new Armes(hallebardeaileeMaterial, "hallebardeAilee");
+		epeebatarde = new Armes(epeebatardeMaterial, "epeeBatarde");
+		hanche = new Armes(hancheMaterial, "hanche");
+		espadon = new Armes(espadonMaterial, "espadon");
+		dague = new Armes(dagueMaterial, "dague");
+		hallante = new Armes(hallanteMaterial, "hallante");
+		masseaailettes = new Armes(masseaailettesMaterial, "masseAilettes");
+		massebenie = new Armes(massebenieMaterial, "masseBenie");
+		hallebarde = new Armes(hallebardeMaterial, "hallebarde");
+		sceptreoronne = new Armes(sceptreoronneMaterial, "sceptreOronne");
+		hallebardebenie = new Armes(hallebardebenieMaterial, "hallebardeBenie");
+		lancedefaille = new Armes(lancedefailleMaterial, "lanceDeFaille");
+		vangarde = new Armes(vangardeMaterial, "vangarde");
+		qian = new Armes(qianMaterial, "qian");
+		yishi = new Armes(yishiMaterial, "yishi");
+		epeebenie = new Armes(epeebenieMaterial, "epeeBenie");
+		hachedefjil = new Armes(hachedefjilMaterial, "hacheDeFjil");
+		epeedorion = new Armes(epeedorionMaterial, "epeeDorion");
+		daguedefjil = new Armes(daguedefjilMaterial, "dagueDeFjil");
+		massedos = new Armes(massedosMaterial, "masseOs");
+		lamedefjil = new Armes(lamedefjilMaterial, "lameDeFjil");
+		quadree = new Armes(quadreeMaterial, "quadree");
+		surin = new Armes(surinMaterial, "surin");
+		malfif = new Armes(malfifMaterial, "malfif");
+		tesson = new Armes(tessonMaterial, "tesson");
+		bouteille = new Armes(bouteilleMaterial, "bouteille");
+		planche = new Armes(plancheMaterial, "planche");
+		massehectaire = new Armes(massehectaireMaterial, "masseHectaire");
+		hachedebataille = new Armes(hachedebatailleMaterial, "hacheDeBataille");
+		deuxmains = new Armes(deuxmainsMaterial, "deuxmains");
+		coutelas = new Armes(coutelasMaterial, "coutelas");
+		zhang = new Armes(zhangMaterial, "zhang");
+		hallebardebarbue = new Armes(hallebardebarbueMaterial, "hallebardeBarbue");
+		masseapointes = new Armes(masseapointesMaterial, "massePointes");
+		hachebarbue = new Armes(hachebarbueMaterial, "hacheBarbue");
+		lance = new Armes(lanceMaterial, "lance");
+		sceptredefer = new Armes(sceptredeferMaterial, "sceptredefer");
+		hachepahinne = new Armes(hachepahinneMaterial, "hachePahinne");
+		massedeguerre = new Armes(massedeguerreMaterial, "masseDeGuerre");
+		katana = new Armes(katanaMaterial, "katana");
+		katar = new Armes(katarMaterial, "katar");
+		kukri = new Armes(kukriMaterial, "kukri");
+		marteau = new Armes(marteauMaterial, "marteau");
+		sakran = new Armes(sakranMaterial, "sakran");
+		espadondorion = new Armes(espadondorionMaterial, "espadonDorion");
+		epeeailee = new Armes(epeeaileeMaterial, "epeeAilee");
+		epeedroite = new Armes(epeedroiteMaterial, "epeeDroite");
+		becdemoinin = new Armes(becdemoininMaterial, "becDeMoinin");
+		rapiere = new Armes(rapiereMaterial, "rapiere");
+		sabre = new Armes(sabreMaterial, "sabre");
+		fauchon = new Armes(fauchonMaterial, "fauchon");
+		fleau = new Armes(fleauMaterial, "fleau");
+		gantsdeguerre = new Armes(gantsdeguerreMaterial, "gantsDeGuerre");
+		griffesdefer = new Armes(griffesdeferMaterial, "griffesDeFer");
+		piquederoc = new Armes(piquederocMaterial, "piqueDeRoc");
+		epeelongue = new Armes(epeelongueMaterial, "epeeLongue");
+		massederoc = new Armes(massederocMaterial, "masseDeRoc");
+		zenjia = new Armes(zenjiaMaterial, "zenjia");
+		lancederoc = new Armes(lancederocMaterial, "lanceDeRoc");
+		pontinne = new Armes(pontinneMaterial, "pontinne");
+		maillet = new Armes(mailletMaterial, "maillet");
+		piquard = new Armes(piquardMaterial, "piquard");
+		daguederoc = new Armes(daguederocMaterial, "dagueDeRoc");
+		pieu = new Armes(pieuMaterial, "pieu");
+		torchere = new Armes(torchereMaterial, "torchere");
+		gourdincercle = new Armes(gourdincercleMaterial, "gourdinCercle");
+		baton = new Armes(batonMaterial, "baton");
+		canne = new Armes(canneMaterial, "canne");
+		lanceenbois = new Armes(lanceenboisMaterial, "lanceEnBois");
+		piquetier = new Armes(piquetierMaterial, "piquetier");
+		serpe = new Armes(serpeMaterial, "serpe");
+		brigande = new Armes(brigandeMaterial, "brigande");
+		pilleuse = new Armes(pilleuseMaterial, "pilleuse");
+		yanli = new Armes(yanliMaterial, "yanli");
+		haida = new Armes(haidaMaterial, "haida");
+		epee = new Armes(epeeMaterial, "epee");
+		gourdin = new Armes(gourdinMaterial, "gourdin");
+		balais = new Armes(balaisMaterial, "balais");
+		lamedobsidienne = new Armes(lamedobsidienneMaterial, "lameObsidienne");
+		hachederoc = new Armes(hachederocMaterial, "hacheDeRoc");
+		hachedentrainement = new Armes(hachedentrainementMaterial, "hacheDentrainement");
+		epeedentrainement = new Armes(epeedentrainementMaterial, "epeeDentrainement");
 
 		GameRegistry.registerItem(epeeClaymore, "item_epeeClaymore");
 		GameRegistry.registerItem(masseRhombe, "item_masse_rhombe");

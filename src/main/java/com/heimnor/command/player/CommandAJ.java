@@ -4,7 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.heimnor.common.Heimnor;
 import com.heimnor.utils.NbtCsFile;
 
 import net.minecraft.command.CommandBase;
@@ -17,6 +16,7 @@ import net.minecraft.util.ChatStyle;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
+import registry.MiscRegistry;
 
 public class CommandAJ extends CommandBase {
 
@@ -72,9 +72,9 @@ public class CommandAJ extends CommandBase {
 						if (nbrAJ != 0) {
 							compound.setLong(sender.getCommandSenderName(), currentTime - (timeSpend % 86400000));
 							NbtCsFile.setNbtTagCompound(joueurs, "aj", compound);
-							ItemStack stackAJ = new ItemStack(Heimnor.itemAJ, nbrAJ * 10);
+							ItemStack stackAJ = new ItemStack(MiscRegistry.aj, nbrAJ * 10);
 							player.inventory.addItemStackToInventory(stackAJ);
-							sender.addChatMessage(new ChatComponentText("Vous avez bien recu vos actions journalières.").setChatStyle(chatStyle));
+							sender.addChatMessage(new ChatComponentText("Vous avez bien recu vos actions journalieres.").setChatStyle(chatStyle));
 						} else {
 							this.errors(sender, 2);
 						}

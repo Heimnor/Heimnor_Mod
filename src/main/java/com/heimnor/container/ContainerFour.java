@@ -45,7 +45,7 @@ public class ContainerFour extends Container {
 
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer player, int slotIndex) {
-
+		
 		Slot slot = (Slot) this.inventorySlots.get(slotIndex);
 		if (slot.getHasStack()) {
 			ItemStack stack = slot.getStack();

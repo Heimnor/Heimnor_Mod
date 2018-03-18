@@ -157,7 +157,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 			if (this.contents[slotIndex].stackSize <= amount) {
 				stack = this.contents[slotIndex];
 				this.contents[slotIndex] = null;
-				this.markDirty();
+				this.updateBlock();
 				return stack;
 			} else {
 
@@ -166,7 +166,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 					this.contents[slotIndex] = null;
 				}
 
-				this.markDirty();
+				this.updateBlock();
 				return stack;
 			}
 		} else {
@@ -192,11 +192,10 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 	public void setInventorySlotContents(int slotIndex, ItemStack stack) {
 
 		this.contents[slotIndex] = stack;
-		System.out.println("test");
 		if (stack != null && stack.stackSize > this.getInventoryStackLimit()) {
 			stack.stackSize = this.getInventoryStackLimit();
 		}
-		this.markDirty();
+		this.updateBlock();
 
 	}
 
@@ -333,7 +332,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 	public void updateEntity() {
 
 		if (this.isUstensileContentBurning() && this.canCook()) {
-			this.markDirty();
+			this.updateBlock();
 			++this.cuissonPlaque;
 		}
 
@@ -343,7 +342,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 
 		if (this.canCook() && this.cuissonPlaque == this.cuissonMax) {
 			this.cookItem();
-			this.markDirty();
+			this.updateBlock();
 		}
 
 		if (!this.canCook())
@@ -353,7 +352,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 
 			if (this.isBurning(i) && this.canSmelt(i)) {
 				this.fireParticle = true;
-				this.markDirty();
+				this.updateBlock();
 				
 				++this.cuisson[i];
 			}
@@ -367,7 +366,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 				this.fireParticle = false;
 
 				this.smeltItem(i);
-				this.markDirty();
+				this.updateBlock();
 			}
 
 			if (this.cuisson[i] > 0 && !this.canSmelt(i)) {
@@ -398,5 +397,10 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 
 	public void setUstensileContent(ItemStack stack) {
 		this.ustensileContent = stack;
+	}
+	
+	public void updateBlock() {
+		this.worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
+		this.markDirty();
 	}
 }

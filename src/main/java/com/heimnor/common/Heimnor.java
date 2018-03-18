@@ -58,6 +58,7 @@ import net.minecraftforge.common.MinecraftForge;
 import registry.ArmorRegistry;
 import registry.BlockFoodRegistry;
 import registry.FurnitureRegistry;
+import registry.MiscRegistry;
 import registry.RecipesFoodMod;
 import registry.WeaponsRegistry;
 
@@ -74,9 +75,6 @@ public class Heimnor {
 	public static CreativeTabs HeimnorWeaponCreativeTabs = new HeimnorWeaponCreativeTabs(
 			"heimnor_weapon_creative_tabs");
 	public static CreativeTabs HeimnorFoodTabs = new HeimnorFoodCreativeTabs("heimnor_food_tabs");
-
-	public static Item itemdrogue1, itemchope_vide, itemverre_vin_vide, bouteilleVide, itemdes, itemAJ;
-	// Déclaration des items Vanilla
 
 	public static Item itemclochette;
 	// Déclaration des items divers
@@ -95,27 +93,12 @@ public class Heimnor {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {// Pré Initialisation
 
-		itemdes = new ItemDes().setUnlocalizedName("des").setCreativeTab(Heimnor.HeimnorMiscCreativeTabs)
-				.setTextureName(Heimnor.MODID + ":des");
-		itemdrogue1 = new ItemHeimnor().setUnlocalizedName("drogue1").setCreativeTab(Heimnor.HeimnorMiscCreativeTabs)
-				.setTextureName(Heimnor.MODID + ":drogue1");
-		itemchope_vide = new ItemHeimnor().setUnlocalizedName("chope_vide")
-				.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs).setTextureName(Heimnor.MODID + ":chope_vide");
-		itemverre_vin_vide = new ItemHeimnor().setUnlocalizedName("verre_vin_vide")
-				.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs).setTextureName(Heimnor.MODID + ":verre_vin_vide");
-		bouteilleVide = new ItemHeimnor().setUnlocalizedName("bouteilleVide").setTextureName(MODID + ":bouteilleVide")
-				.setCreativeTab(HeimnorMiscCreativeTabs);
-		itemAJ = new ItemHeimnor().setUnlocalizedName("AJ").setTextureName(Heimnor.MODID + ":aj")
-				.setCreativeTab(HeimnorMiscCreativeTabs);
-		// Items Vanilla
-
 		itemclochette = new ClochetteMJ().setUnlocalizedName("clochette")
 				.setTextureName(Heimnor.MODID + ":clochettetext").setCreativeTab(HeimnorMiscCreativeTabs);
 		// Items Divers
-
-		itemchope = new AlcoolHeimnor(1, "chope", false, this.itemchope_vide, 4);
+		itemchope = new AlcoolHeimnor(1, "chope", false, MiscRegistry.chope_vide, 4);
 		// paramètres item (class)
-		itemverre_vin = new AlcoolHeimnor(1, "verre_vin", false, this.itemverre_vin_vide, 5);
+		itemverre_vin = new AlcoolHeimnor(1, "verre_vin", false, MiscRegistry.verre_vin_vide, 5);
 		itemnourritureminerale1 = new NourritureMinerale1(8, 0.5F, false).setUnlocalizedName("NourritureMinerale1")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":nourritureminerale1");
 
@@ -128,20 +111,11 @@ public class Heimnor {
 		FurnitureRegistry.registerFurnitures();
 		BlockFoodRegistry.registerTileEntity();
 		FurnitureRegistry.registerTileEntities();
-
-		// Armes
-
-		GameRegistry.registerItem(itemdes, "item_des");
-		GameRegistry.registerItem(itemdrogue1, "item_drogue1");
-		GameRegistry.registerItem(itemAJ, "item_AJ");
-		// GR Items Vanilla
+		MiscRegistry.registerMiscItems();
 
 		GameRegistry.registerItem(itemnourritureminerale1, "item_nourritureminerale1");
 		GameRegistry.registerItem(itemverre_vin, "item_verre_vin");
-		GameRegistry.registerItem(itemverre_vin_vide, "item_verre_vin_vide");
 		GameRegistry.registerItem(itemchope, "item_chope");
-		GameRegistry.registerItem(itemchope_vide, "item_chope_vide");
-		GameRegistry.registerItem(bouteilleVide, "item_bouteilleVide");
 
 		// GR Consommables et contenants
 

@@ -2,11 +2,9 @@ package com.heimnor.creativetabs;
 
 import java.awt.List;
 
-import com.heimnor.common.Heimnor;
-
-import init.drinks.ChopeBiere;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import registry.MiscRegistry;
 
 public class HeimnorMiscCreativeTab extends CreativeTabs {
 
@@ -18,7 +16,7 @@ public class HeimnorMiscCreativeTab extends CreativeTabs {
 
 	@Override
 	public Item getTabIconItem() {
-		return Heimnor.itemdes;
+		return MiscRegistry.des;
 	}
 
 	@Override

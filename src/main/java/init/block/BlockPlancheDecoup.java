@@ -56,6 +56,7 @@ public class BlockPlancheDecoup extends Block {
 				stackCop.stackSize = 1;
 				tile.setContent(stackCop);
 				player.inventory.decrStackSize(player.inventory.currentItem, 1);
+				this.updateBlock(world, x, y, z);
 				return true;
 			} else if (tile.getContent() != null && player.getCurrentEquippedItem() != null
 					&& player.getCurrentEquippedItem().getItem() instanceof CouteauCuisineHeimnor) {
@@ -68,6 +69,7 @@ public class BlockPlancheDecoup extends Block {
 					ItemStack result = RecipesPlancheDecoup.cuttingBase.getResult(tile.getContent());
 					tile.setContent(result.copy());
 					world.playSoundAtEntity(player, EnumSound.CUTTINGVEG.toString(), 0.5F, 0.5F);
+					this.updateBlock(world, x, y, z);
 					return true;
 				}
 			}else if (tile.getContent() == null && player.getCurrentEquippedItem() != null && player.getCurrentEquippedItem().getItem() instanceof CouteauCuisineHeimnor) {
@@ -76,7 +78,7 @@ public class BlockPlancheDecoup extends Block {
 				stack1.stackSize = 1;
 				tile.setUstensile(stack1);
 				player.inventory.decrStackSize(player.inventory.currentItem, 1);
-				
+				this.updateBlock(world, x, y, z);
 			}
 		} else if (player.getCurrentEquippedItem() == null && player.isSneaking()) {
 			// Drop la bouffe
@@ -86,6 +88,7 @@ public class BlockPlancheDecoup extends Block {
 				if (!world.isRemote) {
 					EntityItem entItem = new EntityItem(world, x, y, z, stack);
 					world.spawnEntityInWorld(entItem);
+					this.updateBlock(world, x, y, z);
 				}
 				
 				tile.setContent(null);
@@ -98,6 +101,7 @@ public class BlockPlancheDecoup extends Block {
 					world.spawnEntityInWorld(entItem);
 				}
 				tile.setUstensile(null);
+				this.updateBlock(world, x, y, z);
 				return true;
 			}
 		}
@@ -130,6 +134,12 @@ public class BlockPlancheDecoup extends Block {
 		return false;
 	}
 
+	private void updateBlock(World world, int x, int y, int z) {
+		world.markBlockForUpdate(x, y, z);
+		TileEntity tile = world.getTileEntity(x, y, z);
+		tile.markDirty();
+	}
+	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public int getRenderType() {

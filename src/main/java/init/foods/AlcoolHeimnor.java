@@ -42,40 +42,44 @@ public class AlcoolHeimnor extends ItemFood {
 
 		player.inventory.decrStackSize(player.inventory.currentItem, 1);
 		this.setDamage(stack, this.getDamage(stack) - 1);
-		ExtendedPropertyH props = ExtendedPropertyH.get(player);
-		props.addAlcohol(this.alcohol);
-		// Message d'effet
-		int alc = props.getAlcohol();
-		String effect = "";
-		ChatStyle style = new ChatStyle().setColor(EnumChatFormatting.GRAY);
-		Random rand = new Random();
-		if (alc < 20) {
-			String[] effect1 = { "Ca fait du bien !", "Il faudrait faire cela plus souvent !", "Hmmm",
-					"Ca fait du bien de se poser de temps a autre...", };
-			effect = effect1[rand.nextInt(effect1.length)];
-		} else if (alc >= 20 && alc < 40) {
-			String[] effect2 = { "Vous commencez a vous sentir plus a l'aise.", "Vos joues commencent a rougir." };
-			effect = effect2[rand.nextInt(effect2.length)];
-		} else if (alc >= 40 && alc < 50) {
-			String[] effect4 = { "Vous commencez a etre etourdi(e).", "Vous commencez a begueier." };
-			effect = effect4[rand.nextInt(effect4.length)];
-		} else if (alc > 50) {
-			int result = new FichesUtils(player).ThrowPhys();
+		if (!world.isRemote) {
+			ExtendedPropertyH props = ExtendedPropertyH.get(player);
+			props.addAlcohol(this.alcohol);
+			// Message d'effet
+			int alc = props.getAlcohol();
+			String effect = "";
+			ChatStyle style = new ChatStyle().setColor(EnumChatFormatting.GRAY);
+			Random rand = new Random();
+			if (alc < 20) {
+				String[] effect1 = { "Ca fait du bien !", "Il faudrait faire cela plus souvent !", "Hmmm",
+						"Ca fait du bien de se poser de temps a autre...", };
+				effect = effect1[rand.nextInt(effect1.length)];
+			} else if (alc >= 20 && alc < 40) {
+				String[] effect2 = { "Vous commencez a vous sentir plus a l'aise.", "Vos joues commencent a rougir." };
+				effect = effect2[rand.nextInt(effect2.length)];
+			} else if (alc >= 40 && alc < 50) {
+				String[] effect4 = { "Vous commencez a etre etourdi(e).", "Vous commencez a begueier." };
+				effect = effect4[rand.nextInt(effect4.length)];
+			} else if (alc > 50) {
+				int result = new FichesUtils(player).ThrowPhys();
 
-			if (result < 6) {
-				String[] effect5 = { "Vous vomissez vos tripes.", "Vous vous sentez vraiment pas bien d'un coup..."};
-				effect = effect5[rand.nextInt(effect5.length)];
-			} else if (result >= 6 && result < 18) {
-				String[] effect6 = { "Vous retenez un haut-le-coeur.", "Vous sentez un rot imminent;" };
-				effect = effect6[rand.nextInt(effect6.length)];
-			} else {
-				String[] effect7 = { "Il est où le prochain ?!", "Un autre !" };
-				effect = effect7[rand.nextInt(effect7.length)];
+				if (result < 6) {
+					String[] effect5 = { "Vous vomissez vos tripes.",
+							"Vous vous sentez vraiment pas bien d'un coup..." };
+					effect = effect5[rand.nextInt(effect5.length)];
+				} else if (result >= 6 && result < 18) {
+					String[] effect6 = { "Vous retenez un haut-le-coeur.", "Vous sentez un rot imminent;" };
+					effect = effect6[rand.nextInt(effect6.length)];
+				} else {
+					String[] effect7 = { "Il est où le prochain ?!", "Un autre !" };
+					effect = effect7[rand.nextInt(effect7.length)];
+				}
 			}
+			ChatComponentText text = new ChatComponentText(effect);
+			text.setChatStyle(style);
+			System.out.println("Alcool : " + props.getAlcohol());
+			player.addChatMessage(text);
 		}
-		ChatComponentText text = new ChatComponentText(effect);
-		text.setChatStyle(style);
-		player.addChatMessage(text);
 		return stack;
 	}
 }

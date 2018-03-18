@@ -34,7 +34,6 @@ public class BlockFourCuisine extends BlockContainer {
 	public BlockFourCuisine(Material material) {
 		super(material);
 		this.setResistance(0.8F);
-
 	}
 
 	@Override
@@ -53,12 +52,11 @@ public class BlockFourCuisine extends BlockContainer {
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX,
 			float hitY, float hitZ) {
 		TileEntityFourCuisine tile = (TileEntityFourCuisine) world.getTileEntity(x, y, z);
-		System.out.println(side);
 		if (player.getCurrentEquippedItem() != null) {
 			if (player.getCurrentEquippedItem().getItem() == Items.flint) {
-
+				
 				tile.setTextureRock((tile.getTexture()) ? false : true);
-				tile.markDirty();
+				this.updateBlock(world, x, y, z);
 				return true;
 
 			} else if (player.getCurrentEquippedItem() != null && !tile.getTexture()
@@ -69,6 +67,7 @@ public class BlockFourCuisine extends BlockContainer {
 				currentItem.stackSize = 1;
 				tile.setPlaqueContent(currentItem);
 				player.inventory.decrStackSize(player.inventory.currentItem, 1);
+				this.updateBlock(world, x, y, z);
 				return true;
 			} else if (player.getCurrentEquippedItem().getItem() instanceof IngredientsHeimnor
 					&& tile.getPlaqueContent() != null && tile.getUstensileContent() == null) {
@@ -77,6 +76,7 @@ public class BlockFourCuisine extends BlockContainer {
 				player.inventory.decrStackSize(player.inventory.currentItem, 1);
 				currentStack.stackSize = 1;
 				tile.setUstensileContent(currentStack.copy());
+				this.updateBlock(world, x, y, z);
 				return true;
 			}
 		} else if (player.isSneaking() && player.getCurrentEquippedItem() == null && tile.getPlaqueContent() != null) {
@@ -87,6 +87,7 @@ public class BlockFourCuisine extends BlockContainer {
 					world.spawnEntityInWorld(entItem);
 				}
 				tile.setPlaqueContent(null);
+				this.updateBlock(world, x, y, z);
 				return true;
 			} else if (tile.getUstensileContent() != null) {
 				ItemStack stack = tile.getUstensileContent();
@@ -95,6 +96,7 @@ public class BlockFourCuisine extends BlockContainer {
 					world.spawnEntityInWorld(entItem);
 				}
 				tile.setUstensileContent(null);
+				this.updateBlock(world, x, y, z);
 				return true;
 			}
 		} else if (!world.isRemote) {
@@ -209,6 +211,12 @@ public class BlockFourCuisine extends BlockContainer {
 			
 			world.spawnParticle("smoke", d0 - d4 +0.25D, y + 1D, d2, 0.0D, 0.0D, 0.0D);
 		}
+	}
+	
+	private void updateBlock(World world, int x, int y, int z) {
+		world.markBlockForUpdate(x, y, z);
+		TileEntity tile = world.getTileEntity(x, y, z);
+		tile.markDirty();
 	}
 
 	@SideOnly(Side.CLIENT)

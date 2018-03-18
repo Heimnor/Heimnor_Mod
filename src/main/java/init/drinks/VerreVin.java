@@ -2,13 +2,13 @@ package init.drinks;
 
 import com.heimnor.common.Heimnor;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import registry.MiscRegistry;
 
 public class VerreVin extends ItemFood {
 
@@ -35,7 +35,7 @@ public class VerreVin extends ItemFood {
 		par3EntityPlayer.getFoodStats();
 		par1ItemStack.stackSize--;
 		 super.onEaten(par1ItemStack, par2World, par3EntityPlayer);
-		 return new ItemStack(Heimnor.itemverre_vin_vide);
+		 return new ItemStack(MiscRegistry.verre_vin_vide);
 	}
 
 }
