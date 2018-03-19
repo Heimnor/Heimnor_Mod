@@ -10,195 +10,195 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class WeaponsRegistry {
 
-	public static ToolMaterial masserhombeMaterial = EnumHelper.addToolMaterial("masserhombeMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial masserhombeMaterial = EnumHelper.addToolMaterial("masserhombeMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial matraqueMaterial = EnumHelper.addToolMaterial("matraqueMaterial", 3, 1501, 12.0F, 0.0F,
+	public static ToolMaterial matraqueMaterial = EnumHelper.addToolMaterial("matraqueMaterial", 3, 1500, 12.0F, 0.0F,
 			18);
-	public static ToolMaterial pattedoursMaterial = EnumHelper.addToolMaterial("pattedoursMaterial", 3, 1501, 12.0F,
+	public static ToolMaterial pattedoursMaterial = EnumHelper.addToolMaterial("pattedoursMaterial", 3, 1500, 12.0F,
 			0.0F, 18);
-	public static ToolMaterial bodanMaterial = EnumHelper.addToolMaterial("bodanMaterial", 3, 2001, 12.0F, 1.0F, 18);
-	public static ToolMaterial saifMaterial = EnumHelper.addToolMaterial("saifMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial brazureMaterial = EnumHelper.addToolMaterial("brazureMaterial", 3, 2501, 12.0F, 3.0F,
+	public static ToolMaterial bodanMaterial = EnumHelper.addToolMaterial("bodanMaterial", 3, 2000, 12.0F, 1.0F, 18);
+	public static ToolMaterial saifMaterial = EnumHelper.addToolMaterial("saifMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial brazureMaterial = EnumHelper.addToolMaterial("brazureMaterial", 3, 2500, 12.0F, 3.0F,
 			18);
-	public static ToolMaterial espadondebrazMaterial = EnumHelper.addToolMaterial("espadondebrazMaterial", 3, 2501,
+	public static ToolMaterial espadondebrazMaterial = EnumHelper.addToolMaterial("espadondebrazMaterial", 3, 2500,
 			12.0F, 3.0F, 18);
-	public static ToolMaterial daguedebrazMaterial = EnumHelper.addToolMaterial("daguedebrazMaterial", 3, 2201, 12.0F,
+	public static ToolMaterial daguedebrazMaterial = EnumHelper.addToolMaterial("daguedebrazMaterial", 3, 2200, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial guisarmeMaterial = EnumHelper.addToolMaterial("guisarmeMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial guisarmeMaterial = EnumHelper.addToolMaterial("guisarmeMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
 	public static ToolMaterial marteaudebrazMaterial = EnumHelper.addToolMaterial("marteaudebrazMaterial", 3, 2501,
 			12.0F, 3.0F, 18);
 	public static ToolMaterial fauxMaterial = EnumHelper.addToolMaterial("fauxMaterial", 3, 1001, 12.0F, 0.0F, 18);
-	public static ToolMaterial lancedebrazMaterial = EnumHelper.addToolMaterial("lancedebrazMaterial", 3, 2501, 12.0F,
+	public static ToolMaterial lancedebrazMaterial = EnumHelper.addToolMaterial("lancedebrazMaterial", 3, 2500, 12.0F,
 			3.0F, 18);
-	public static ToolMaterial epeedebrazMaterial = EnumHelper.addToolMaterial("epeedebrazMaterial", 3, 2501, 12.0F,
+	public static ToolMaterial epeedebrazMaterial = EnumHelper.addToolMaterial("epeedebrazMaterial", 3, 2500, 12.0F,
 			3.0F, 18);
-	public static ToolMaterial bidentdebrazMaterial = EnumHelper.addToolMaterial("claymoreMaterial", 3, 2501, 12.0F,
+	public static ToolMaterial bidentdebrazMaterial = EnumHelper.addToolMaterial("claymoreMaterial", 3, 2500, 12.0F,
 			3.0F, 18);
 	public static ToolMaterial marteaulourdebrazMaterial = EnumHelper.addToolMaterial("marteaulourdebrazMaterial", 3,
-			2501, 12.0F, 3.0F, 18);
-	public static ToolMaterial hachoirMaterial = EnumHelper.addToolMaterial("hachoirMaterial", 3, 801, 12.0F, 1.0F, 18);
-	public static ToolMaterial becdecorbinMaterial = EnumHelper.addToolMaterial("becdecorbinMaterial", 3, 2001, 12.0F,
+			2500, 12.0F, 3.0F, 18);
+	public static ToolMaterial hachoirMaterial = EnumHelper.addToolMaterial("hachoirMaterial", 3, 800, 12.0F, 1.0F, 18);
+	public static ToolMaterial becdecorbinMaterial = EnumHelper.addToolMaterial("becdecorbinMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial khirveMaterial = EnumHelper.addToolMaterial("khirveMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial epeelargeMaterial = EnumHelper.addToolMaterial("epeelargeMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial khirveMaterial = EnumHelper.addToolMaterial("khirveMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial epeelargeMaterial = EnumHelper.addToolMaterial("epeelargeMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
 	public static ToolMaterial daguerituelleMaterial = EnumHelper.addToolMaterial("daguerituelleMaterial", 3, 1701,
 			12.0F, 1.0F, 18);
-	public static ToolMaterial chapelierMaterial = EnumHelper.addToolMaterial("chapelierMaterial", 3, 1201, 12.0F,
+	public static ToolMaterial chapelierMaterial = EnumHelper.addToolMaterial("chapelierMaterial", 3, 1200, 12.0F,
 			-1.0F, 18);
-	public static ToolMaterial sceptreMaterial = EnumHelper.addToolMaterial("sceptreMaterial", 3, 1201, 12.0F, -1.0F,
+	public static ToolMaterial sceptreMaterial = EnumHelper.addToolMaterial("sceptreMaterial", 3, 1200, 12.0F, -1.0F,
 			18);
-	public static ToolMaterial daguedosMaterial = EnumHelper.addToolMaterial("daguedosMaterial", 3, 1501, 12.0F, 1.0F,
+	public static ToolMaterial daguedosMaterial = EnumHelper.addToolMaterial("daguedosMaterial", 3, 1500, 12.0F, 1.0F,
 			18);
-	public static ToolMaterial hancheMaterial = EnumHelper.addToolMaterial("hancheMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial espadonMaterial = EnumHelper.addToolMaterial("espadonMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial hancheMaterial = EnumHelper.addToolMaterial("hancheMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial espadonMaterial = EnumHelper.addToolMaterial("espadonMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
 	public static ToolMaterial dagueMaterial = EnumHelper.addToolMaterial("dagueMaterial", 3, 1701, 12.0F, 1.0F, 18);
-	public static ToolMaterial hallanteMaterial = EnumHelper.addToolMaterial("hallanteMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial hallanteMaterial = EnumHelper.addToolMaterial("hallanteMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial masseaailettesMaterial = EnumHelper.addToolMaterial("masseaailettesMaterial", 3, 2001,
+	public static ToolMaterial masseaailettesMaterial = EnumHelper.addToolMaterial("masseaailettesMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial massebenieMaterial = EnumHelper.addToolMaterial("massebenieMaterial", 3, 2201, 12.0F,
+	public static ToolMaterial massebenieMaterial = EnumHelper.addToolMaterial("massebenieMaterial", 3, 2200, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial hallebardeMaterial = EnumHelper.addToolMaterial("hallebardeMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial hallebardeMaterial = EnumHelper.addToolMaterial("hallebardeMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial sceptreoronneMaterial = EnumHelper.addToolMaterial("sceptreoronneMaterial", 3, 801,
+	public static ToolMaterial sceptreoronneMaterial = EnumHelper.addToolMaterial("sceptreoronneMaterial", 3, 800,
 			12.0F, -1.0F, 18);
-	public static ToolMaterial hallebardebenieMaterial = EnumHelper.addToolMaterial("hallebardebenieMaterial", 3, 2201,
+	public static ToolMaterial hallebardebenieMaterial = EnumHelper.addToolMaterial("hallebardebenieMaterial", 3, 2200,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial hachebenieMaterial = EnumHelper.addToolMaterial("hachebenieMaterial", 3, 2201, 12.0F,
+	public static ToolMaterial hachebenieMaterial = EnumHelper.addToolMaterial("hachebenieMaterial", 3, 2200, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial marteaudeguerreMaterial = EnumHelper.addToolMaterial("marteaudeguerreMaterial", 3, 2001,
+	public static ToolMaterial marteaudeguerreMaterial = EnumHelper.addToolMaterial("marteaudeguerreMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial bipenneMaterial = EnumHelper.addToolMaterial("bipenneMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial bipenneMaterial = EnumHelper.addToolMaterial("bipenneMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial epeebatardeMaterial = EnumHelper.addToolMaterial("epeebatardeMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial epeebatardeMaterial = EnumHelper.addToolMaterial("epeebatardeMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial tsuriMaterial = EnumHelper.addToolMaterial("tsuriMaterial", 3, 1401, 12.0F, 2.0F, 18);
-	public static ToolMaterial hallebardeaileeMaterial = EnumHelper.addToolMaterial("hallebardeaileeMaterial", 3, 2001,
+	public static ToolMaterial tsuriMaterial = EnumHelper.addToolMaterial("tsuriMaterial", 3, 1400, 12.0F, 2.0F, 18);
+	public static ToolMaterial hallebardeaileeMaterial = EnumHelper.addToolMaterial("hallebardeaileeMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial lancedefailleMaterial = EnumHelper.addToolMaterial("lancedefailleMaterial", 3, 2001,
+	public static ToolMaterial lancedefailleMaterial = EnumHelper.addToolMaterial("lancedefailleMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial vangardeMaterial = EnumHelper.addToolMaterial("vangardeMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial vangardeMaterial = EnumHelper.addToolMaterial("vangardeMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial qianMaterial = EnumHelper.addToolMaterial("qianMaterial", 3, 1701, 12.0F, 3.0F, 18);
-	public static ToolMaterial yishiMaterial = EnumHelper.addToolMaterial("yishiMaterial", 3, 1201, 12.0F, 1.0F, 18);
-	public static ToolMaterial epeebenieMaterial = EnumHelper.addToolMaterial("epeebenieMaterial", 3, 2201, 12.0F, 2.0F,
+	public static ToolMaterial qianMaterial = EnumHelper.addToolMaterial("qianMaterial", 3, 1700, 12.0F, 3.0F, 18);
+	public static ToolMaterial yishiMaterial = EnumHelper.addToolMaterial("yishiMaterial", 3, 1200, 12.0F, 1.0F, 18);
+	public static ToolMaterial epeebenieMaterial = EnumHelper.addToolMaterial("epeebenieMaterial", 3, 2200, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial hachedefjilMaterial = EnumHelper.addToolMaterial("hachedefjilMaterial", 3, 1801, 12.0F,
+	public static ToolMaterial hachedefjilMaterial = EnumHelper.addToolMaterial("hachedefjilMaterial", 3, 1800, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial epeedorionMaterial = EnumHelper.addToolMaterial("epeedorionMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial epeedorionMaterial = EnumHelper.addToolMaterial("epeedorionMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial daguedefjilMaterial = EnumHelper.addToolMaterial("daguedefjilMaterial", 3, 1301, 12.0F,
+	public static ToolMaterial daguedefjilMaterial = EnumHelper.addToolMaterial("daguedefjilMaterial", 3, 1300, 12.0F,
 			1.0F, 18);
-	public static ToolMaterial massedosMaterial = EnumHelper.addToolMaterial("massedosMaterial", 3, 1701, 12.0F, 2.0F,
+	public static ToolMaterial massedosMaterial = EnumHelper.addToolMaterial("massedosMaterial", 3, 1700, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial lamedefjilMaterial = EnumHelper.addToolMaterial("lamedefjilMaterial", 3, 1801, 12.0F,
+	public static ToolMaterial lamedefjilMaterial = EnumHelper.addToolMaterial("lamedefjilMaterial", 3, 1800, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial quadreeMaterial = EnumHelper.addToolMaterial("quadreeMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial quadreeMaterial = EnumHelper.addToolMaterial("quadreeMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial surinMaterial = EnumHelper.addToolMaterial("surinMaterial", 3, 1001, 12.0F, -1.0F, 18);
-	public static ToolMaterial malfifMaterial = EnumHelper.addToolMaterial("malfifMaterial", 3, 1701, 12.0F, 1.0F, 18);
-	public static ToolMaterial tessonMaterial = EnumHelper.addToolMaterial("tessonMaterial", 3, 201, 12.0F, -1.0F, 18);
-	public static ToolMaterial bouteilleMaterial = EnumHelper.addToolMaterial("bouteilleMaterial", 3, 401, 12.0F, -2.0F,
+	public static ToolMaterial surinMaterial = EnumHelper.addToolMaterial("surinMaterial", 3, 1000, 12.0F, -1.0F, 18);
+	public static ToolMaterial malfifMaterial = EnumHelper.addToolMaterial("malfifMaterial", 3, 1700, 12.0F, 1.0F, 18);
+	public static ToolMaterial tessonMaterial = EnumHelper.addToolMaterial("tessonMaterial", 3, 200, 12.0F, -1.0F, 18);
+	public static ToolMaterial bouteilleMaterial = EnumHelper.addToolMaterial("bouteilleMaterial", 3, 400, 12.0F, -2.0F,
 			18);
-	public static ToolMaterial plancheMaterial = EnumHelper.addToolMaterial("plancheMaterial", 3, 501, 12.0F, -2.0F,
+	public static ToolMaterial plancheMaterial = EnumHelper.addToolMaterial("plancheMaterial", 3, 500, 12.0F, -2.0F,
 			18);
-	public static ToolMaterial massehectaireMaterial = EnumHelper.addToolMaterial("massehectaireMaterial", 3, 2001,
+	public static ToolMaterial massehectaireMaterial = EnumHelper.addToolMaterial("massehectaireMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial hachedebatailleMaterial = EnumHelper.addToolMaterial("hachedebatailleMaterial", 3, 2001,
+	public static ToolMaterial hachedebatailleMaterial = EnumHelper.addToolMaterial("hachedebatailleMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial deuxmainsMaterial = EnumHelper.addToolMaterial("deuxmainsMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial deuxmainsMaterial = EnumHelper.addToolMaterial("deuxmainsMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial coutelasMaterial = EnumHelper.addToolMaterial("coutelasMaterial", 3, 1701, 12.0F, 1.0F,
+	public static ToolMaterial coutelasMaterial = EnumHelper.addToolMaterial("coutelasMaterial", 3, 1700, 12.0F, 1.0F,
 			18);
-	public static ToolMaterial zhangMaterial = EnumHelper.addToolMaterial("zhangMaterial", 3, 1701, 12.0F, 3.0F, 18);
+	public static ToolMaterial zhangMaterial = EnumHelper.addToolMaterial("zhangMaterial", 3, 1700, 12.0F, 3.0F, 18);
 	public static ToolMaterial hallebardebarbueMaterial = EnumHelper.addToolMaterial("hallebardebarbueMaterial", 3,
-			2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial masseapointesMaterial = EnumHelper.addToolMaterial("masseapointesMaterial", 3, 2001,
+			2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial masseapointesMaterial = EnumHelper.addToolMaterial("masseapointesMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial hachebarbueMaterial = EnumHelper.addToolMaterial("hachebarbueMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial hachebarbueMaterial = EnumHelper.addToolMaterial("hachebarbueMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial lanceMaterial = EnumHelper.addToolMaterial("lanceMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial sceptredeferMaterial = EnumHelper.addToolMaterial("sceptreMaterial", 3, 1201, 12.0F,
+	public static ToolMaterial lanceMaterial = EnumHelper.addToolMaterial("lanceMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial sceptredeferMaterial = EnumHelper.addToolMaterial("sceptreMaterial", 3, 1200, 12.0F,
 			-1.0F, 18);
-	public static ToolMaterial hachepahinneMaterial = EnumHelper.addToolMaterial("hachepahinneMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial hachepahinneMaterial = EnumHelper.addToolMaterial("hachepahinneMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial massedeguerreMaterial = EnumHelper.addToolMaterial("massedeguerreMaterial", 3, 2001,
+	public static ToolMaterial massedeguerreMaterial = EnumHelper.addToolMaterial("massedeguerreMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
 	public static ToolMaterial katanaMaterial = EnumHelper.addToolMaterial("katanaMaterial", 3, 1701, 12.0F, 3.0F, 18);
-	public static ToolMaterial katarMaterial = EnumHelper.addToolMaterial("katarMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial kukriMaterial = EnumHelper.addToolMaterial("kukriMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial marteauMaterial = EnumHelper.addToolMaterial("marteauMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial katarMaterial = EnumHelper.addToolMaterial("katarMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial kukriMaterial = EnumHelper.addToolMaterial("kukriMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial marteauMaterial = EnumHelper.addToolMaterial("marteauMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial epeedroiteMaterial = EnumHelper.addToolMaterial("epeedroiteMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial epeedroiteMaterial = EnumHelper.addToolMaterial("epeedroiteMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial sakranMaterial = EnumHelper.addToolMaterial("sakranMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial espadondorionMaterial = EnumHelper.addToolMaterial("espadondorionMaterial", 3, 2001,
+	public static ToolMaterial sakranMaterial = EnumHelper.addToolMaterial("sakranMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial espadondorionMaterial = EnumHelper.addToolMaterial("espadondorionMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial epeeaileeMaterial = EnumHelper.addToolMaterial("epeeaileeMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial epeeaileeMaterial = EnumHelper.addToolMaterial("epeeaileeMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial becdemoininMaterial = EnumHelper.addToolMaterial("becdemoininMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial becdemoininMaterial = EnumHelper.addToolMaterial("becdemoininMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial rapiereMaterial = EnumHelper.addToolMaterial("rapiereMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial rapiereMaterial = EnumHelper.addToolMaterial("rapiereMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial sabreMaterial = EnumHelper.addToolMaterial("sabreMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial fauchonMaterial = EnumHelper.addToolMaterial("fauchonMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial sabreMaterial = EnumHelper.addToolMaterial("sabreMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial fauchonMaterial = EnumHelper.addToolMaterial("fauchonMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial fleauMaterial = EnumHelper.addToolMaterial("fleauMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial gantsdeguerreMaterial = EnumHelper.addToolMaterial("gantsdeguerreMaterial", 3, 2001,
+	public static ToolMaterial fleauMaterial = EnumHelper.addToolMaterial("fleauMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial gantsdeguerreMaterial = EnumHelper.addToolMaterial("gantsdeguerreMaterial", 3, 2000,
 			12.0F, 2.0F, 18);
-	public static ToolMaterial griffesdeferMaterial = EnumHelper.addToolMaterial("griffesdeferMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial griffesdeferMaterial = EnumHelper.addToolMaterial("griffesdeferMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial piquederocMaterial = EnumHelper.addToolMaterial("piquederocMaterial", 3, 1501, 12.0F,
+	public static ToolMaterial piquederocMaterial = EnumHelper.addToolMaterial("piquederocMaterial", 3, 1500, 12.0F,
 			1.0F, 18);
-	public static ToolMaterial epeelongueMaterial = EnumHelper.addToolMaterial("epeelongueMaterial", 3, 2001, 12.0F,
+	public static ToolMaterial epeelongueMaterial = EnumHelper.addToolMaterial("epeelongueMaterial", 3, 2000, 12.0F,
 			2.0F, 18);
-	public static ToolMaterial massederocMaterial = EnumHelper.addToolMaterial("massederocMaterial", 3, 1501, 12.0F,
+	public static ToolMaterial massederocMaterial = EnumHelper.addToolMaterial("massederocMaterial", 3, 1500, 12.0F,
 			1.0F, 18);
-	public static ToolMaterial zenjiaMaterial = EnumHelper.addToolMaterial("ZenjiaMaterial", 3, 1701, 12.0F, 3.0F, 18);
-	public static ToolMaterial lancederocMaterial = EnumHelper.addToolMaterial("lancederocMaterial", 3, 1501, 12.0F,
+	public static ToolMaterial zenjiaMaterial = EnumHelper.addToolMaterial("ZenjiaMaterial", 3, 1700, 12.0F, 3.0F, 18);
+	public static ToolMaterial lancederocMaterial = EnumHelper.addToolMaterial("lancederocMaterial", 3, 1500, 12.0F,
 			1.0F, 18);
-	public static ToolMaterial pontinneMaterial = EnumHelper.addToolMaterial("pontinneMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial pontinneMaterial = EnumHelper.addToolMaterial("pontinneMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial mailletMaterial = EnumHelper.addToolMaterial("mailletMaterial", 3, 1501, 12.0F, 0.0F,
+	public static ToolMaterial mailletMaterial = EnumHelper.addToolMaterial("mailletMaterial", 3, 1500, 12.0F, 0.0F,
 			18);
-	public static ToolMaterial piquardMaterial = EnumHelper.addToolMaterial("piquardMaterial", 3, 1501, 12.0F, 0.0F,
+	public static ToolMaterial piquardMaterial = EnumHelper.addToolMaterial("piquardMaterial", 3, 1500, 12.0F, 0.0F,
 			18);
-	public static ToolMaterial daguederocMaterial = EnumHelper.addToolMaterial("daguederocMaterial", 3, 1201, 12.0F,
+	public static ToolMaterial daguederocMaterial = EnumHelper.addToolMaterial("daguederocMaterial", 3, 1200, 12.0F,
 			0.0F, 18);
-	public static ToolMaterial pieuMaterial = EnumHelper.addToolMaterial("pieuMaterial", 3, 1501, 12.0F, 0.0F, 18);
-	public static ToolMaterial torchereMaterial = EnumHelper.addToolMaterial("torchereMaterial", 3, 501, 12.0F, -2.0F,
+	public static ToolMaterial pieuMaterial = EnumHelper.addToolMaterial("pieuMaterial", 3, 1500, 12.0F, 0.0F, 18);
+	public static ToolMaterial torchereMaterial = EnumHelper.addToolMaterial("torchereMaterial", 3, 500, 12.0F, -2.0F,
 			18);
-	public static ToolMaterial gourdincercleMaterial = EnumHelper.addToolMaterial("gourdincercleMaterial", 3, 751,
+	public static ToolMaterial gourdincercleMaterial = EnumHelper.addToolMaterial("gourdincercleMaterial", 3, 750,
 			12.0F, 0.0F, 18);
-	public static ToolMaterial batonMaterial = EnumHelper.addToolMaterial("batonMaterial", 3, 501, 12.0F, -2.0F, 18);
-	public static ToolMaterial canneMaterial = EnumHelper.addToolMaterial("canneMaterial", 3, 501, 12.0F, -2.0F, 18);
-	public static ToolMaterial lanceenboisMaterial = EnumHelper.addToolMaterial("lanceneboisMaterial", 3, 1501, 12.0F,
+	public static ToolMaterial batonMaterial = EnumHelper.addToolMaterial("batonMaterial", 3, 500, 12.0F, -2.0F, 18);
+	public static ToolMaterial canneMaterial = EnumHelper.addToolMaterial("canneMaterial", 3, 500, 12.0F, -2.0F, 18);
+	public static ToolMaterial lanceenboisMaterial = EnumHelper.addToolMaterial("lanceneboisMaterial", 3, 1500, 12.0F,
 			0.0F, 18);
-	public static ToolMaterial piquetierMaterial = EnumHelper.addToolMaterial("piquetierMaterial", 3, 1501, 12.0F,
+	public static ToolMaterial piquetierMaterial = EnumHelper.addToolMaterial("piquetierMaterial", 3, 1500, 12.0F,
 			-2.0F, 18);
-	public static ToolMaterial serpeMaterial = EnumHelper.addToolMaterial("serpeMaterial", 3, 1001, 12.0F, 0.0F, 18);
-	public static ToolMaterial brigandeMaterial = EnumHelper.addToolMaterial("brigandeMaterial", 3, 2001, 12.0F, 2.0F,
+	public static ToolMaterial serpeMaterial = EnumHelper.addToolMaterial("serpeMaterial", 3, 1000, 12.0F, 0.0F, 18);
+	public static ToolMaterial brigandeMaterial = EnumHelper.addToolMaterial("brigandeMaterial", 3, 2000, 12.0F, 2.0F,
 			18);
-	public static ToolMaterial pilleuseMaterial = EnumHelper.addToolMaterial("pilleuseMaterial", 3, 2501, 12.0F, 0.0F,
+	public static ToolMaterial pilleuseMaterial = EnumHelper.addToolMaterial("pilleuseMaterial", 3, 2500, 12.0F, 0.0F,
 			18);
-	public static ToolMaterial yanliMaterial = EnumHelper.addToolMaterial("yanliMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial haidaMaterial = EnumHelper.addToolMaterial("haidaMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial epeeMaterial = EnumHelper.addToolMaterial("epeeMaterial", 3, 2001, 12.0F, 2.0F, 18);
-	public static ToolMaterial gourdinMaterial = EnumHelper.addToolMaterial("gourdinMaterial", 3, 501, 12.0F, -2.0F,
+	public static ToolMaterial yanliMaterial = EnumHelper.addToolMaterial("yanliMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial haidaMaterial = EnumHelper.addToolMaterial("haidaMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial epeeMaterial = EnumHelper.addToolMaterial("epeeMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	public static ToolMaterial gourdinMaterial = EnumHelper.addToolMaterial("gourdinMaterial", 3, 500, 12.0F, -2.0F,
 			18);
-	public static ToolMaterial balaisMaterial = EnumHelper.addToolMaterial("balaisMaterial", 3, 501, 12.0F, -2.0F, 18);
-	public static ToolMaterial lamedobsidienneMaterial = EnumHelper.addToolMaterial("lamedobsidienneMaterial", 3, 1501,
+	public static ToolMaterial balaisMaterial = EnumHelper.addToolMaterial("balaisMaterial", 3, 500, 12.0F, -2.0F, 18);
+	public static ToolMaterial lamedobsidienneMaterial = EnumHelper.addToolMaterial("lamedobsidienneMaterial", 3, 1500,
 			12.0F, 1.0F, 18);
-	public static ToolMaterial hachederocMaterial = EnumHelper.addToolMaterial("hachederocMaterial", 3, 1501, 12.0F,
+	public static ToolMaterial hachederocMaterial = EnumHelper.addToolMaterial("hachederocMaterial", 3, 1500, 12.0F,
 			1.0F, 18);
 	public static ToolMaterial hachedentrainementMaterial = EnumHelper.addToolMaterial("hachedentrainementMaterial", 3,
-			2001, 12.0F, -1.0F, 18);
+			2000, 12.0F, -1.0F, 18);
 	public static ToolMaterial epeedentrainementMaterial = EnumHelper.addToolMaterial("epeedentrainementMaterial", 3,
-			2001, 12.0F, -1.0F, 18);
-	public static ToolMaterial claymoreMaterial = EnumHelper.addToolMaterial("claymoreMaterial", 3, 751, 12.0F, -2.0F,
+			2000, 12.0F, -1.0F, 18);
+	public static ToolMaterial claymoreMaterial = EnumHelper.addToolMaterial("claymoreMaterial", 3, 750, 12.0F, -2.0F,
 			18);
 
 	public static Item epeeClaymore, brazure, masseRhombe, matraque, patteDours, bodan, saif, espadondebraz,

@@ -7,6 +7,7 @@ public class BlockGlass extends Block{
 
 	public BlockGlass(Material material) {
 		super(material);
+		
 	}
 
 }
