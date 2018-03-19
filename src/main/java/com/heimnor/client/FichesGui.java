@@ -166,7 +166,7 @@ public class FichesGui extends GuiScreen {
 		this.fontRendererObj.drawString("Homme du Pays :", pix + 48, pixh + 93, 0xFFFFFF, true);
 		this.fontRendererObj.drawString("Maitre d'oeuvre :", pix + 48, pixh + 69, 0xFFFFFF, true);
 		this.fontRendererObj.drawString("Intendance :", pix + 48, pixh + 117, 0xFFFFFF, true);
-		this.fontRendererObj.drawString("Blessures", pix - 255, pixh + 21, 0xFFFFFF, true);
+		this.fontRendererObj.drawString("Blessures :", pix - 255, pixh + 21, 0xFFFFFF, true);
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
 

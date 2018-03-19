@@ -1,6 +1,6 @@
 package com.heimnor.packet;
 
-import com.heimnor.common.ExtendedPropertyH;
+import com.heimnor.extendedentityproperties.EPAlcohol;
 
 import cpw.mods.fml.common.network.ByteBufUtils;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
@@ -37,7 +37,7 @@ public class IMessagePropertyRep implements IMessage{
 		@Override
 		public IMessage onMessage(IMessagePropertyRep message, MessageContext ctx) {
 			EntityPlayer player = (EntityPlayer) Minecraft.getMinecraft().thePlayer;
-			ExtendedPropertyH properties = ExtendedPropertyH.get(player);
+			EPAlcohol properties = EPAlcohol.get(player);
 			properties.alcohol = message.alcohol;
 			return null;
 		}

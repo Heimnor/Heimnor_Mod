@@ -1,6 +1,6 @@
 package com.heimnor.packet;
 
-import com.heimnor.common.ExtendedPropertyH;
+import com.heimnor.extendedentityproperties.EPAlcohol;
 
 import cpw.mods.fml.common.network.ByteBufUtils;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
@@ -34,7 +34,7 @@ public class IMessagePropertySync implements IMessage{
 		public IMessage onMessage(IMessagePropertySync message, MessageContext ctx) {
 			
 			EntityPlayerMP player = ctx.getServerHandler().playerEntity;
-			ExtendedPropertyH properties = ExtendedPropertyH.get(player);
+			EPAlcohol properties = EPAlcohol.get(player);
 			properties.alcohol = message.alcohol;
 			System.out.println("Packet Serveur");
 			return null;

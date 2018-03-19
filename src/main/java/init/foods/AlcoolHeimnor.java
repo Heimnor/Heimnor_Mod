@@ -2,8 +2,8 @@ package init.foods;
 
 import java.util.Random;
 
-import com.heimnor.common.ExtendedPropertyH;
 import com.heimnor.common.Heimnor;
+import com.heimnor.extendedentityproperties.EPAlcohol;
 import com.heimnor.utils.FichesUtils;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -43,8 +43,9 @@ public class AlcoolHeimnor extends ItemFood {
 		player.inventory.decrStackSize(player.inventory.currentItem, 1);
 		this.setDamage(stack, this.getDamage(stack) - 1);
 		if (!world.isRemote) {
-			ExtendedPropertyH props = ExtendedPropertyH.get(player);
+			EPAlcohol props = EPAlcohol.get(player);
 			props.addAlcohol(this.alcohol);
+			
 			// Message d'effet
 			int alc = props.getAlcohol();
 			String effect = "";
@@ -61,23 +62,23 @@ public class AlcoolHeimnor extends ItemFood {
 				String[] effect4 = { "Vous commencez a etre etourdi(e).", "Vous commencez a begueier." };
 				effect = effect4[rand.nextInt(effect4.length)];
 			} else if (alc > 50) {
-				int result = new FichesUtils(player).ThrowPhys();
+				int result = new FichesUtils(player).ThrowPhys(player);
 
 				if (result < 6) {
 					String[] effect5 = { "Vous vomissez vos tripes.",
 							"Vous vous sentez vraiment pas bien d'un coup..." };
 					effect = effect5[rand.nextInt(effect5.length)];
 				} else if (result >= 6 && result < 18) {
-					String[] effect6 = { "Vous retenez un haut-le-coeur.", "Vous sentez un rot imminent;" };
+					String[] effect6 = { "Vous retenez un haut-le-coeur.", "Vous sentez un rot imminent." };
 					effect = effect6[rand.nextInt(effect6.length)];
 				} else {
 					String[] effect7 = { "Il est où le prochain ?!", "Un autre !" };
 					effect = effect7[rand.nextInt(effect7.length)];
 				}
 			}
+			
 			ChatComponentText text = new ChatComponentText(effect);
 			text.setChatStyle(style);
-			System.out.println("Alcool : " + props.getAlcohol());
 			player.addChatMessage(text);
 		}
 		return stack;

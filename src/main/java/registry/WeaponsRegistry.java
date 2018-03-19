@@ -216,6 +216,7 @@ public class WeaponsRegistry {
 
 	public static void registerWeapons() {
 
+		//Argument 1 : material(dura, degats etc...) Argument 2: nom de la texture sans le ".png" et nom non localisé
 		epeeClaymore = new Armes(claymoreMaterial, "epeeclaymore");
 		masseRhombe = new Armes(masserhombeMaterial, "masseRhombe");
 		matraque = new Armes(matraqueMaterial, "matraque");

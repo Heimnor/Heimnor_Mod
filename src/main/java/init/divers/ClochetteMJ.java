@@ -1,6 +1,6 @@
 package init.divers;
 
-import com.heimnor.common.ExtendedPropertyH;
+import com.heimnor.extendedentityproperties.EPAlcohol;
 import com.heimnor.henum.EnumSound;
 
 import net.minecraft.entity.player.EntityPlayer;

@@ -1,5 +1,6 @@
-package com.heimnor.common;
+package com.heimnor.extendedentityproperties;
 
+import com.heimnor.common.Heimnor;
 import com.heimnor.packet.IMessagePropertyRep;
 import com.heimnor.packet.IMessagePropertySync;
 import com.heimnor.proxy.CommonProxy;
@@ -11,25 +12,23 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IExtendedEntityProperties;
 
-public class ExtendedPropertyH implements IExtendedEntityProperties {
+public class EPAlcohol implements IExtendedEntityProperties {
 
 	public final static String EXT_PROP_NAME = "EPHeimnor";
 	private final EntityPlayer player;
 
 	public int alcohol;
 
-	public ExtendedPropertyH(EntityPlayer player) {
+	public EPAlcohol(EntityPlayer player) {
 		this.player = player;
-		this.alcohol = 0;
-		System.out.println("Constructor");
 	}
 
 	public static final void register(EntityPlayer player) {
-		player.registerExtendedProperties(ExtendedPropertyH.EXT_PROP_NAME, new ExtendedPropertyH(player));
+		player.registerExtendedProperties(EPAlcohol.EXT_PROP_NAME, new EPAlcohol(player));
 	}
 
-	public static final ExtendedPropertyH get(EntityPlayer player) {
-		return (ExtendedPropertyH) player.getExtendedProperties(EXT_PROP_NAME);
+	public static final EPAlcohol get(EntityPlayer player) {
+		return (EPAlcohol) player.getExtendedProperties(EXT_PROP_NAME);
 	}
 
 	@Override
@@ -52,7 +51,7 @@ public class ExtendedPropertyH implements IExtendedEntityProperties {
 	}
 
 	public static void saveProxyData(EntityPlayer player) {
-		ExtendedPropertyH playerData = ExtendedPropertyH.get(player);
+		EPAlcohol playerData = EPAlcohol.get(player);
 		NBTTagCompound savedData = new NBTTagCompound();
 
 		playerData.saveNBTData(savedData);
@@ -60,7 +59,7 @@ public class ExtendedPropertyH implements IExtendedEntityProperties {
 	}
 
 	public static void loadProxyData(EntityPlayer player) {
-		ExtendedPropertyH playerData = ExtendedPropertyH.get(player);
+		EPAlcohol playerData = EPAlcohol.get(player);
 		NBTTagCompound savedData = CommonProxy.getEntityData(getSaveKey(player));
 
 		if (savedData != null) {
@@ -90,7 +89,7 @@ public class ExtendedPropertyH implements IExtendedEntityProperties {
 	}
 	
 	public void addAlcohol(int alcoholLevel) {
-		this.alcohol = this.alcohol + 1;
+		this.alcohol = this.alcohol + alcoholLevel;
 		this.sync();
 	}
 	

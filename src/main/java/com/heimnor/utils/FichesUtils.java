@@ -89,7 +89,7 @@ public class FichesUtils {
 		return resultat;
 	}
 
-	public static int ThrowPhys() {
+	public static int ThrowPhys(EntityPlayer player) {
 
 		if (hasPerso) {
 			String persoName = NbtCsFile.getData(new File("Heimnor/Joueurs.dat")).getCompoundTag("index")
@@ -117,8 +117,8 @@ public class FichesUtils {
 
 			String formula = "(" + jet + "+" + comp + "=" + results + ")";
 			ChatComponentText text = new ChatComponentText(EnumChatFormatting.DARK_GRAY + "[" + compName + "]" + formula
-					+ EnumChatFormatting.GRAY + player.getDisplayName() + "obtient" + results + ".");
-			player.addChatMessage(text);
+					+ EnumChatFormatting.GRAY + player.getDisplayName() + " obtient " + results + ".");
+			player.addChatComponentMessage(text);
 			return results;
 		}
 		return -1;

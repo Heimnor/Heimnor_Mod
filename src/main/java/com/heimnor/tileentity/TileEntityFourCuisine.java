@@ -332,7 +332,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 	public void updateEntity() {
 
 		if (this.isUstensileContentBurning() && this.canCook()) {
-			this.updateBlock();
+			this.markDirty();
 			++this.cuissonPlaque;
 		}
 
