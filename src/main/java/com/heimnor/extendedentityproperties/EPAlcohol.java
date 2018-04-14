@@ -93,8 +93,13 @@ public class EPAlcohol implements IExtendedEntityProperties {
 		this.sync();
 	}
 	
-	public void reduceAlcohol() {
-		this.alcohol -= 5;
+	public void reduceAlcohol(int amount) {
+		this.alcohol -= amount;
+		this.sync();
+	}
+	
+	public void resetAlcohol() {
+		this.alcohol = 0;
 		this.sync();
 	}
 }

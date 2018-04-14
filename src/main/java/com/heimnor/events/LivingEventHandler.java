@@ -11,6 +11,8 @@ import com.heimnor.proxy.ClientProxy;
 import cpw.mods.fml.common.ObfuscationReflectionHelper;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.InputEvent.KeyInputEvent;
+import cpw.mods.fml.common.gameevent.TickEvent;
+import cpw.mods.fml.common.gameevent.TickEvent.Type;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
@@ -39,6 +41,14 @@ public class LivingEventHandler {
 
 	@SubscribeEvent
 	@SideOnly(Side.CLIENT)
+	public void updateAlcohol(TickEvent.PlayerTickEvent event) {
+		if (event.side.isClient()) {
+			
+		}
+	}
+
+	@SubscribeEvent
+	@SideOnly(Side.CLIENT)
 	public void openChatGui(GuiOpenEvent event) {
 
 		if (event.gui != null && event.gui.getClass().equals(GuiChat.class)) {
@@ -47,7 +57,6 @@ public class LivingEventHandler {
 			System.out.println(event.gui);
 		}
 	}
-	
 
 	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
@@ -91,11 +100,11 @@ public class LivingEventHandler {
 			tessellator.addVertexWithUV(-16 + 32, -220 + 32, -10, 0.1F, 0.0F);
 			tessellator.addVertexWithUV(-16 + 32, -220 + 0, -10, 0.0F, 0.0F);
 			// coin haut gauche
-			
+
 			tessellator.addVertexWithUV(-16 + 0, -220 + 0, -10, 0.0F, 0.1F);
 			tessellator.draw();
 			GL11.glPopMatrix();
-			
+
 		} else if (ClientProxy.CHATTING_PLAYERS_USERNAME.contains(event.entityPlayer.getDisplayName())
 				&& event.entityPlayer.getDisplayName() != Minecraft.getMinecraft().thePlayer.getDisplayName()) {
 
@@ -123,8 +132,7 @@ public class LivingEventHandler {
 			tessellator.addVertexWithUV(-16 + 0, -220 + 0, -10, 0.0F, 0.1F);
 			tessellator.draw();
 			GL11.glPopMatrix();
-			
-			
+
 		}
 	}
 }
