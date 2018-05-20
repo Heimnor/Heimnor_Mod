@@ -10,196 +10,9 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class WeaponsRegistry {
 
-	public static ToolMaterial masserhombeMaterial = EnumHelper.addToolMaterial("masserhombeMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial matraqueMaterial = EnumHelper.addToolMaterial("matraqueMaterial", 3, 1500, 12.0F, 0.0F,
-			18);
-	public static ToolMaterial pattedoursMaterial = EnumHelper.addToolMaterial("pattedoursMaterial", 3, 1500, 12.0F,
-			0.0F, 18);
-	public static ToolMaterial bodanMaterial = EnumHelper.addToolMaterial("bodanMaterial", 3, 2000, 12.0F, 1.0F, 18);
-	public static ToolMaterial saifMaterial = EnumHelper.addToolMaterial("saifMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial brazureMaterial = EnumHelper.addToolMaterial("brazureMaterial", 3, 2500, 12.0F, 3.0F,
-			18);
-	public static ToolMaterial espadondebrazMaterial = EnumHelper.addToolMaterial("espadondebrazMaterial", 3, 2500,
-			12.0F, 3.0F, 18);
-	public static ToolMaterial daguedebrazMaterial = EnumHelper.addToolMaterial("daguedebrazMaterial", 3, 2200, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial guisarmeMaterial = EnumHelper.addToolMaterial("guisarmeMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial marteaudebrazMaterial = EnumHelper.addToolMaterial("marteaudebrazMaterial", 3, 2501,
-			12.0F, 3.0F, 18);
-	public static ToolMaterial fauxMaterial = EnumHelper.addToolMaterial("fauxMaterial", 3, 1001, 12.0F, 0.0F, 18);
-	public static ToolMaterial lancedebrazMaterial = EnumHelper.addToolMaterial("lancedebrazMaterial", 3, 2500, 12.0F,
-			3.0F, 18);
-	public static ToolMaterial epeedebrazMaterial = EnumHelper.addToolMaterial("epeedebrazMaterial", 3, 2500, 12.0F,
-			3.0F, 18);
-	public static ToolMaterial bidentdebrazMaterial = EnumHelper.addToolMaterial("claymoreMaterial", 3, 2500, 12.0F,
-			3.0F, 18);
-	public static ToolMaterial marteaulourdebrazMaterial = EnumHelper.addToolMaterial("marteaulourdebrazMaterial", 3,
-			2500, 12.0F, 3.0F, 18);
-	public static ToolMaterial hachoirMaterial = EnumHelper.addToolMaterial("hachoirMaterial", 3, 800, 12.0F, 1.0F, 18);
-	public static ToolMaterial becdecorbinMaterial = EnumHelper.addToolMaterial("becdecorbinMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial khirveMaterial = EnumHelper.addToolMaterial("khirveMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial epeelargeMaterial = EnumHelper.addToolMaterial("epeelargeMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial daguerituelleMaterial = EnumHelper.addToolMaterial("daguerituelleMaterial", 3, 1701,
-			12.0F, 1.0F, 18);
-	public static ToolMaterial chapelierMaterial = EnumHelper.addToolMaterial("chapelierMaterial", 3, 1200, 12.0F,
-			-1.0F, 18);
-	public static ToolMaterial sceptreMaterial = EnumHelper.addToolMaterial("sceptreMaterial", 3, 1200, 12.0F, -1.0F,
-			18);
-	public static ToolMaterial daguedosMaterial = EnumHelper.addToolMaterial("daguedosMaterial", 3, 1500, 12.0F, 1.0F,
-			18);
-	public static ToolMaterial hancheMaterial = EnumHelper.addToolMaterial("hancheMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial espadonMaterial = EnumHelper.addToolMaterial("espadonMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial dagueMaterial = EnumHelper.addToolMaterial("dagueMaterial", 3, 1701, 12.0F, 1.0F, 18);
-	public static ToolMaterial hallanteMaterial = EnumHelper.addToolMaterial("hallanteMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial masseaailettesMaterial = EnumHelper.addToolMaterial("masseaailettesMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial massebenieMaterial = EnumHelper.addToolMaterial("massebenieMaterial", 3, 2200, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial hallebardeMaterial = EnumHelper.addToolMaterial("hallebardeMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial sceptreoronneMaterial = EnumHelper.addToolMaterial("sceptreoronneMaterial", 3, 800,
-			12.0F, -1.0F, 18);
-	public static ToolMaterial hallebardebenieMaterial = EnumHelper.addToolMaterial("hallebardebenieMaterial", 3, 2200,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial hachebenieMaterial = EnumHelper.addToolMaterial("hachebenieMaterial", 3, 2200, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial marteaudeguerreMaterial = EnumHelper.addToolMaterial("marteaudeguerreMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial bipenneMaterial = EnumHelper.addToolMaterial("bipenneMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial epeebatardeMaterial = EnumHelper.addToolMaterial("epeebatardeMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial tsuriMaterial = EnumHelper.addToolMaterial("tsuriMaterial", 3, 1400, 12.0F, 2.0F, 18);
-	public static ToolMaterial hallebardeaileeMaterial = EnumHelper.addToolMaterial("hallebardeaileeMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial lancedefailleMaterial = EnumHelper.addToolMaterial("lancedefailleMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial vangardeMaterial = EnumHelper.addToolMaterial("vangardeMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial qianMaterial = EnumHelper.addToolMaterial("qianMaterial", 3, 1700, 12.0F, 3.0F, 18);
-	public static ToolMaterial yishiMaterial = EnumHelper.addToolMaterial("yishiMaterial", 3, 1200, 12.0F, 1.0F, 18);
-	public static ToolMaterial epeebenieMaterial = EnumHelper.addToolMaterial("epeebenieMaterial", 3, 2200, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial hachedefjilMaterial = EnumHelper.addToolMaterial("hachedefjilMaterial", 3, 1800, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial epeedorionMaterial = EnumHelper.addToolMaterial("epeedorionMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial daguedefjilMaterial = EnumHelper.addToolMaterial("daguedefjilMaterial", 3, 1300, 12.0F,
-			1.0F, 18);
-	public static ToolMaterial massedosMaterial = EnumHelper.addToolMaterial("massedosMaterial", 3, 1700, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial lamedefjilMaterial = EnumHelper.addToolMaterial("lamedefjilMaterial", 3, 1800, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial quadreeMaterial = EnumHelper.addToolMaterial("quadreeMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial surinMaterial = EnumHelper.addToolMaterial("surinMaterial", 3, 1000, 12.0F, -1.0F, 18);
-	public static ToolMaterial malfifMaterial = EnumHelper.addToolMaterial("malfifMaterial", 3, 1700, 12.0F, 1.0F, 18);
-	public static ToolMaterial tessonMaterial = EnumHelper.addToolMaterial("tessonMaterial", 3, 200, 12.0F, -1.0F, 18);
-	public static ToolMaterial bouteilleMaterial = EnumHelper.addToolMaterial("bouteilleMaterial", 3, 400, 12.0F, -2.0F,
-			18);
-	public static ToolMaterial plancheMaterial = EnumHelper.addToolMaterial("plancheMaterial", 3, 500, 12.0F, -2.0F,
-			18);
-	public static ToolMaterial massehectaireMaterial = EnumHelper.addToolMaterial("massehectaireMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial hachedebatailleMaterial = EnumHelper.addToolMaterial("hachedebatailleMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial deuxmainsMaterial = EnumHelper.addToolMaterial("deuxmainsMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial coutelasMaterial = EnumHelper.addToolMaterial("coutelasMaterial", 3, 1700, 12.0F, 1.0F,
-			18);
-	public static ToolMaterial zhangMaterial = EnumHelper.addToolMaterial("zhangMaterial", 3, 1700, 12.0F, 3.0F, 18);
-	public static ToolMaterial hallebardebarbueMaterial = EnumHelper.addToolMaterial("hallebardebarbueMaterial", 3,
-			2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial masseapointesMaterial = EnumHelper.addToolMaterial("masseapointesMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial hachebarbueMaterial = EnumHelper.addToolMaterial("hachebarbueMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial lanceMaterial = EnumHelper.addToolMaterial("lanceMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial sceptredeferMaterial = EnumHelper.addToolMaterial("sceptreMaterial", 3, 1200, 12.0F,
-			-1.0F, 18);
-	public static ToolMaterial hachepahinneMaterial = EnumHelper.addToolMaterial("hachepahinneMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial massedeguerreMaterial = EnumHelper.addToolMaterial("massedeguerreMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial katanaMaterial = EnumHelper.addToolMaterial("katanaMaterial", 3, 1701, 12.0F, 3.0F, 18);
-	public static ToolMaterial katarMaterial = EnumHelper.addToolMaterial("katarMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial kukriMaterial = EnumHelper.addToolMaterial("kukriMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial marteauMaterial = EnumHelper.addToolMaterial("marteauMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial epeedroiteMaterial = EnumHelper.addToolMaterial("epeedroiteMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial sakranMaterial = EnumHelper.addToolMaterial("sakranMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial espadondorionMaterial = EnumHelper.addToolMaterial("espadondorionMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial epeeaileeMaterial = EnumHelper.addToolMaterial("epeeaileeMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial becdemoininMaterial = EnumHelper.addToolMaterial("becdemoininMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial rapiereMaterial = EnumHelper.addToolMaterial("rapiereMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial sabreMaterial = EnumHelper.addToolMaterial("sabreMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial fauchonMaterial = EnumHelper.addToolMaterial("fauchonMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial fleauMaterial = EnumHelper.addToolMaterial("fleauMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial gantsdeguerreMaterial = EnumHelper.addToolMaterial("gantsdeguerreMaterial", 3, 2000,
-			12.0F, 2.0F, 18);
-	public static ToolMaterial griffesdeferMaterial = EnumHelper.addToolMaterial("griffesdeferMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial piquederocMaterial = EnumHelper.addToolMaterial("piquederocMaterial", 3, 1500, 12.0F,
-			1.0F, 18);
-	public static ToolMaterial epeelongueMaterial = EnumHelper.addToolMaterial("epeelongueMaterial", 3, 2000, 12.0F,
-			2.0F, 18);
-	public static ToolMaterial massederocMaterial = EnumHelper.addToolMaterial("massederocMaterial", 3, 1500, 12.0F,
-			1.0F, 18);
-	public static ToolMaterial zenjiaMaterial = EnumHelper.addToolMaterial("ZenjiaMaterial", 3, 1700, 12.0F, 3.0F, 18);
-	public static ToolMaterial lancederocMaterial = EnumHelper.addToolMaterial("lancederocMaterial", 3, 1500, 12.0F,
-			1.0F, 18);
-	public static ToolMaterial pontinneMaterial = EnumHelper.addToolMaterial("pontinneMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial mailletMaterial = EnumHelper.addToolMaterial("mailletMaterial", 3, 1500, 12.0F, 0.0F,
-			18);
-	public static ToolMaterial piquardMaterial = EnumHelper.addToolMaterial("piquardMaterial", 3, 1500, 12.0F, 0.0F,
-			18);
-	public static ToolMaterial daguederocMaterial = EnumHelper.addToolMaterial("daguederocMaterial", 3, 1200, 12.0F,
-			0.0F, 18);
-	public static ToolMaterial pieuMaterial = EnumHelper.addToolMaterial("pieuMaterial", 3, 1500, 12.0F, 0.0F, 18);
-	public static ToolMaterial torchereMaterial = EnumHelper.addToolMaterial("torchereMaterial", 3, 500, 12.0F, -2.0F,
-			18);
-	public static ToolMaterial gourdincercleMaterial = EnumHelper.addToolMaterial("gourdincercleMaterial", 3, 750,
-			12.0F, 0.0F, 18);
-	public static ToolMaterial batonMaterial = EnumHelper.addToolMaterial("batonMaterial", 3, 500, 12.0F, -2.0F, 18);
-	public static ToolMaterial canneMaterial = EnumHelper.addToolMaterial("canneMaterial", 3, 500, 12.0F, -2.0F, 18);
-	public static ToolMaterial lanceenboisMaterial = EnumHelper.addToolMaterial("lanceneboisMaterial", 3, 1500, 12.0F,
-			0.0F, 18);
-	public static ToolMaterial piquetierMaterial = EnumHelper.addToolMaterial("piquetierMaterial", 3, 1500, 12.0F,
-			-2.0F, 18);
-	public static ToolMaterial serpeMaterial = EnumHelper.addToolMaterial("serpeMaterial", 3, 1000, 12.0F, 0.0F, 18);
-	public static ToolMaterial brigandeMaterial = EnumHelper.addToolMaterial("brigandeMaterial", 3, 2000, 12.0F, 2.0F,
-			18);
-	public static ToolMaterial pilleuseMaterial = EnumHelper.addToolMaterial("pilleuseMaterial", 3, 2500, 12.0F, 0.0F,
-			18);
-	public static ToolMaterial yanliMaterial = EnumHelper.addToolMaterial("yanliMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial haidaMaterial = EnumHelper.addToolMaterial("haidaMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial epeeMaterial = EnumHelper.addToolMaterial("epeeMaterial", 3, 2000, 12.0F, 2.0F, 18);
-	public static ToolMaterial gourdinMaterial = EnumHelper.addToolMaterial("gourdinMaterial", 3, 500, 12.0F, -2.0F,
-			18);
-	public static ToolMaterial balaisMaterial = EnumHelper.addToolMaterial("balaisMaterial", 3, 500, 12.0F, -2.0F, 18);
-	public static ToolMaterial lamedobsidienneMaterial = EnumHelper.addToolMaterial("lamedobsidienneMaterial", 3, 1500,
-			12.0F, 1.0F, 18);
-	public static ToolMaterial hachederocMaterial = EnumHelper.addToolMaterial("hachederocMaterial", 3, 1500, 12.0F,
-			1.0F, 18);
-	public static ToolMaterial hachedentrainementMaterial = EnumHelper.addToolMaterial("hachedentrainementMaterial", 3,
-			2000, 12.0F, -1.0F, 18);
-	public static ToolMaterial epeedentrainementMaterial = EnumHelper.addToolMaterial("epeedentrainementMaterial", 3,
-			2000, 12.0F, -1.0F, 18);
-	public static ToolMaterial claymoreMaterial = EnumHelper.addToolMaterial("claymoreMaterial", 3, 750, 12.0F, -2.0F,
-			18);
+	public static ToolMaterial improvise = EnumHelper.addToolMaterial("improviseMaterial", 3, 1000, 12.0F, 0.0F, 18);
+	public static ToolMaterial military = EnumHelper.addToolMaterial("militaryMaterial", 3, 2000, 12.0F, 2.0F, 18);
+	
 
 	public static Item epeeClaymore, brazure, masseRhombe, matraque, patteDours, bodan, saif, espadondebraz,
 			daguedebraz, guisarme, marteaudebraz, faux, lancedebraz, epeedebraz, bidentdebraz, marteaulourddebraz,
@@ -216,117 +29,118 @@ public class WeaponsRegistry {
 
 	public static void registerWeapons() {
 
-		//Argument 1 : material(dura, degats etc...) Argument 2: nom de la texture sans le ".png" et nom non localisé
-		epeeClaymore = new Armes(claymoreMaterial, "epeeclaymore");
-		masseRhombe = new Armes(masserhombeMaterial, "masseRhombe");
-		matraque = new Armes(matraqueMaterial, "matraque");
-		patteDours = new Armes(pattedoursMaterial, "patteDOurs");
-		bodan = new Armes(bodanMaterial, "bodan");
-		saif = new Armes(saifMaterial, "saif");
-		brazure = new Armes(brazureMaterial, "brazure");
-		hachebenie = new Armes(hachebenieMaterial, "hachebenie");
-		espadondebraz = new Armes(espadondebrazMaterial, "espadonDeBraz");
-		bipenne = new Armes(bipenneMaterial, "bipenne");
-		marteaudeguerre = new Armes(marteaudeguerreMaterial, "marteaudeguerre");
-		daguedebraz = new Armes(daguedebrazMaterial, "dagueDeBraz");
-		guisarme = new Armes(guisarmeMaterial, "guisarme");
-		marteaudebraz = new Armes(marteaudebrazMaterial, "marteauDeBraz");
-		faux = new Armes(fauxMaterial, "faux");
-		lancedebraz = new Armes(lancedebrazMaterial, "lanceDeBraz");
-		epeedebraz = new Armes(epeedebrazMaterial, "epeeDeBraz");
-		bidentdebraz = new Armes(bidentdebrazMaterial, "bidentDeBraz");
-		marteaulourddebraz = new Armes(marteaulourdebrazMaterial, "marteauLourdDeBraz");
-		hachoir = new Armes(hachoirMaterial, "hachoir");
-		becdecorbin = new Armes(becdecorbinMaterial, "becDeCorbin");
-		khirve = new Armes(khirveMaterial, "khirve");
-		epeelarge = new Armes(epeelargeMaterial, "epeeLarge");
-		daguerituelle = new Armes(daguerituelleMaterial, "dagueRituelle");
-		chapelier = new Armes(chapelierMaterial, "Chapelier");
-		sceptre = new Armes(sceptreMaterial, "Sceptre");
-		daguedos = new Armes(daguedosMaterial, "dagueDos");
-		tsuri = new Armes(tsuriMaterial, "tsuri");
-		hallebardeailee = new Armes(hallebardeaileeMaterial, "hallebardeAilee");
-		epeebatarde = new Armes(epeebatardeMaterial, "epeeBatarde");
-		hanche = new Armes(hancheMaterial, "hanche");
-		espadon = new Armes(espadonMaterial, "espadon");
-		dague = new Armes(dagueMaterial, "dague");
-		hallante = new Armes(hallanteMaterial, "hallante");
-		masseaailettes = new Armes(masseaailettesMaterial, "masseAilettes");
-		massebenie = new Armes(massebenieMaterial, "masseBenie");
-		hallebarde = new Armes(hallebardeMaterial, "hallebarde");
-		sceptreoronne = new Armes(sceptreoronneMaterial, "sceptreOronne");
-		hallebardebenie = new Armes(hallebardebenieMaterial, "hallebardeBenie");
-		lancedefaille = new Armes(lancedefailleMaterial, "lanceDeFaille");
-		vangarde = new Armes(vangardeMaterial, "vangarde");
-		qian = new Armes(qianMaterial, "qian");
-		yishi = new Armes(yishiMaterial, "yishi");
-		epeebenie = new Armes(epeebenieMaterial, "epeeBenie");
-		hachedefjil = new Armes(hachedefjilMaterial, "hacheDeFjil");
-		epeedorion = new Armes(epeedorionMaterial, "epeeDorion");
-		daguedefjil = new Armes(daguedefjilMaterial, "dagueDeFjil");
-		massedos = new Armes(massedosMaterial, "masseOs");
-		lamedefjil = new Armes(lamedefjilMaterial, "lameDeFjil");
-		quadree = new Armes(quadreeMaterial, "quadree");
-		surin = new Armes(surinMaterial, "surin");
-		malfif = new Armes(malfifMaterial, "malfif");
-		tesson = new Armes(tessonMaterial, "tesson");
-		bouteille = new Armes(bouteilleMaterial, "bouteille");
-		planche = new Armes(plancheMaterial, "planche");
-		massehectaire = new Armes(massehectaireMaterial, "masseHectaire");
-		hachedebataille = new Armes(hachedebatailleMaterial, "hacheDeBataille");
-		deuxmains = new Armes(deuxmainsMaterial, "deuxmains");
-		coutelas = new Armes(coutelasMaterial, "coutelas");
-		zhang = new Armes(zhangMaterial, "zhang");
-		hallebardebarbue = new Armes(hallebardebarbueMaterial, "hallebardeBarbue");
-		masseapointes = new Armes(masseapointesMaterial, "massePointes");
-		hachebarbue = new Armes(hachebarbueMaterial, "hacheBarbue");
-		lance = new Armes(lanceMaterial, "lance");
-		sceptredefer = new Armes(sceptredeferMaterial, "sceptredefer");
-		hachepahinne = new Armes(hachepahinneMaterial, "hachePahinne");
-		massedeguerre = new Armes(massedeguerreMaterial, "masseDeGuerre");
-		katana = new Armes(katanaMaterial, "katana");
-		katar = new Armes(katarMaterial, "katar");
-		kukri = new Armes(kukriMaterial, "kukri");
-		marteau = new Armes(marteauMaterial, "marteau");
-		sakran = new Armes(sakranMaterial, "sakran");
-		espadondorion = new Armes(espadondorionMaterial, "espadonDorion");
-		epeeailee = new Armes(epeeaileeMaterial, "epeeAilee");
-		epeedroite = new Armes(epeedroiteMaterial, "epeeDroite");
-		becdemoinin = new Armes(becdemoininMaterial, "becDeMoinin");
-		rapiere = new Armes(rapiereMaterial, "rapiere");
-		sabre = new Armes(sabreMaterial, "sabre");
-		fauchon = new Armes(fauchonMaterial, "fauchon");
-		fleau = new Armes(fleauMaterial, "fleau");
-		gantsdeguerre = new Armes(gantsdeguerreMaterial, "gantsDeGuerre");
-		griffesdefer = new Armes(griffesdeferMaterial, "griffesDeFer");
-		piquederoc = new Armes(piquederocMaterial, "piqueDeRoc");
-		epeelongue = new Armes(epeelongueMaterial, "epeeLongue");
-		massederoc = new Armes(massederocMaterial, "masseDeRoc");
-		zenjia = new Armes(zenjiaMaterial, "zenjia");
-		lancederoc = new Armes(lancederocMaterial, "lanceDeRoc");
-		pontinne = new Armes(pontinneMaterial, "pontinne");
-		maillet = new Armes(mailletMaterial, "maillet");
-		piquard = new Armes(piquardMaterial, "piquard");
-		daguederoc = new Armes(daguederocMaterial, "dagueDeRoc");
-		pieu = new Armes(pieuMaterial, "pieu");
-		torchere = new Armes(torchereMaterial, "torchere");
-		gourdincercle = new Armes(gourdincercleMaterial, "gourdinCercle");
-		baton = new Armes(batonMaterial, "baton");
-		canne = new Armes(canneMaterial, "canne");
-		lanceenbois = new Armes(lanceenboisMaterial, "lanceEnBois");
-		piquetier = new Armes(piquetierMaterial, "piquetier");
-		serpe = new Armes(serpeMaterial, "serpe");
-		brigande = new Armes(brigandeMaterial, "brigande");
-		pilleuse = new Armes(pilleuseMaterial, "pilleuse");
-		yanli = new Armes(yanliMaterial, "yanli");
-		haida = new Armes(haidaMaterial, "haida");
-		epee = new Armes(epeeMaterial, "epee");
-		gourdin = new Armes(gourdinMaterial, "gourdin");
-		balais = new Armes(balaisMaterial, "balais");
-		lamedobsidienne = new Armes(lamedobsidienneMaterial, "lameObsidienne");
-		hachederoc = new Armes(hachederocMaterial, "hacheDeRoc");
-		hachedentrainement = new Armes(hachedentrainementMaterial, "hacheDentrainement");
-		epeedentrainement = new Armes(epeedentrainementMaterial, "epeeDentrainement");
+		// Argument 1 : material(dura, degats etc...) Argument 2: nom de la texture sans
+		// le ".png" et nom non localisé
+		epeeClaymore = new Armes(military, "epeeclaymore");
+		masseRhombe = new Armes(military, "masseRhombe");
+		matraque = new Armes(improvise, "matraque");
+		patteDours = new Armes(improvise, "patteDOurs");
+		bodan = new Armes(improvise, "bodan");
+		saif = new Armes(military, "saif");
+		brazure = new Armes(military, "brazure");
+		hachebenie = new Armes(military, "hachebenie");
+		espadondebraz = new Armes(military, "espadonDeBraz");
+		bipenne = new Armes(military, "bipenne");
+		marteaudeguerre = new Armes(military, "marteaudeguerre");
+		daguedebraz = new Armes(military, "dagueDeBraz");
+		guisarme = new Armes(military, "guisarme");
+		marteaudebraz = new Armes(military, "marteauDeBraz");
+		faux = new Armes(improvise, "faux");
+		lancedebraz = new Armes(military, "lanceDeBraz");
+		epeedebraz = new Armes(military, "epeeDeBraz");
+		bidentdebraz = new Armes(military, "bidentDeBraz");
+		marteaulourddebraz = new Armes(military, "marteauLourdDeBraz");
+		hachoir = new Armes(improvise, "hachoir");
+		becdecorbin = new Armes(military, "becDeCorbin");
+		khirve = new Armes(military, "khirve");
+		epeelarge = new Armes(military, "epeeLarge");
+		daguerituelle = new Armes(military, "dagueRituelle");
+		chapelier = new Armes(improvise, "Chapelier");
+		sceptre = new Armes(improvise, "Sceptre");
+		daguedos = new Armes(improvise, "dagueDos");
+		tsuri = new Armes(military, "tsuri");
+		hallebardeailee = new Armes(military, "hallebardeAilee");
+		epeebatarde = new Armes(military, "epeeBatarde");
+		hanche = new Armes(military, "hanche");
+		espadon = new Armes(military, "espadon");
+		dague = new Armes(improvise, "dague");
+		hallante = new Armes(military, "hallante");
+		masseaailettes = new Armes(military, "masseAilettes");
+		massebenie = new Armes(military, "masseBenie");
+		hallebarde = new Armes(military, "hallebarde");
+		sceptreoronne = new Armes(improvise, "sceptreOronne");
+		hallebardebenie = new Armes(military, "hallebardeBenie");
+		lancedefaille = new Armes(military, "lanceDeFaille");
+		vangarde = new Armes(military, "vangarde");
+		qian = new Armes(military, "qian");
+		yishi = new Armes(military, "yishi");
+		epeebenie = new Armes(military, "epeeBenie");
+		hachedefjil = new Armes(military, "hacheDeFjil");
+		epeedorion = new Armes(military, "epeeDorion");
+		daguedefjil = new Armes(military, "dagueDeFjil");
+		massedos = new Armes(military, "masseOs");
+		lamedefjil = new Armes(military, "lameDeFjil");
+		quadree = new Armes(military, "quadree");
+		surin = new Armes(improvise, "surin");
+		malfif = new Armes(improvise, "malfif");
+		tesson = new Armes(improvise, "tesson");
+		bouteille = new Armes(improvise, "bouteille");
+		planche = new Armes(improvise, "planche");
+		massehectaire = new Armes(military, "masseHectaire");
+		hachedebataille = new Armes(military, "hacheDeBataille");
+		deuxmains = new Armes(military, "deuxmains");
+		coutelas = new Armes(military, "coutelas");
+		zhang = new Armes(military, "zhang");
+		hallebardebarbue = new Armes(military, "hallebardeBarbue");
+		masseapointes = new Armes(military, "massePointes");
+		hachebarbue = new Armes(military, "hacheBarbue");
+		lance = new Armes(military, "lance");
+		sceptredefer = new Armes(improvise, "sceptredefer");
+		hachepahinne = new Armes(military, "hachePahinne");
+		massedeguerre = new Armes(military, "masseDeGuerre");
+		katana = new Armes(military, "katana");
+		katar = new Armes(improvise, "katar");
+		kukri = new Armes(military, "kukri");
+		marteau = new Armes(military, "marteau");
+		sakran = new Armes(military, "sakran");
+		espadondorion = new Armes(military, "espadonDorion");
+		epeeailee = new Armes(military, "epeeAilee");
+		epeedroite = new Armes(military, "epeeDroite");
+		becdemoinin = new Armes(military, "becDeMoinin");
+		rapiere = new Armes(military, "rapiere");
+		sabre = new Armes(military, "sabre");
+		fauchon = new Armes(military, "fauchon");
+		fleau = new Armes(military, "fleau");
+		gantsdeguerre = new Armes(improvise, "gantsDeGuerre");
+		griffesdefer = new Armes(improvise, "griffesDeFer");
+		piquederoc = new Armes(improvise, "piqueDeRoc");
+		epeelongue = new Armes(military, "epeeLongue");
+		massederoc = new Armes(military, "masseDeRoc");
+		zenjia = new Armes(military, "zenjia");
+		lancederoc = new Armes(military, "lanceDeRoc");
+		pontinne = new Armes(military, "pontinne");
+		maillet = new Armes(improvise, "maillet");
+		piquard = new Armes(improvise, "piquard");
+		daguederoc = new Armes(improvise, "dagueDeRoc");
+		pieu = new Armes(improvise, "pieu");
+		torchere = new Armes(improvise, "torchere");
+		gourdincercle = new Armes(improvise, "gourdinCercle");
+		baton = new Armes(improvise, "baton");
+		canne = new Armes(improvise, "canne");
+		lanceenbois = new Armes(improvise, "lanceEnBois");
+		piquetier = new Armes(improvise, "piquetier");
+		serpe = new Armes(improvise, "serpe");
+		brigande = new Armes(military, "brigande");
+		pilleuse = new Armes(military, "pilleuse");
+		yanli = new Armes(military, "yanli");
+		haida = new Armes(military, "haida");
+		epee = new Armes(military, "epee");
+		gourdin = new Armes(improvise, "gourdin");
+		balais = new Armes(improvise, "balais");
+		lamedobsidienne = new Armes(military, "lameObsidienne");
+		hachederoc = new Armes(improvise, "hacheDeRoc");
+		hachedentrainement = new Armes(improvise, "hacheDentrainement");
+		epeedentrainement = new Armes(improvise, "epeeDentrainement");
 
 		GameRegistry.registerItem(epeeClaymore, "item_epeeClaymore");
 		GameRegistry.registerItem(masseRhombe, "item_masse_rhombe");
