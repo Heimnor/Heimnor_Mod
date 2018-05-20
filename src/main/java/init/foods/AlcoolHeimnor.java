@@ -76,31 +76,6 @@ public class AlcoolHeimnor extends ItemFood {
 	public ItemStack onEaten(ItemStack stack, World world, EntityPlayer player) {
 
 		if (!world.isRemote) {
-			ChatComponentText text = this.showMessage(player, world);
-			System.out.println("Local ?");
-			if (text != null) {
-				player.addChatMessage(text);
-			} else {
-				HMessageUtils.showError("Erreur AlcoolHeimnor.class(message null).", player);
-			}
-
-			if (stack.hasTagCompound() && stack.getTagCompound().hasKey("contenu")) {
-				NBTTagCompound compound = stack.getTagCompound();
-
-				int content = compound.getInteger("contenu");
-				content--;
-				compound.setInteger("contenu", content);
-				stack.setTagCompound(compound);
-				if (content == 0) {
-					player.inventory.decrStackSize(player.inventory.currentItem, 1);
-				}
-			}
-		}
-		return stack;
-	}
-
-	public ChatComponentText showMessage(EntityPlayer player, World world) {
-		if (!world.isRemote) {
 			EPAlcohol props = EPAlcohol.get(player);
 			props.addAlcohol(this.alcohol);
 			System.out.println("Alcoolémie : " + props.getAlcohol());
@@ -136,11 +111,26 @@ public class AlcoolHeimnor extends ItemFood {
 					effect = effect7[rand.nextInt(effect7.length)];
 				}
 			}
-
 			ChatComponentText text = new ChatComponentText(effect);
 			text.setChatStyle(style);
-			return text;
+
+			if (text != null) {
+				player.addChatMessage(text);
+			}
+
+			if (stack.hasTagCompound() && stack.getTagCompound().hasKey("contenu")) {
+				NBTTagCompound compound = stack.getTagCompound();
+
+				int content = compound.getInteger("contenu");
+				content--;
+				compound.setInteger("contenu", content);
+				stack.setTagCompound(compound);
+				if (content == 0) {
+					player.inventory.decrStackSize(player.inventory.currentItem, 1);
+				}
+			}
+			return stack;
 		}
-		return null;
+		return stack;
 	}
 }
