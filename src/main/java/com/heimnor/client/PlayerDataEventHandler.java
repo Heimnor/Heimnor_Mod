@@ -20,56 +20,56 @@ public class PlayerDataEventHandler {
 
 	public CommonProxy proxy;
 
-	
 	@SubscribeEvent
 	public void onEntityJoinWorld(EntityJoinWorldEvent event) {
 
-		if(event.entity.worldObj.isRemote) {
-		if (event.entity instanceof EntityPlayer) {
-			Heimnor.network.sendToServer(new IMessageCSSync(new NBTTagCompound(), "perm",
-					Minecraft.getMinecraft().thePlayer.getDisplayName(), "false"));
-			String player = Minecraft.getMinecraft().thePlayer.getDisplayName();
+		if (event.entity.worldObj.isRemote) {
+			if (event.entity instanceof EntityPlayer) {
+				Heimnor.network.sendToServer(new IMessageCSSync(new NBTTagCompound(), "perm",
+						Minecraft.getMinecraft().thePlayer.getDisplayName(), "false"));
+				String player = Minecraft.getMinecraft().thePlayer.getDisplayName();
 
-			File ficheJoueur = new File("Heimnor/Joueurs.dat");
-			System.out.println("test");
-			File fiche = new File("Heimnor/Fiches.dat");
+				File ficheJoueur = new File("Heimnor/Joueurs.dat");
+				File fiche = new File("Heimnor/Fiches.dat");
 
-			try {
-				if (!ficheJoueur.exists()) {
-
-					System.out.println("test2");
-					ficheJoueur.getParentFile().mkdirs();
-					ficheJoueur.createNewFile();
-					NBTTagCompound indextag = new NBTTagCompound();
-					NBTTagCompound compound = new NBTTagCompound();
-					indextag.setTag(player, compound);
-					NbtCsFile.setNbtTagCompound(ficheJoueur, "index", indextag);
-					Heimnor.network.sendToServer(new IMessageCSSync(indextag, "true", player, "false"));
-
-				} else if (ficheJoueur.exists()) {
-
-					Heimnor.network.sendToServer(new IMessageCSSync(NbtCsFile.getNbtTagCompound(ficheJoueur, "index"),
-							"true", player, "false"));
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-			if (!fiche.exists()) {
 				try {
-					fiche.createNewFile();
-					NbtCsFile.setNbtTagCompound(fiche, "index", new NBTTagCompound());
-					Heimnor.network.sendToServer(new IMessageCSSync(NbtCsFile.getData(fiche).getCompoundTag("index"),
-							"false", player, "false"));
+					if (!ficheJoueur.exists()) {
+
+						System.out.println("test2");
+						ficheJoueur.getParentFile().mkdirs();
+						ficheJoueur.createNewFile();
+						NBTTagCompound indextag = new NBTTagCompound();
+						NBTTagCompound compound = new NBTTagCompound();
+						indextag.setTag(player, compound);
+						NbtCsFile.setNbtTagCompound(ficheJoueur, "index", indextag);
+						Heimnor.network.sendToServer(new IMessageCSSync(indextag, "true", player, "false"));
+
+					} else if (ficheJoueur.exists()) {
+
+						Heimnor.network.sendToServer(new IMessageCSSync(
+								NbtCsFile.getNbtTagCompound(ficheJoueur, "index"), "true", player, "false"));
+					}
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-			} else if (fiche.exists()) {
 
-				Heimnor.network.sendToServer(new IMessageCSSync(NbtCsFile.getNbtTagCompound(fiche, "index"), "false",
-						NbtCsFile.getNbtTagCompound(ficheJoueur, "index").getCompoundTag(player).getString("perso"),
-						"false"));
+				if (!fiche.exists()) {
+					try {
+						fiche.createNewFile();
+						NbtCsFile.setNbtTagCompound(fiche, "index", new NBTTagCompound());
+						Heimnor.network.sendToServer(new IMessageCSSync(
+								NbtCsFile.getData(fiche).getCompoundTag("index"), "false", player, "false"));
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				} else if (fiche.exists()) {
+
+					Heimnor.network.sendToServer(new IMessageCSSync(NbtCsFile.getNbtTagCompound(fiche, "index"),
+							"false",
+							NbtCsFile.getNbtTagCompound(ficheJoueur, "index").getCompoundTag(player).getString("perso"),
+							"false"));
+				}
 			}
 		}
 	}
-}}
+}

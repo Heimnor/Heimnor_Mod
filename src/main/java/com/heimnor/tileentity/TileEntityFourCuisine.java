@@ -182,8 +182,10 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 
 			ItemStack stack = this.contents[slotIndex];
 			this.contents[slotIndex] = null;
+			this.updateBlock();
 			return stack;
 		} else {
+			this.updateBlock();
 			return null;
 		}
 	}
@@ -195,8 +197,6 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 		if (stack != null && stack.stackSize > this.getInventoryStackLimit()) {
 			stack.stackSize = this.getInventoryStackLimit();
 		}
-		this.updateBlock();
-
 	}
 
 	@Override
@@ -288,7 +288,8 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 		if (this.ustensileContent == null) {
 			return false;
 		} else {
-			ItemStack stack = RecipesPlaquesDeCuisson.plaqueBase.getResult(this.ustensileContent, this.plaqueContent.getItem());
+			ItemStack stack = RecipesPlaquesDeCuisson.plaqueBase.getResult(this.ustensileContent,
+					this.plaqueContent.getItem());
 			if (stack == null) {
 				return false;
 			}
@@ -308,8 +309,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 				this.contents[slot] = stack.copy();
 				this.cuisson[slot] = 0;
 				--this.contents[slot].stackSize;
-				if (this.contents[slot].stackSize <= 0)
-					this.contents[slot] = null;
+				if (this.contents[slot].stackSize <= 0) this.contents[slot] = null;
 				this.setInventorySlotContents(slot, stack.copy());
 			}
 		}
@@ -319,11 +319,11 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 	public void cookItem() {
 		if (this.canCook()) {
 			if (this.ustensileContent != null && this.cuissonPlaque == this.cuissonMax) {
-				ItemStack stack = RecipesPlaquesDeCuisson.plaqueBase.getResult(this.ustensileContent , this.plaqueContent.getItem());
+				ItemStack stack = RecipesPlaquesDeCuisson.plaqueBase.getResult(this.ustensileContent,
+						this.plaqueContent.getItem());
 				this.cuissonPlaque = 0;
 				--this.ustensileContent.stackSize;
-				if (this.ustensileContent.stackSize <= 0)
-					this.ustensileContent = null;
+				if (this.ustensileContent.stackSize <= 0) this.ustensileContent = null;
 				this.ustensileContent = stack.copy();
 			}
 		}
@@ -345,15 +345,13 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 			this.updateBlock();
 		}
 
-		if (!this.canCook())
-			this.cuissonPlaque = 0;
-		
+		if (!this.canCook()) this.cuissonPlaque = 0;
+
 		for (int i = 0; i <= 5; i++) {
 
 			if (this.isBurning(i) && this.canSmelt(i)) {
 				this.fireParticle = true;
-				this.updateBlock();
-				
+
 				++this.cuisson[i];
 			}
 
@@ -364,7 +362,6 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 
 			if (this.canSmelt(i) && this.cuisson[i] == this.cuissonMax) {
 				this.fireParticle = false;
-
 				this.smeltItem(i);
 				this.updateBlock();
 			}
@@ -398,7 +395,7 @@ public class TileEntityFourCuisine extends TileEntity implements IInventory {
 	public void setUstensileContent(ItemStack stack) {
 		this.ustensileContent = stack;
 	}
-	
+
 	public void updateBlock() {
 		this.worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
 		this.markDirty();

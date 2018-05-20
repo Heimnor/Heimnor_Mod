@@ -24,7 +24,7 @@ public class ContainerFour extends Container {
 		this.addSlotToContainer(new Slot(tile, 2, p + 66, 51));
 		this.addSlotToContainer(new Slot(tile, 3, p + 30, 73));
 		this.addSlotToContainer(new Slot(tile, 4, p + 48, 73));
-		this.addSlotToContainer(new Slot(tile, 5, p +66, 73));
+		this.addSlotToContainer(new Slot(tile, 5, p + 66, 73));
 
 		this.bindPlayerInventory(inventory);
 	}
@@ -45,44 +45,57 @@ public class ContainerFour extends Container {
 
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer player, int slotIndex) {
-		
+
+		/*
+		 * Slot slot = (Slot) this.inventorySlots.get(slotIndex); if
+		 * (slot.getHasStack()) { ItemStack stack = slot.getStack();
+		 * 
+		 * if (slot.inventory instanceof InventoryPlayer) { if (stack.stackSize == 1) {
+		 * for (int i = 0; i < this.inventorySlots.size(); i++) { Slot slotSearch =
+		 * (Slot) this.inventorySlots.get(i); if (slotSearch.getHasStack() == false &&
+		 * slotSearch.inventory instanceof TileEntityFourCuisine) {
+		 * slotSearch.putStack(stack); slot.putStack((ItemStack) null); i =
+		 * this.inventorySlots.size(); return null; } } } else if (stack.stackSize > 1)
+		 * { ItemStack stack2 = stack.copy();
+		 * 
+		 * for (int i = 0; i < this.inventorySlots.size(); i++) { Slot slotSearch =
+		 * (Slot) this.inventorySlots.get(i); if (slotSearch.getHasStack() == false &&
+		 * slotSearch.inventory instanceof TileEntityFourCuisine) { --stack.stackSize;
+		 * slot.putStack(stack); stack2.stackSize = 1; slotSearch.putStack(stack2); i =
+		 * this.inventorySlots.size(); return null; } } } } else if (slot.inventory
+		 * instanceof TileEntityFourCuisine) {
+		 * 
+		 * } }
+		 */
+
+		ItemStack stack = null;
 		Slot slot = (Slot) this.inventorySlots.get(slotIndex);
-		if (slot.getHasStack()) {
-			ItemStack stack = slot.getStack();
 
-			if (slot.inventory instanceof InventoryPlayer) {
-				if (stack.stackSize == 1) {
-					for (int i = 0; i < this.inventorySlots.size(); i++) {
-						Slot slotSearch = (Slot) this.inventorySlots.get(i);
-						if (slotSearch.getHasStack() == false
-								&& slotSearch.inventory instanceof TileEntityFourCuisine) {
-							slotSearch.putStack(stack);
-							slot.putStack((ItemStack) null);
-							i = this.inventorySlots.size();
-							return null;
-						}
-					}
-				} else if (stack.stackSize > 1) {
-					ItemStack stack2 = stack.copy();
+		if (slot != null && slot.getHasStack()) {
 
-					for (int i = 0; i < this.inventorySlots.size(); i++) {
-						Slot slotSearch = (Slot) this.inventorySlots.get(i);
-						if (slotSearch.getHasStack() == false
-								&& slotSearch.inventory instanceof TileEntityFourCuisine) {
-							--stack.stackSize;
-							slot.putStack(stack);
-							stack2.stackSize = 1;
-							slotSearch.putStack(stack2);
-							i = this.inventorySlots.size();
-							return null;
-						}
-					}
+			ItemStack stack1 = slot.getStack();
+			stack = stack1.copy();
+
+			if (slotIndex < this.tileFour.getSizeInventory()) {
+
+				if (!this.mergeItemStack(stack1, this.tileFour.getSizeInventory(), this.inventorySlots.size(), true)) {
+
+					return null;
 				}
-			} else if (slot.inventory instanceof TileEntityFourCuisine) {
+			} else if (!this.mergeItemStack(stack1, 0, this.tileFour.getSizeInventory(), false)) {
 
+				return null;
+			}
+
+			if (stack1.stackSize == 0) {
+
+				slot.putStack((ItemStack) null);
+			} else {
+				slot.onSlotChanged();
 			}
 		}
-		return null;
+
+		return stack;
 	}
 
 	@Override

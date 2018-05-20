@@ -35,7 +35,6 @@ public class LivingEventHandler {
 				&& Keyboard.isKeyDown(Minecraft.getMinecraft().gameSettings.keyBindChat.getKeyCode())) {
 
 			Heimnor.network.sendToServer(new IMessageChat());
-
 		}
 	}
 

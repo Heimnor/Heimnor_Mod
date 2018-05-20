@@ -78,7 +78,6 @@ public class AlcoolHeimnor extends ItemFood {
 		if (!world.isRemote) {
 			EPAlcohol props = EPAlcohol.get(player);
 			props.addAlcohol(this.alcohol);
-			System.out.println("Alcoolémie : " + props.getAlcohol());
 
 			// Message d'effet
 			int alc = props.getAlcohol();
@@ -87,7 +86,7 @@ public class AlcoolHeimnor extends ItemFood {
 			Random rand = new Random();
 			if (alc < 20) {
 				String[] effect1 = { "Ca fait du bien !", "Il faudrait faire cela plus souvent !", "Hmmm",
-						"Ca fait du bien de se poser de temps a autre...", };
+						"Ca fait du bien de se poser de temps a autre..."};
 				effect = effect1[rand.nextInt(effect1.length)];
 			} else if (alc >= 20 && alc < 40) {
 				String[] effect2 = { "Vous commencez a vous sentir plus a l'aise.", "Vos joues commencent a rougir." };
