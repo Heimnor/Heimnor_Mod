@@ -23,7 +23,6 @@ public class TileEntityMiroir extends TileEntity {
 
 		super.writeToNBT(compound);
 		compound.setByte("Direction", this.direction);
-
 	}
 	
 	public byte getDirection() {

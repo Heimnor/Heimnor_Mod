@@ -1,10 +1,13 @@
 package init.divers;
 
+import java.util.List;
 import java.util.Random;
 
 import com.heimnor.common.Heimnor;
 import com.heimnor.packet.IMessageDes;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -38,6 +41,8 @@ public class ItemDes extends Item {
 		return itemdes;
 	}
 
+	
+	
 	public void onUpdate(ItemStack itemdes, World world, net.minecraft.entity.Entity entity, int var1, boolean var2) {
 		super.onUpdate(itemdes, world, entity, var1, var2);
 
@@ -52,5 +57,12 @@ public class ItemDes extends Item {
 					itemdes.stackTagCompound.setInteger("timer", 0);
 			}
 		}
+	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, EntityPlayer player, List lore, boolean chepa) {
+		lore.add(EnumChatFormatting.GRAY + "Des dés à 6 faces.");
+		lore.add(EnumChatFormatting.GRAY + "La base de nombreux jeux depuis des siècles.");
 	}
 }

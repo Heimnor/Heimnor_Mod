@@ -35,7 +35,6 @@ public class EPAlcohol implements IExtendedEntityProperties {
 	public void saveNBTData(NBTTagCompound compound) {
 		NBTTagCompound properties = new NBTTagCompound();
 		properties.setInteger("alcohol", this.alcohol);
-
 		// Sauvegarde les properties (toujours à la fin)
 		compound.setTag(EXT_PROP_NAME, properties);
 	}

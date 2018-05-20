@@ -1,16 +1,22 @@
 package init.foods;
 
+import java.util.List;
 import java.util.Random;
 
 import com.heimnor.common.Heimnor;
 import com.heimnor.extendedentityproperties.EPAlcohol;
 import com.heimnor.utils.FichesUtils;
+import com.heimnor.utils.HMessageUtils;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatStyle;
 import net.minecraft.util.EnumChatFormatting;
@@ -19,10 +25,11 @@ import net.minecraft.world.World;
 public class AlcoolHeimnor extends ItemFood {
 
 	private int alcohol;
+	private int format;
+	private int contenu;
 
 	public AlcoolHeimnor(int format, String unlocalized, boolean isBottle, Item container, int alcohol) {
 		super(0, 0.2F, false);
-		this.setMaxDamage(format);
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName(unlocalized);
 		this.setCreativeTab(Heimnor.HeimnorFoodTabs);
@@ -30,6 +37,17 @@ public class AlcoolHeimnor extends ItemFood {
 		this.setContainerItem(container);
 		this.setAlwaysEdible();
 		this.alcohol = alcohol;
+		this.format = format;
+	}
+
+	public void onUpdate(ItemStack stack, World world, Entity entity, int var1, boolean var2) {
+		super.onUpdate(stack, world, entity, var1, var2);
+
+		if (!stack.hasTagCompound()) {
+			NBTTagCompound compound = new NBTTagCompound();
+			compound.setInteger("contenu", this.format);
+			stack.setTagCompound(compound);
+		}
 	}
 
 	@Override
@@ -38,15 +56,55 @@ public class AlcoolHeimnor extends ItemFood {
 	}
 
 	@Override
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack stack, EntityPlayer player, List lore, boolean chepa) {
+
+		lore.add(EnumChatFormatting.ITALIC.GRAY + "Taille de la bouteille : " + this.format);
+
+		if (stack.hasTagCompound() && stack.getTagCompound().hasKey("contenu")) {
+
+			if (this.contenu > 1) {
+				lore.add(EnumChatFormatting.ITALIC.GREEN + "Il reste l'équivalent de " + this.contenu + " verre.");
+			} else {
+				lore.add(EnumChatFormatting.ITALIC.GREEN + "Il reste l'équivalent de "
+						+ stack.getTagCompound().getInteger("contenu") + " verre.");
+			}
+		}
+	}
+
+	@Override
 	public ItemStack onEaten(ItemStack stack, World world, EntityPlayer player) {
 
-		player.inventory.decrStackSize(player.inventory.currentItem, 1);
-		this.setDamage(stack, this.getDamage(stack) - 1);
+		if (!world.isRemote) {
+			ChatComponentText text = this.showMessage(player, world);
+			System.out.println("Local ?");
+			if (text != null) {
+				player.addChatMessage(text);
+			} else {
+				HMessageUtils.showError("Erreur AlcoolHeimnor.class(message null).", player);
+			}
+
+			if (stack.hasTagCompound() && stack.getTagCompound().hasKey("contenu")) {
+				NBTTagCompound compound = stack.getTagCompound();
+
+				int content = compound.getInteger("contenu");
+				content--;
+				compound.setInteger("contenu", content);
+				stack.setTagCompound(compound);
+				if (content == 0) {
+					player.inventory.decrStackSize(player.inventory.currentItem, 1);
+				}
+			}
+		}
+		return stack;
+	}
+
+	public ChatComponentText showMessage(EntityPlayer player, World world) {
 		if (!world.isRemote) {
 			EPAlcohol props = EPAlcohol.get(player);
 			props.addAlcohol(this.alcohol);
 			System.out.println("Alcoolémie : " + props.getAlcohol());
-			
+
 			// Message d'effet
 			int alc = props.getAlcohol();
 			String effect = "";
@@ -78,11 +136,11 @@ public class AlcoolHeimnor extends ItemFood {
 					effect = effect7[rand.nextInt(effect7.length)];
 				}
 			}
-			
+
 			ChatComponentText text = new ChatComponentText(effect);
 			text.setChatStyle(style);
-			player.addChatMessage(text);
+			return text;
 		}
-		return stack;
+		return null;
 	}
 }

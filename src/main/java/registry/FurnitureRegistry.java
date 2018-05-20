@@ -4,7 +4,7 @@ import com.heimnor.common.Heimnor;
 import com.heimnor.tileentity.TileEntityMiroir;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import init.block.BlockMetadata;
+import init.block.BlockDirection;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -14,7 +14,7 @@ public class FurnitureRegistry {
 
 	public static void registerFurnitures() {
 
-		miroir = new BlockMetadata(Material.wood).setResistance(0.5F)
+		miroir = new BlockDirection(Material.wood).setResistance(0.5F)
 				.setBlockTextureName(Heimnor.MODID + ":plandetravail").setBlockName("miroir")
 				.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs);
 		

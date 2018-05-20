@@ -15,9 +15,9 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-public class BlockMetadata extends Block{
+public class BlockDirection extends Block{
 	
-	public BlockMetadata(Material material) {
+	public BlockDirection(Material material) {
 		super(material);
 	}
 	
