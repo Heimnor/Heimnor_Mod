@@ -1,9 +1,7 @@
 package init.block;
 
 import com.heimnor.proxy.ClientProxy;
-import com.heimnor.tileentity.TileEntityFourCuisine;
 import com.heimnor.tileentity.TileEntityMiroir;
-import com.heimnor.tileentity.TileEntityPlancheDecoup;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

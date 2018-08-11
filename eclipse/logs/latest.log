@@ -1,0 +1,65 @@
+[18:33:05] [main/INFO]: Setting user: Player74
+[18:33:07] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:33:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Heimnor
+[18:33:18] [Sound Library Loader/INFO]: Sound engine started
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/GnollDeath1.ogg does not exist, cannot add it to event heimnormod:gnoll_mort
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/ZeppelinLoop.ogg does not exist, cannot add it to event heimnormod:zeppelin_loop
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingDeath.ogg does not exist, cannot add it to event heimnormod:montagnard_mort
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed1.ogg does not exist, cannot add it to event heimnormod:montagnard_pastis
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed2.ogg does not exist, cannot add it to event heimnormod:montagnard_tavernier
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed3.ogg does not exist, cannot add it to event heimnormod:montagnard_gros
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed4.ogg does not exist, cannot add it to event heimnormod:montagnard_petit
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed5.ogg does not exist, cannot add it to event heimnormod:montagnard_chopine
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed6.ogg does not exist, cannot add it to event heimnormod:montagnard_hydromel
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed7.ogg does not exist, cannot add it to event heimnormod:montagnard_rhum
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingReady1.ogg does not exist, cannot add it to event heimnormod:montagnard_pret
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat1.ogg does not exist, cannot add it to event heimnormod:montagnard_oui
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat2.ogg does not exist, cannot add it to event heimnormod:montagnard_action
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat3.ogg does not exist, cannot add it to event heimnormod:montagnard_ordre
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat4.ogg does not exist, cannot add it to event heimnormod:montagnard_mh
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes1.ogg does not exist, cannot add it to event heimnormod:montagnard_bien
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes2.ogg does not exist, cannot add it to event heimnormod:montagnard_partit
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes3.ogg does not exist, cannot add it to event heimnormod:montagnard_route
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes4.ogg does not exist, cannot add it to event heimnormod:montagnard_passer
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack1.ogg does not exist, cannot add it to event heimnormod:montagnard_armes
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack2.ogg does not exist, cannot add it to event heimnormod:montagnard_mal
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack3.ogg does not exist, cannot add it to event heimnormod:montagnard_tranche
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack4.ogg does not exist, cannot add it to event heimnormod:montagnard_assaut
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingAttack1.ogg does not exist, cannot add it to event heimnormod:montagnard_attaqueson
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/PeasantDeath.ogg does not exist, cannot add it to event heimnormod:paysan_mort
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/SorceressWhat4.ogg does not exist, cannot add it to event heimnormod:sorciere_ecoute
+[18:33:23] [Client thread/WARN]: File heimnormod:sounds/BallistaAttackEffort.ogg does not exist, cannot add it to event heimnormod:balliste_attaque
+[18:33:24] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[18:33:24] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[18:33:24] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Heimnor
+[18:33:25] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[18:33:25] [Client thread/INFO]: Created: 1024x512 textures/items-atlas
+[18:33:26] [Sound Library Loader/INFO]: Sound engine started
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/GnollDeath1.ogg does not exist, cannot add it to event heimnormod:gnoll_mort
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/ZeppelinLoop.ogg does not exist, cannot add it to event heimnormod:zeppelin_loop
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingDeath.ogg does not exist, cannot add it to event heimnormod:montagnard_mort
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed1.ogg does not exist, cannot add it to event heimnormod:montagnard_pastis
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed2.ogg does not exist, cannot add it to event heimnormod:montagnard_tavernier
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed3.ogg does not exist, cannot add it to event heimnormod:montagnard_gros
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed4.ogg does not exist, cannot add it to event heimnormod:montagnard_petit
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed5.ogg does not exist, cannot add it to event heimnormod:montagnard_chopine
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed6.ogg does not exist, cannot add it to event heimnormod:montagnard_hydromel
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingPissed7.ogg does not exist, cannot add it to event heimnormod:montagnard_rhum
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingReady1.ogg does not exist, cannot add it to event heimnormod:montagnard_pret
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat1.ogg does not exist, cannot add it to event heimnormod:montagnard_oui
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat2.ogg does not exist, cannot add it to event heimnormod:montagnard_action
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat3.ogg does not exist, cannot add it to event heimnormod:montagnard_ordre
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingWhat4.ogg does not exist, cannot add it to event heimnormod:montagnard_mh
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes1.ogg does not exist, cannot add it to event heimnormod:montagnard_bien
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes2.ogg does not exist, cannot add it to event heimnormod:montagnard_partit
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes3.ogg does not exist, cannot add it to event heimnormod:montagnard_route
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYes4.ogg does not exist, cannot add it to event heimnormod:montagnard_passer
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack1.ogg does not exist, cannot add it to event heimnormod:montagnard_armes
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack2.ogg does not exist, cannot add it to event heimnormod:montagnard_mal
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack3.ogg does not exist, cannot add it to event heimnormod:montagnard_tranche
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingYesAttack4.ogg does not exist, cannot add it to event heimnormod:montagnard_assaut
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/HeroMoutainKingAttack1.ogg does not exist, cannot add it to event heimnormod:montagnard_attaqueson
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/PeasantDeath.ogg does not exist, cannot add it to event heimnormod:paysan_mort
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/SorceressWhat4.ogg does not exist, cannot add it to event heimnormod:sorciere_ecoute
+[18:33:26] [Client thread/WARN]: File heimnormod:sounds/BallistaAttackEffort.ogg does not exist, cannot add it to event heimnormod:balliste_attaque
+[18:33:40] [Client thread/INFO]: Stopping!

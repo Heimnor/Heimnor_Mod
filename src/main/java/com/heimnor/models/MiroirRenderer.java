@@ -4,7 +4,6 @@ import org.lwjgl.opengl.GL11;
 
 import com.heimnor.common.Heimnor;
 import com.heimnor.tileentity.TileEntityMiroir;
-import com.heimnor.tileentity.TileEntityPlancheDecoup;
 
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;

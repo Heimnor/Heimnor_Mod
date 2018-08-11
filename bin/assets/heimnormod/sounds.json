@@ -1,0 +1,5003 @@
+{
+    "clochette_sound":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "clochette",
+                "stream": false
+            }
+        ]
+    },
+    "cuttingVegie_sound":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "cuttingVegie",
+                "stream": false
+            }
+        ]
+    },
+	"assassin_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "AssassinDeath1",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditDeath1",
+                "stream": false
+            }
+        ]
+	},	
+	"bandit_seul":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditPissed2",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_lumiere":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditPissed3",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_sombre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditPissed4",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_apple":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditPissed5",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_embuscade":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditWarcry1",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditWhat1",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_cible":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditWhat2",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_leon":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditWhat3",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_okidoki":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditYes1",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_partit":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditYes2",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_bien":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditYes3",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_assaut":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditYesAttack1",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_gamoloronn":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditYesAttack2",
+                "stream": false
+            }
+        ]
+	},
+	"bandit_sus":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BanditYesAttack3",
+                "stream": false
+            }
+        ]
+	},
+	"banshee_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BansheeGhostDeath1",
+                "stream": false
+            }
+        ]
+	},
+	"banshee_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BansheeGhostWhat1",
+                "stream": false
+            }
+        ]
+	},
+	"banshee_oui1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BansheeGhostYes1",
+                "stream": false
+            }
+        ]
+	},
+	"banshee_oui2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BansheeGhostYes2",
+                "stream": false
+            }
+        ]
+	},
+	"banshee_attaque1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BansheeGhostYesAttack1",
+                "stream": false
+            }
+        ]
+	},
+	"banshee_attaque2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BansheeGhostYesAttack2",
+                "stream": false
+            }
+        ]
+	},
+	"dragon_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonDeath1",
+                "stream": false
+            }
+        ]
+	},		
+	"dragon_grogne":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonPissed1",
+                "stream": false
+            }
+        ]
+	},			
+	"dragon_grogne2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonPissed2",
+                "stream": false
+            }
+        ]
+	},
+	"dragon_grogne3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonPissed3",
+                "stream": false
+            }
+        ]
+	},
+	"dragon_grogne4":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonWhat1",
+                "stream": false
+            }
+        ]
+	},
+	"dragon_grogne5":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonWhat2",
+                "stream": false
+            }
+        ]
+	},
+	"dragon_grogne6":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonWhat3",
+                "stream": false
+            }
+        ]
+	},				
+	"dragon_crache1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonYes1",
+                "stream": false
+            }
+        ]
+	},
+	"dragon_crache2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonYes2",
+                "stream": false	
+			}
+        ]
+	},
+	"dragon_crache3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonYes3",
+                "stream": false	
+			}
+        ]
+	},
+	"dragon_attaque1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonYesAttack1",
+                "stream": false	
+			}
+        ]
+	},
+	"dragon_attaque2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonYesAttack2",
+                "stream": false	
+			}
+        ]
+	},
+	"dragon_attaque3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DragonYesAttack3",
+                "stream": false	
+			}
+        ]
+	},
+	"dragon_attaque4":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BlackDragonAttack1",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurDeath",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_colere1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurPissed1",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_colere2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurPissed2",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_pret1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurReady1",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_quoi1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurWhat1",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_quoi2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurWhat2",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_quoi3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurWhat3",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_oui1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurYes1",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_oui2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurYes2",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_oui3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurYes3",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_attaque1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurYesAttack1",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_attaque2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurYesAttack2",
+                "stream": false	
+			}
+        ]
+	},
+	"centaure_attaque3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CentaurYesAttack3",
+                "stream": false	
+			}
+        ]
+	},
+	"ent_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "EntDeath1",
+                "stream": false	
+			}
+        ]
+	},
+	"ent_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "EntReady1",
+                "stream": false	
+			}
+        ]
+	},
+	"ent_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "EntWhat1",
+                "stream": false	
+			}
+        ]
+	},
+	"ent_oui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "EntYes1",
+                "stream": false	
+			}
+        ]
+	},
+	"loup_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DireWolfDeath1",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollDeath",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_bourpif":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollPissed1",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_Tuvokdulas":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollPissed2",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_gibberish":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollPissed3",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_ooh":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollPissed4",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_quoidneuf":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollPissed5",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_ordonnance":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollPissed6",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_quartier":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollReady1",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_sus":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollWarcry1",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollWhat1",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_hache":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollWhat2",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_quituer":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollWhat3",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_illitchuta":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollWhat4",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_daccord":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYes1",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_gibberish2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYes2",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_toutfaire":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYes3",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_oui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYes4",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_attaque":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYesAttack1",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_attaque2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYesAttack2",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_boum":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYesAttack3",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_attaque3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollYesAttack4",
+                "stream": false	
+			}
+        ]
+	},
+	"troll_mort2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ForestTrollShadowPriestDeath1",
+                "stream": false	
+			}
+        ]
+	},
+	"furbolg_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgDeath1",
+                "stream": false	
+			}
+        ]
+	},
+	"furbolg_grogne1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_gibberish":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne4":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne5":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne6":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne7":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne8":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne9":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne10":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"furbolg_grogne11":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FurbolgYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_grogne1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_grogne2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_jappe":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_confus":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_grogne3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_quoi1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_quoi2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_grogne4":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_oui1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_oui2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_compris":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_attaque1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_attaque2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_attaque3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"gnoll_mort2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GnollArcherDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"mine_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinLandMineDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_papa":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_prout":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_minicarte":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_scotty":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_grisbi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_pomme":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperPissed6",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_et_autre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperPissed7",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_salut":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_destin":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperWarcry1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_oui_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_oui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_postes":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_pare":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_quoi2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperWhat5",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_fete":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYes1",
+                "stream": false	
+				     }
+        ]
+		},	
+	"goblin_chouette":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_eclate":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_partit":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_rire":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYes5",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_fauve":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_trop_beau":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_amis":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_paix":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYesAttack4",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_leon":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinSapperYesAttack5",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_explosion":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SapperBlowsUp",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_crash":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_gibberish1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinFull1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_gibberish2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinLoading1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_vertige":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_nains":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_boutons":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_bouton":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_papy":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_mourir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinPissed6",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_sans_peur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_quoi_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_menace":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_hein":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_kwa":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_compris":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_sulu":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_hihi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"goblin_vroum":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GoblinZeppelinYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"zeppelin_loop":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ZeppelinLoop",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri4":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri5":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri6":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri7":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri8":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri9":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri10":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"harpy_cri11":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HarpyYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"enfant_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerChildDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"enfant_salut":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerCWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"enfant_jouer":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerCWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"enfant_chat":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerCWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"enfant_qui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerCWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"enfant_nom":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerCWhat5",
+                "stream": false	
+				     }
+        ]
+		},
+	"villageois_bonjour":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerM1",
+                "stream": false	
+				     }
+        ]
+		},
+	"villageois_joie":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerM2",
+                "stream": false	
+				     }
+        ]
+		},
+	"villageois_baie":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerM3",
+                "stream": false	
+				     }
+        ]
+		},
+	"villageois_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerMaleDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"villageoise_bonjour":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerF1",
+                "stream": false	
+				     }
+        ]
+		},
+	"villageoise_bienvenue":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerF2",
+                "stream": false	
+				     }
+        ]
+		},
+	"villageoise_heureuse":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "VillagerF3",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_prince":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_honneur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_guide":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_force":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_commander":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_sait":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasPissed6",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_inutile":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasPissed7",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_lumiere":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_danger":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_combat":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_ordre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_justice":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasWhat5",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_biensur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_certainement":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_plan":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_honneur2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_demon":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_lumiere2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_fin":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_roi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYesAttack4",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_courroux":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYesAttack5",
+                "stream": false	
+				     }
+        ]
+		},
+	"arthas_justice2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArthasYesAttack6",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_couvert":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_heure":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_engager":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_egratignure":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanReady1",
+                "stream": false	
+				     }
+        ]
+		},
+		//test 1
+	"fantassin_ordre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_vouloir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_seigneur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_ordre2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_compris":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_vais":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_ordre3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_certainnement":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_laisser":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_attaque":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"fantassin_armes":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "FootmanYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+
+	"aiglier_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_boire":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_clou":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_vie":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_chef":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_moyens":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_yep":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderWhat5",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_yep2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_probleme":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"aiglier_super":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "GryphonRiderYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_guerre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmagePissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_encore":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_ecoute":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_alors":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_parfait":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_faut":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_engage":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"archimage_gloire":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroArchmageYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_pastis":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_tavernier":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_gros":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_petit":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_chopine":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_hydromel":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingPissed6",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_rhum":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingPissed7",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_oui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_action":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_ordre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_mh":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_bien":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_partit":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_route":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_passer":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_armes":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_mal":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_tranche":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_assaut":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingYesAttack4",
+                "stream": false	
+				     }
+        ]
+		},
+	"montagnard_attaqueson":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroMoutainKingAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_attaqueson1":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_attaqueson2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_foi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_bouclier":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_chaste":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_jeanpierre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_publique":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_obscur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinPissed6",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_foi2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_attendez":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_crainte":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_peril":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_siera":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_souhait":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_honneur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_foi3":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_ainsi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_justice":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_nom":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"paladin_infidels":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "HeroPaladinYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaOnFootDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_pacifiste":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_etudier":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_troubles":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_pere":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_bizarre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_aider":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_etrange":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_reflechir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_plan":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_bien":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_voir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_interessant":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_charge":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_violence":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"jaina_attaque":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "JainaYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_pique":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_chaussettes":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_ni":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_chasseur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightPissed6",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_ordre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_honneur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightWarcry1",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_sir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_votre_honneur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_ordre2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"chevalier_oui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "KnightWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	// test 2
+	"baffe":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_casser":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamPissed6",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_johnson":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamPissed7",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_compte":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamPissed8",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_combat":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_aller":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_cible":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_bouge":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_fait":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamYes5",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_route":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamYes6",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_bataille":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_mort2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_attrape":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamYesAttack4",
+                "stream": false	
+				     }
+        ]
+		},
+	"mortier_chaud":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MortarTeamYesAttack5",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_cadet":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_baffe":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_souffrir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_force":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinWarcry1",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_aller":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_mieux":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_ainsi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_partit":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_chauffer":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"muradin_attaque":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "MuradinYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_francois":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_humour":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_aah":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantWarcry1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_oui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantWhat2",
+                "stream": false	
+				     }
+        ]
+		},	
+	"paysan_encore":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_pardon":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_bien":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_oui2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_bien2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_occuper":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_essayer":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_vouler":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_autre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"paysan_mort2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PeasantYesAttack4",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_lumiere":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_dingue":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_purifier":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_frapper":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestWarcry1",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_maux":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_fils":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_benediction":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_blesses":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_serviteur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_bien":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestYes2",
+                "stream": false	
+				     }
+        ]
+		},	
+	"pretre_plaira":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"pretre_champ":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "PriestYes4",
+                "stream": false	
+				     }
+        ]
+		},	
+	"fusillier_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_hommes":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_creuse":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_payer":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_oui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_cible":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_cible2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_occupe":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_partit":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_oui2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"fusillier_tirer":
+	{
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "RiflemanYesAttack4",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressDeath",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_vivre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_loreal":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_choix":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_instable":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_peine":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+//test 3
+	"sorciere_quoi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_ecoute":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_alors":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressWhat5",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_insister":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_idee":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_temps":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_desirs":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},	
+	"sorciere_victoire":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"sorciere_champ":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "SorceressYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"capitaine_paysan":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainPissed1",
+                "stream": false	
+			}
+        ]
+		},
+	"capitaine_grognon":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainPissed2",
+                "stream": false	
+			}
+        ]
+		},
+	"capitaine_gallons":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"capitaine_pret":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"capitaine_désirs":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"capitaine_servir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"capitaine_honorer":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"capitaine_mieux":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"capitaine_immonde":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "CaptainYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_vieux":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherPissed1",
+                "stream": false	
+				     }
+        ]
+		},
+//test 5
+	"uther_eglise":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_ici":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherWhat1",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_crainte":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherWhat2",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_lumiere":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherWhat3",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_faillir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_bien":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_sage":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_lumiere2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_honneur":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"uther_detruire":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "UtherYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+//test 7
+	"archere_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherDeath1",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_plan":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherPissed1",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_salauds":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherPissed2",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_robin":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherPissed3",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_pomme":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherPissed4",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_chocolats":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherPissed5",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_culture":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherPissed6",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_pulpe":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherPissed7",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_prete":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherReady1",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_lune":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherWarcry1",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_t_ecoute":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherWhat1",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_chemin":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherWhat2",
+                "stream": false	
+			}
+        ]
+	},
+	"archere_ordre":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherWhat3",
+                "stream": false	
+				     }
+        ]
+	},
+	"archere_v_ecoute":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherWhat4",
+                "stream": false	
+				     }
+        ]
+		},
+//test 4
+	"archere_compris":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYes1",
+                "stream": false	
+				     }
+        ]
+		},
+	"archere_recu":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYes2",
+                "stream": false	
+				     }
+        ]
+		},
+	"archere_ainsi":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYes3",
+                "stream": false	
+				     }
+        ]
+		},
+	"archere_facile":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYes4",
+                "stream": false	
+				     }
+        ]
+		},
+	"archere_decocher":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYesAttack1",
+                "stream": false	
+				     }
+        ]
+		},
+	"archere_feu":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYesAttack2",
+                "stream": false	
+				     }
+        ]
+		},
+	"archere_fleche":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYesAttack3",
+                "stream": false	
+				     }
+        ]
+		},
+	"archere_arc":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ArcherYesAttack4",
+                "stream": false	
+				     }
+        ]
+		},
+	"balliste_attaque":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BallistaAttackEffort",
+                "stream": false	
+				     }
+        ]
+		},
+	"balliste_avance":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "BallistaReady1",
+                "stream": false	
+				     }
+        ]
+		},
+	"chimere_cri":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "ChimaeraPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"dryade_mort":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadDeath1",
+                "stream": false	
+				     }
+        ]
+		},
+	"dryade_chance":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadPissed2",
+                "stream": false	
+				     }
+        ]
+		},
+	"dryade_cela":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadPissed3",
+                "stream": false	
+				     }
+        ]
+		},
+	"dryade_mongolienne":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadPissed4",
+                "stream": false	
+				     }
+        ]
+		},
+	"dryade_flou":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadPissed5",
+                "stream": false	
+				     }
+        ]
+		},
+	"dryade_probleme":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadPissed8",
+                "stream": false	
+				     }
+        ]
+		},
+	"dryade_tact":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadPissed9",
+                "stream": false	
+			}
+        ]
+	},
+	"dryade_nature":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadReady1",
+                "stream": false	
+			}
+        ]
+		},
+	"dryade_bonjour":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadWhat1",
+                "stream": false	
+			}
+        ]
+		},
+	"dryade_probleme2":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadWhat2",
+                "stream": false	
+			}
+        ]
+		},
+	"dryade_qui":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadWhat3",
+                "stream": false	
+			}
+        ]
+		},
+	"dryade_route":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadYes2",
+                "stream": false	
+			}
+        ]
+	},
+	"dryade_partit":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadYes3",
+                "stream": false	
+			}
+        ]
+	},
+	"dryade_plaisir":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadYes4",
+                "stream": false	
+			}
+        ]
+	},
+	"dryade_lance":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadYesAttack2",
+                "stream": false	
+			}
+        ]
+	},	
+	"dryade_chasse":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadYesAttack3",
+                "stream": false	
+			}
+        ]
+	},
+	"dryade_viser":
+    {
+        "category": "master",
+        "sounds":
+        [
+            {
+                "name": "DryadYesAttack4",
+                "stream": false	
+			}
+        ]
+	}
+}

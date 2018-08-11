@@ -5,13 +5,9 @@ import java.util.ArrayList;
 
 import com.heimnor.client.FichesGui;
 import com.heimnor.common.Heimnor;
-import com.heimnor.models.FourRenderer;
 import com.heimnor.models.MiroirRenderer;
-import com.heimnor.models.PlancheDecoupRenderer;
 import com.heimnor.packet.IMessageCSSync;
-import com.heimnor.tileentity.TileEntityFourCuisine;
 import com.heimnor.tileentity.TileEntityMiroir;
-import com.heimnor.tileentity.TileEntityPlancheDecoup;
 import com.heimnor.utils.NbtCsFile;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -47,8 +43,6 @@ public class ClientProxy extends CommonProxy {
 		
 		 
         RenderingRegistry.registerBlockHandler(new TESRInventoryRender());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityFourCuisine.class, new FourRenderer());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPlancheDecoup.class, new PlancheDecoupRenderer());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMiroir.class, new MiroirRenderer());
 	}
 

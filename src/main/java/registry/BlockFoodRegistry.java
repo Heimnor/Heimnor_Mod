@@ -1,29 +1,21 @@
 package registry;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.heimnor.common.Heimnor;
-import com.heimnor.tileentity.TileEntityFourCuisine;
-import com.heimnor.tileentity.TileEntityPlancheDecoup;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import init.block.BlockFourCuisine;
-import init.block.BlockGlass;
 import init.block.BlockPlanDeTravail;
-import init.block.BlockPlancheDecoup;
+import init.foods.AlcoolHeimnor;
+import init.foods.CouteauCuisineHeimnor;
 import init.foods.IngredientsHeimnor;
 import init.foods.ItemsFoodHeimnor;
 import init.foods.UstensileHeimnor;
-import init.foods.AlcoolHeimnor;
-import init.foods.CouteauCuisineHeimnor;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
 public class BlockFoodRegistry {
 
-	public static Block planDeTravail, fourCuisine, plancheDecoup, verre;
+	public static Block planDeTravail;
 
 	public static Item couteauCuisineSimple;
 
@@ -149,11 +141,6 @@ public class BlockFoodRegistry {
 
 		planDeTravail = new BlockPlanDeTravail(Material.wood).setBlockName("plandetravail")
 				.setBlockTextureName(Heimnor.MODID + ":plandetravail").setCreativeTab(Heimnor.HeimnorFoodTabs);
-		verre = new BlockGlass(Material.glass).setBlockName("verre").setBlockTextureName(Heimnor.MODID + ":verre");
-		fourCuisine = new BlockFourCuisine(Material.glass).setBlockName("fourCuisine")
-				.setCreativeTab(Heimnor.HeimnorFoodTabs).setBlockTextureName(Heimnor.MODID + ":fourmaterialrock");
-		plancheDecoup = new BlockPlancheDecoup(Material.wood).setBlockName("plancheDecoup")
-				.setCreativeTab(Heimnor.HeimnorFoodTabs).setBlockTextureName(Heimnor.MODID + ":plancheDecoup");
 
 		tartineFromage = new IngredientsHeimnor(5, 0.6F, false).setUnlocalizedName("tartinefrom")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":tartinefrom");
@@ -205,14 +192,11 @@ public class BlockFoodRegistry {
 		GameRegistry.registerItem(tartineFromage, "item_tartinefrom");
 		GameRegistry.registerItem(toastFromageFondu, "item_toastfromfondu");
 
-		GameRegistry.registerBlock(fourCuisine, "block_fourcuisine");
 		GameRegistry.registerBlock(planDeTravail, "block_plandetravail");
-		GameRegistry.registerBlock(plancheDecoup, "block_planchedecoup");
-		GameRegistry.registerBlock(verre, "block_verre");
+
 	}
 
 	public static void registerTileEntity() {
-		GameRegistry.registerTileEntity(TileEntityFourCuisine.class, Heimnor.MODID + ":fourcuisine");
-		GameRegistry.registerTileEntity(TileEntityPlancheDecoup.class, Heimnor.MODID + ":plancheDecoup");
+
 	}
 }
