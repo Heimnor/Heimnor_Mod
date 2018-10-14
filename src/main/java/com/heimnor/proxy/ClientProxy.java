@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 import com.heimnor.client.FichesGui;
 import com.heimnor.common.Heimnor;
-import com.heimnor.models.MiroirRenderer;
+import com.heimnor.models.OneBlockRenderer;
 import com.heimnor.packet.IMessageCSSync;
-import com.heimnor.tileentity.TileEntityMiroir;
+import com.heimnor.tileentity.TileEntityDirection;
 import com.heimnor.utils.NbtCsFile;
 
 import cpw.mods.fml.client.registry.ClientRegistry;
@@ -41,9 +41,8 @@ public class ClientProxy extends CommonProxy {
 		EquipmentRender.registerEquipmentRender();
 		renderID = RenderingRegistry.getNextAvailableRenderId();
 		
-		 
         RenderingRegistry.registerBlockHandler(new TESRInventoryRender());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityMiroir.class, new MiroirRenderer());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDirection.class, new OneBlockRenderer());
 	}
 
 	@SubscribeEvent

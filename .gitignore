@@ -1,0 +1,19 @@
+
+.gradle/2.0/taskArtifacts/cache.properties
+build.gradle
+.project
+# exclude everything
+eclipse/*
+.gradle/*
+.setting/*
+bin/*
+gradle/*
+CREDITS-fml.txt
+forge-1.7.10-10.13.4.1614-1.7.10-changelog.txt
+gradlew
+gradlew.bat
+README.txt
+MinecraftForge-License.txt
+MinecraftForge-Credits.txt
+LICENSE-fml.txt
+.settings/org.eclipse.jdt.core.prefs

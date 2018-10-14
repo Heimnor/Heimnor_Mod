@@ -3,7 +3,7 @@ package registry;
 import com.heimnor.common.Heimnor;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import init.block.BlockPlanDeTravail;
+import init.block.HBlock;
 import init.foods.AlcoolHeimnor;
 import init.foods.CouteauCuisineHeimnor;
 import init.foods.IngredientsHeimnor;
@@ -139,7 +139,7 @@ public class BlockFoodRegistry {
 		sandLainard = new ItemsFoodHeimnor(9, 0.9F, false).setUnlocalizedName("sandLainard")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":sandlainard");
 
-		planDeTravail = new BlockPlanDeTravail(Material.wood).setBlockName("plandetravail")
+		planDeTravail = new HBlock(Material.wood).setBlockName("plandetravail")
 				.setBlockTextureName(Heimnor.MODID + ":plandetravail").setCreativeTab(Heimnor.HeimnorFoodTabs);
 
 		tartineFromage = new IngredientsHeimnor(5, 0.6F, false).setUnlocalizedName("tartinefrom")

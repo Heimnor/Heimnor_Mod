@@ -11,6 +11,8 @@ itemGroup.heimnor_weapon_creative_tabs=Heimnor Armes
 itemGroup.heimnor_misc_creative_tabs=Heimnor Divers
 itemGroup.heimnor_armor_creative_tabs=Heimnor Armure
 itemGroup.heimnor_food_tabs=Heimnor Cuisine
+itemGroup.heimnor_block_tabs=Heimnor Blocs
+itemGroup.heimnor_blockdeco_tabs=Heimnor Blocs Décoratifs
 
 item.adamanteC.name=Casque de Braz
 item.adamanteP.name=Plastron de Braz

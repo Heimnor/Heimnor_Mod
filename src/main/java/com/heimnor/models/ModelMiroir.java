@@ -3,7 +3,7 @@ package com.heimnor.models;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 
-public class ModelMiroir extends ModelBase
+public class ModelMiroir extends ModelBaseH
 {
     ModelRenderer Block;
     ModelRenderer Block1;

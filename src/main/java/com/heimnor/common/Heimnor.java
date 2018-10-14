@@ -3,13 +3,13 @@ package com.heimnor.common;
 import java.io.File;
 import java.io.IOException;
 
-import org.lwjgl.opengl.Display;
-
 import com.heimnor.client.PlayerDataEventHandler;
 import com.heimnor.command.player.CommandAJ;
 import com.heimnor.command.player.CommandJet;
 import com.heimnor.command.staff.HPerm;
 import com.heimnor.creativetabs.HeimnorArmorCreativeTabs;
+import com.heimnor.creativetabs.HeimnorBlockCreativeTabs;
+import com.heimnor.creativetabs.HeimnorBlocksDecoTabs;
 import com.heimnor.creativetabs.HeimnorFoodCreativeTabs;
 import com.heimnor.creativetabs.HeimnorMiscCreativeTab;
 import com.heimnor.creativetabs.HeimnorWeaponCreativeTabs;
@@ -45,11 +45,7 @@ import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import init.divers.ClochetteMJ;
-import init.divers.ItemDes;
-import init.divers.ItemHeimnor;
-import init.drinks.VerreVin;
 import init.foods.AlcoolHeimnor;
-import init.foods.ItemsFoodHeimnor;
 import init.foods.NourritureMinerale1;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -57,7 +53,8 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.MinecraftForge;
 import registry.ArmorRegistry;
 import registry.BlockFoodRegistry;
-import registry.FurnitureRegistry;
+import registry.BlocksDecoRegistry;
+import registry.BlocksRegistry;
 import registry.MiscRegistry;
 import registry.RecipesFoodMod;
 import registry.WeaponsRegistry;
@@ -75,6 +72,8 @@ public class Heimnor {
 	public static CreativeTabs HeimnorWeaponCreativeTabs = new HeimnorWeaponCreativeTabs(
 			"heimnor_weapon_creative_tabs");
 	public static CreativeTabs HeimnorFoodTabs = new HeimnorFoodCreativeTabs("heimnor_food_tabs");
+	public static CreativeTabs HeimnorBlockTabs = new HeimnorBlockCreativeTabs("heimnor_block_tabs");
+	public static CreativeTabs HeimnorBlockDecoTabs = new HeimnorBlocksDecoTabs("heimnor_blockdeco_tabs");
 
 	public static Item itemclochette;
 	// Déclaration des items divers
@@ -102,16 +101,16 @@ public class Heimnor {
 		itemnourritureminerale1 = new NourritureMinerale1(8, 0.5F, false).setUnlocalizedName("NourritureMinerale1")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":nourritureminerale1");
 
-		// Items Consommables (Remplacer Boisson par Manger au besoin)
-
 		ArmorRegistry.registerArmors();
 		WeaponsRegistry.registerWeapons();
 		BlockFoodRegistry.registerBlock();
 		RecipesFoodMod.registerRecipes();
-		FurnitureRegistry.registerFurnitures();
+		BlocksDecoRegistry.registerFurnitures();
+		BlocksDecoRegistry.registerTileEntities();
 		BlockFoodRegistry.registerTileEntity();
-		FurnitureRegistry.registerTileEntities();
 		MiscRegistry.registerMiscItems();
+		BlocksRegistry.registerBlocks();
+		BlocksRegistry.registerTileEntities();
 
 		GameRegistry.registerItem(itemnourritureminerale1, "item_nourritureminerale1");
 		GameRegistry.registerItem(itemverre_vin, "item_verre_vin");
