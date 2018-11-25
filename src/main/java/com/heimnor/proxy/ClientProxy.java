@@ -7,6 +7,7 @@ import com.heimnor.client.FichesGui;
 import com.heimnor.common.Heimnor;
 import com.heimnor.models.OneBlockRenderer;
 import com.heimnor.packet.IMessageCSSync;
+import com.heimnor.renders.RenderRideau;
 import com.heimnor.tileentity.TileEntityDirection;
 import com.heimnor.utils.NbtCsFile;
 
@@ -29,6 +30,7 @@ public class ClientProxy extends CommonProxy {
 
 	public static ArrayList<String> CHATTING_PLAYERS_USERNAME = new ArrayList<String>();
 	public static int renderID;
+	public static int renderBanniereId;
 	
 	public ClientProxy() {
 
@@ -40,6 +42,10 @@ public class ClientProxy extends CommonProxy {
 
 		EquipmentRender.registerEquipmentRender();
 		renderID = RenderingRegistry.getNextAvailableRenderId();
+		
+		
+		renderBanniereId = RenderingRegistry.getNextAvailableRenderId();
+		RenderingRegistry.registerBlockHandler(renderBanniereId, new RenderRideau());
 		
         RenderingRegistry.registerBlockHandler(new TESRInventoryRender());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDirection.class, new OneBlockRenderer());

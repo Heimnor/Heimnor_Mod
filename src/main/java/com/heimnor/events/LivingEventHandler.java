@@ -98,8 +98,6 @@ public class LivingEventHandler {
 			tessellator.addVertexWithUV(-16 + 0, -220 + 32, -10, 0.1F, 0.1F);
 			tessellator.addVertexWithUV(-16 + 32, -220 + 32, -10, 0.1F, 0.0F);
 			tessellator.addVertexWithUV(-16 + 32, -220 + 0, -10, 0.0F, 0.0F);
-			// coin haut gauche
-
 			tessellator.addVertexWithUV(-16 + 0, -220 + 0, -10, 0.0F, 0.1F);
 			tessellator.draw();
 			GL11.glPopMatrix();

@@ -59,6 +59,13 @@ import registry.MiscRegistry;
 import registry.RecipesFoodMod;
 import registry.WeaponsRegistry;
 
+/**
+ * 
+  * @author Joe
+  * 25 nov. 2018
+  *
+ */
+
 @Mod(modid = Heimnor.MODID, name = Heimnor.NAME, version = Heimnor.VERSION)
 public class Heimnor {
 	public static final String MODID = "heimnormod";
