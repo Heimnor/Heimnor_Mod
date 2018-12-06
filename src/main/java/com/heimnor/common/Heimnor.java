@@ -98,6 +98,8 @@ public class Heimnor {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {// Pré Initialisation
+		
+		proxy.registerRender();
 
 		itemclochette = new ClochetteMJ().setUnlocalizedName("clochette")
 				.setTextureName(Heimnor.MODID + ":clochettetext").setCreativeTab(HeimnorMiscCreativeTabs);
@@ -165,7 +167,6 @@ public class Heimnor {
 		MinecraftForge.EVENT_BUS.register(new PropertiesEvent());
 		FMLCommonHandler.instance().bus().register(new PropertiesEvent());
 		NetworkRegistry.INSTANCE.registerGuiHandler(Heimnor.instance, new CSGuiHandler());
-		proxy.registerRender();
 		// Items Render
 
 	}

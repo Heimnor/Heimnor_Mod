@@ -15,8 +15,6 @@ import net.minecraft.item.Item;
 
 public class BlockFoodRegistry {
 
-	public static Block planDeTravail;
-
 	public static Item couteauCuisineSimple;
 
 	public static Item fromagedoux, pain, tranchedepain, chocolat, algues, bacon, jambon, banane, beurre,
@@ -139,9 +137,6 @@ public class BlockFoodRegistry {
 		sandLainard = new ItemsFoodHeimnor(9, 0.9F, false).setUnlocalizedName("sandLainard")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":sandlainard");
 
-		planDeTravail = new HBlock(Material.wood).setBlockName("plandetravail")
-				.setBlockTextureName(Heimnor.MODID + ":plandetravail").setCreativeTab(Heimnor.HeimnorFoodTabs);
-
 		tartineFromage = new IngredientsHeimnor(5, 0.6F, false).setUnlocalizedName("tartinefrom")
 				.setCreativeTab(Heimnor.HeimnorFoodTabs).setTextureName(Heimnor.MODID + ":tartinefrom");
 		toastFromageFondu = new ItemsFoodHeimnor(6, 0.8F, false).setUnlocalizedName("toastfrom")
@@ -191,8 +186,6 @@ public class BlockFoodRegistry {
 
 		GameRegistry.registerItem(tartineFromage, "item_tartinefrom");
 		GameRegistry.registerItem(toastFromageFondu, "item_toastfromfondu");
-
-		GameRegistry.registerBlock(planDeTravail, "block_plandetravail");
 
 	}
 

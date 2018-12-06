@@ -12,7 +12,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class BlockDirectionLog extends Block {
+public class BlockDirectionLog extends HBlock {
 
 	public String name;
 
@@ -23,9 +23,8 @@ public class BlockDirectionLog extends Block {
 
 	private int var1;
 
-	public BlockDirectionLog(Material material, String name) {
-		super(material);
-
+	public BlockDirectionLog(String name) {
+		super(name);
 		this.name = name;
 		this.setCreativeTab(Heimnor.HeimnorBlockTabs);
 	}

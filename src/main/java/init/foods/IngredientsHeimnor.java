@@ -60,9 +60,9 @@ public class IngredientsHeimnor extends ItemFood {
 			lore.add(EnumChatFormatting.RED + "Viande vraiment grasse, on peut voir");
 			lore.add(EnumChatFormatting.RED + "le gras briller apres la cuisson.");
 		} else if (stack.getItem() == BlockFoodRegistry.boulettes) {
-			lore.add(EnumChatFormatting.RED + "Quelques boulettes qui rendent les");
-			lore.add(EnumChatFormatting.RED + "viandes moins tendre a avoir une texture");
-			lore.add(EnumChatFormatting.RED + "bien plus agreable.");
+			lore.add(EnumChatFormatting.RED + "Quelques boulettes qui aident les viandes");
+			lore.add(EnumChatFormatting.RED + "moins tendre a avoir une texture bien");
+			lore.add(EnumChatFormatting.RED + " plus agreable.");
 		} else if (stack.getItem() == BlockFoodRegistry.boulettescuites) {
 			lore.add(EnumChatFormatting.RED + "Un plat plutot basique mais qui");
 			lore.add(EnumChatFormatting.RED + "satisfait presque tout le monde pour");
@@ -75,8 +75,7 @@ public class IngredientsHeimnor extends ItemFood {
 		} else if (stack.getItem() == BlockFoodRegistry.viandehacheecuite) {
 			lore.add(EnumChatFormatting.RED + "Viande prete a etre consommee");
 			lore.add(EnumChatFormatting.RED + "tel quel ou pour rajouter a autre");
-			lore.add(EnumChatFormatting.RED + "chose pour faire un plat simple mais");
-			lore.add(EnumChatFormatting.RED + "efficace.");
+			lore.add(EnumChatFormatting.RED + "chose.");
 		}
 	}
 }

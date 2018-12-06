@@ -2,6 +2,8 @@ package init.block;
 
 import com.heimnor.common.Heimnor;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -16,9 +18,9 @@ public class BlockNoWebCollision extends Block {
 
 	public BlockNoWebCollision(Material material, String name, String[] nameArray) {
 		super(material);
-		this.setBlockTextureName(Heimnor.MODID + ":" + name);
+		
 		this.setBlockName(name);
-		this.setCreativeTab(Heimnor.HeimnorMiscCreativeTabs);
+		this.setCreativeTab(Heimnor.HeimnorBlockDecoTabs);
 		subBlock = new String[nameArray.length];
 		
 		for(int i =0 ; i < nameArray.length ; i++) {
@@ -32,7 +34,8 @@ public class BlockNoWebCollision extends Block {
 
 		return 1;
 	}
-
+	
+	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconRegister)
 	    {
 	        for(int i = 0; i < subBlock.length; i++)
@@ -41,6 +44,7 @@ public class BlockNoWebCollision extends Block {
 	        }
 	    }
 	
+	@SideOnly(Side.CLIENT)
 	public IIcon getIcon(int side, int metadata)
     {
         if(metadata >= 0 && metadata < subBlock.length)
