@@ -1,5 +1,4 @@
 package com.heimnor.packet;
-
 import com.heimnor.events.LivingEventHandler;
 import com.heimnor.proxy.ClientProxy;
 

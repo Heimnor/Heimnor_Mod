@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 
 public class MiscRegistry {
 
-	public static Item cleanWater, dirtyWater, saltWater, des, drogue1, chope_vide, verre_vin_vide, bouteilleVide, aj, outilDev; 
+	public static Item cleanWater, dirtyWater, saltWater, des, drogue1, chope_vide, verre_vin_vide, bouteilleVide, aj, outilDev, ecu; 
 	
 	public static void registerMiscItems() {
 		
@@ -27,7 +27,7 @@ public class MiscRegistry {
 		dirtyWater = new ItemHeimnor("dirtyWater");
 		saltWater = new ItemHeimnor("saltWater");
 		outilDev = new OutilDev();
-		
+		ecu = new ItemHeimnor("ecu");
 		
 		GameRegistry.registerItem(des, "item_des");
 		GameRegistry.registerItem(drogue1, "item_drogue1");
@@ -39,5 +39,6 @@ public class MiscRegistry {
 		GameRegistry.registerItem(dirtyWater, "item_dirtyWater");
 		GameRegistry.registerItem(saltWater, "item_saltWater");
 		GameRegistry.registerItem(outilDev, "item_outilDev");
+		GameRegistry.registerItem(ecu, "item_ecu");
 	}
 }

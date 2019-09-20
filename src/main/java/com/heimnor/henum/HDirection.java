@@ -2,8 +2,6 @@ package com.heimnor.henum;
 
 import java.util.HashMap;
 
-import init.block.BlockReactUpDown;
-import init.block.ConnectedStructureBlock;
 import net.minecraft.block.Block;
 import net.minecraft.world.IBlockAccess;
 

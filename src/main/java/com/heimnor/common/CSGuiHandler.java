@@ -14,6 +14,12 @@ public class CSGuiHandler implements IGuiHandler {
 	public static final int CHARACTER_SHEET_LIST = 2;
 
 	@Override
+	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+
+		return null;
+	}
+
+	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		TileEntity tile = world.getTileEntity(x, y, z);
 
@@ -22,12 +28,6 @@ public class CSGuiHandler implements IGuiHandler {
 
 		if (ID == CHARACTER_SHEET_LIST)
 			return new GuiListCS();
-
-		return null;
-	}
-
-	@Override
-	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 
 		return null;
 	}

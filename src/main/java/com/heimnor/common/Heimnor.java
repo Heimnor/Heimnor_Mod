@@ -56,7 +56,6 @@ import registry.BlockFoodRegistry;
 import registry.BlocksDecoRegistry;
 import registry.BlocksRegistry;
 import registry.MiscRegistry;
-import registry.RecipesFoodMod;
 import registry.WeaponsRegistry;
 
 /**
@@ -113,7 +112,7 @@ public class Heimnor {
 		ArmorRegistry.registerArmors();
 		WeaponsRegistry.registerWeapons();
 		BlockFoodRegistry.registerBlock();
-		RecipesFoodMod.registerRecipes();
+
 		BlocksDecoRegistry.registerFurnitures();
 		BlocksDecoRegistry.registerTileEntities();
 		BlockFoodRegistry.registerTileEntity();

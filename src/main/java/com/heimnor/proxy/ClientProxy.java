@@ -5,19 +5,9 @@ import java.util.ArrayList;
 
 import com.heimnor.client.FichesGui;
 import com.heimnor.common.Heimnor;
-import com.heimnor.models.OneBlockRenderer;
 import com.heimnor.packet.IMessageCSSync;
-import com.heimnor.renders.RenderCobWeb;
-import com.heimnor.renders.RenderFloor;
-import com.heimnor.renders.RenderFloorWallS;
-import com.heimnor.renders.RenderRandomBlock;
-import com.heimnor.renders.RenderRideau;
-import com.heimnor.renders.RenderSlab;
-import com.heimnor.renders.RenderTrapDoor;
-import com.heimnor.tileentity.TileEntityDirection;
 import com.heimnor.utils.NbtCsFile;
 
-import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.client.Minecraft;
@@ -49,30 +39,6 @@ public class ClientProxy extends CommonProxy {
 
 		EquipmentRender.registerEquipmentRender();
 		renderID = RenderingRegistry.getNextAvailableRenderId();
-		
-		renderCurtain = RenderingRegistry.getNextAvailableRenderId();
-		RenderingRegistry.registerBlockHandler(renderCurtain, new RenderRideau());
-		
-		renderFloorWallS = RenderingRegistry.getNextAvailableRenderId();
-		RenderingRegistry.registerBlockHandler(renderFloorWallS, new RenderFloorWallS());
-		
-		renderFloor = RenderingRegistry.getNextAvailableRenderId();
-		RenderingRegistry.registerBlockHandler(renderFloor, new RenderFloor());
-		
-		renderSlab = RenderingRegistry.getNextAvailableRenderId();
-		RenderingRegistry.registerBlockHandler(renderSlab, new RenderSlab());
-		
-		renderCobWeb = RenderingRegistry.getNextAvailableRenderId();
-		RenderingRegistry.registerBlockHandler(renderCobWeb, new RenderCobWeb());
-		
-		renderTrapDoor = RenderingRegistry.getNextAvailableRenderId();
-		RenderingRegistry.registerBlockHandler(renderTrapDoor, new RenderTrapDoor());
-		
-		renderRandom = RenderingRegistry.getNextAvailableRenderId();
-		RenderingRegistry.registerBlockHandler(renderRandom, new RenderRandomBlock());
-		
-        RenderingRegistry.registerBlockHandler(new TESRInventoryRender());
-		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityDirection.class, new OneBlockRenderer());
 	}
 
 	@SubscribeEvent
